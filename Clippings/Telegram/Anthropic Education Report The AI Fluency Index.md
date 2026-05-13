@@ -5,6 +5,7 @@ source: "https://www.anthropic.com/research/AI-fluency-index"
 tags:
 ContentType: "Article"
 captured_via: "Telegram"
+<<<<<<< HEAD
 captured_at: "2026-05-13T12:08:38.952Z"
 ---
 
@@ -33,6 +34,44 @@ AI Fluency, Human-AI Collaboration, AI Literacy Skills, [[Anthropic]]
 - **Numbers:** 9,830 conversations; 11 observable behaviors; 24 total behaviors; 85.7% with iteration and refinement; 12.3% with artifacts; 30% setting collaboration terms; 5.6x more likely to question reasoning; 4x more likely to identify missing context; -3.1pp and -5.2pp for artifact conversations
 - **Things:** 4D AI Fluency Framework, Claude Sonnet 4, Claude Haiku 3.5, privacy-preserving analysis tool (CLIO), Economic Index
 - **Concepts:** AI fluency, human-AI collaboration, iteration and refinement, augmentative AI use, critical evaluation, artifact generation, early adopter bias, behavioral indicators
+=======
+captured_at: "2026-05-13T16:42:19.683Z"
+---
+
+In summary, effective AI collaboration is characterized by iterative refinement rather than accepting initial outputs, but users tend to be less critically evaluative when AI produces polished artifacts despite this being precisely when careful evaluation is most needed.
+
+## Suggested Topics
+
+AI skill development, Human-AI collaboration, Technology adoption patterns
+
+## Matched Topics
+
+None
+
+## Headlines
+
+- **Iteration and refinement is the strongest predictor of AI fluency across all other collaborative behaviors.** Users who build on previous exchanges rather than accepting first responses demonstrate 2.67 times more fluency behaviors overall, and are 5.6x more likely to question AI reasoning and 4x more likely to identify missing context.
+
+- **Users become less critical when AI produces polished outputs despite directing the AI more precisely at the outset.** In conversations involving artifacts like code or documents, users show 14.7pp higher rates of goal clarification but 5.2pp lower rates of identifying missing context and 3.1pp lower rates of questioning reasoning.
+
+- **The 4D AI Fluency Framework identifies 24 specific behaviors defining safe and effective human-AI collaboration, of which only 11 are directly observable in chat interfaces.** The study analyzed 9,830 Claude.ai conversations over one week in January 2026 to establish a baseline for measuring how AI fluency evolves over time.
+
+- **Setting explicit collaboration terms upfront can fundamentally change conversation dynamics, yet only 30% of users do so.** Users who establish expectations like "push back on my assumptions" or "explain your reasoning before answering" enable more sophisticated interactions.
+
+- **Future research will use qualitative methods to assess the 13 unobservable fluency behaviors, including honesty about AI's role in work and consideration of consequences from sharing AI outputs.** These harder-to-measure dimensions may represent the most consequential aspects of responsible AI use.
+
+## Things
+
+- **People:** Kristen Swanson, Drew Bent, Zoe Ludwig, Rick Dakan, Joe Feller, Keir Bradwell, Rebecca Hiscott, Ryan Donegan, Sarah Pollack, Zack Lee, Hanah Ho
+
+- **Places:** Claude.ai, Claude Code
+
+- **Numbers:** 9,830 conversations analyzed; 24 behavioral indicators in framework; 11 directly observable behaviors; 85.7% of conversations showed iteration and refinement; 12.3% of conversations involved artifacts; 30% of conversations where users set collaboration terms; 2.67x more fluency behaviors in iterative conversations; 5.6x more likely to question reasoning; 4x more likely to identify missing context; -5.2pp missing context identification in artifact conversations; -3.1pp reasoning questioning in artifact conversations; January 20-26, 2026 study period
+
+- **Things:** 4D AI Fluency Framework, Claude Sonnet 4, Claude Haiku 3.5, privacy-preserving analysis tool (CLIO), Economic Index
+
+- **Concepts:** AI fluency, augmentative AI use, thought partnership, iteration and refinement, artifact creation, critical evaluation, behavioral indicators, human-AI collaboration, early adopters, responsible AI use
+>>>>>>> origin/main
 
 ---
 
