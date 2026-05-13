@@ -1,10 +1,23 @@
 filters:
   and:
     - ContentType == "Article"
+formulas:
+  Untitled: source.toString().replace(/^(?:https?:\/\/)?(?:www\.)?([^\/?#]+).*$/, "$1")
+  Domain: source.toString().replace(/^(?:https?:\/\/)?(?:www\.)?([^\/?#]+).*$/, "$1")
+properties:
+  formula.Untitled:
+    displayName: Domain
 views:
   - type: table
     name: Table
-
+    order:
+      - file.name
+      - formula.Untitled
+      - source
+    sort: []
+    columnSize:
+      file.name: 300
+      formula.Untitled: 175
   - type: table
     name: Digital PR
     filters:
@@ -12,6 +25,7 @@ views:
         - file.hasLink("Topics/Digital PR.md")
     order:
       - file.name
+      - formula.Domain
       - author
       - source
       - watched
@@ -28,6 +42,25 @@ views:
         - file.hasLink("Topics/Generative Engine Optimisation (GEO).md")
     order:
       - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      note.source: 218
+  - type: table
+    name: SEO
+    filters:
+      or:
+        - file.hasLink("Topics/SEO.md")
+    order:
+      - file.name
+      - formula.Domain
       - author
       - source
       - watched
@@ -38,18 +71,22 @@ views:
       file.name: 261
       note.source: 218
   - type: table
-    name: SEO
+    name: Anthropic
     filters:
       or:
-        - file.hasLink("Topics/SEO.md")
+        - file.hasLink("Topics/Anthropic.md")
     order:
       - file.name
+      - formula.Domain
       - author
       - source
       - watched
     sort:
+      - property: author
+        direction: ASC
       - property: file.name
         direction: DESC
     columnSize:
       file.name: 261
+      formula.Domain: 120
       note.source: 218

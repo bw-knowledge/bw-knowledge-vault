@@ -12,7 +12,7 @@ In summary, digital PR has become essential to brand visibility in AI-driven sea
 
 ## Suggested Topics
 
-Digital PR, Generative Engine Optimisation (GEO)
+[[Digital PR]], [[Generative Engine Optimisation (GEO)]]
 
 ## Headlines
 

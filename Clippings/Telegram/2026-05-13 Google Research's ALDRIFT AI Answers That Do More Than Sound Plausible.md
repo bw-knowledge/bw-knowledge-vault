@@ -12,7 +12,7 @@ In summary, Google Research's ALDRIFT framework addresses the limitation of AI s
 
 ## Suggested Topics
 
-AI Answer Quality, Generative Model Optimization, Inference-Time Alignment
+AI Answer Quality, [[Generative Engine Optimisation (GEO)|GEO]], Inference-Time Alignment
 
 ## Headlines
 

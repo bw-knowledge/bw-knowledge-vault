@@ -12,7 +12,7 @@ In summary, people using AI tools are developing measurable fluency behaviors th
 
 ## Suggested Topics
 
-AI Fluency, Human-AI Collaboration, AI Literacy Skills
+AI Fluency, Human-AI Collaboration, AI Literacy Skills, [[Anthropic]]
 
 ## Headlines
 

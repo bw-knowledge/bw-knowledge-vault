@@ -11,14 +11,13 @@
             "id": "f52f030689cdcbff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "Clippings/Telegram/2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
-                "mode": "source",
-                "source": false
+                "file": "Bases/Articles.base",
+                "viewName": "Anthropic"
               },
-              "icon": "lucide-file",
-              "title": "2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible"
+              "icon": "lucide-table",
+              "title": "Articles"
             }
           }
         ]
@@ -78,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "2b8a47ae85ec3eea",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/Telegram/2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
+                "file": "Bases/Articles.base",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible"
+              "title": "Backlinks for Articles"
             }
           },
           {
@@ -113,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Clippings/Telegram/2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
+                "file": "Bases/Articles.base",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible"
+              "title": "Outgoing links from Articles"
             }
           },
           {
@@ -156,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clippings/Telegram/2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
+                "file": "Bases/Articles.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible"
+              "title": "Outline of Articles"
             }
           },
           {
@@ -197,13 +196,17 @@
   },
   "active": "f52f030689cdcbff",
   "lastOpenFiles": [
-    "Topics/Generative Engine Optimisation (GEO).md",
-    "Clippings/Telegram/2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
     "Topics/SEO.md",
+    "Bases/Articles.base",
+    "Topics/Generative Engine Optimisation (GEO).md",
+    "Topics/Anthropic.md",
+    "Clippings/Telegram/2026-05-13 The personalized Internet is here.md",
+    "Clippings/Telegram/2026-05-13 Anthropic Education Report The AI Fluency Index.md",
+    "Clippings/Telegram/2026-05-13 Digital PR is the way to win over LLMs The Drum.md",
+    "Clippings/Telegram/2026-05-13 Google Drops FAQ Rich Results From Search.md",
+    "Clippings/Telegram/2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
     "Topics/Digital PR.md",
     "Templates/resources-dynamic.md",
-    "Bases/Articles.base",
-    "Clippings/Telegram/2026-05-13 Anthropic Education Report The AI Fluency Index.md",
     "Bases",
     "Templates",
     "Welcome.md",

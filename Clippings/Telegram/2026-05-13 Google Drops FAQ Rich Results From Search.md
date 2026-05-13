@@ -12,7 +12,7 @@ In summary, Google has fully deprecated FAQ rich results from search after a thr
 
 ## Suggested Topics
 
-SEO
+[[SEO]]
 
 ## Headlines
 
