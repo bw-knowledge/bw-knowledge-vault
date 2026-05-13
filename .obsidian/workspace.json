@@ -22,22 +22,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "e307654db733b145",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d4e26d7925cb9db0",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -180,13 +164,23 @@
               "icon": "lucide-list",
               "title": "Outline of Welcome"
             }
+          },
+          {
+            "id": "92b82e6af91c08d4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,15 +190,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8e25d52f3a22bdd6",
+  "active": "f52f030689cdcbff",
   "lastOpenFiles": [
+    "Clippings/Telegram/2026-05-13 Anthropic Education Report The AI Fluency Index.md",
+    "Welcome.md",
     "AI Summaries",
     "Topics",
     "Clippings/Telegram",
-    "Clippings",
-    "Welcome.md"
+    "Clippings"
   ]
 }
