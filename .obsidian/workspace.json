@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "25f5a1b0000d13d8",
+        "id": "ce6b4f0ba6ccbdb0",
         "type": "tabs",
         "children": [
           {
-            "id": "5891e8eda648958a",
+            "id": "d77466c8a71df72c",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md",
-                "bFile": "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Anthropic Education Report The AI Fluency Index  (Working Tree)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -187,7 +183,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5891e8eda648958a",
+  "active": "92b82e6af91c08d4",
   "lastOpenFiles": [
     "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md",
     "Knowledge Hub.md",
