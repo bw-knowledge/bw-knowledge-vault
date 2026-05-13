@@ -5,6 +5,34 @@
       "path": "Knowledge Hub.md"
     },
     {
+      "basename": "Articles",
+      "path": "Bases/Articles.base"
+    },
+    {
+      "basename": "The personalized Internet is here",
+      "path": "Clippings/Telegram/The personalized Internet is here.md"
+    },
+    {
+      "basename": "Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible",
+      "path": "Clippings/Telegram/Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md"
+    },
+    {
+      "basename": "Google Drops FAQ Rich Results From Search",
+      "path": "Clippings/Telegram/Google Drops FAQ Rich Results From Search.md"
+    },
+    {
+      "basename": "Digital PR is the way to win over LLMs The Drum",
+      "path": "Clippings/Telegram/Digital PR is the way to win over LLMs The Drum.md"
+    },
+    {
+      "basename": "Condé Nast CEO Plan As If Search Traffic Will Be Zero",
+      "path": "Clippings/Telegram/Condé Nast CEO Plan As If Search Traffic Will Be Zero.md"
+    },
+    {
+      "basename": "Anthropic Education Report The AI Fluency Index",
+      "path": "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md"
+    },
+    {
       "basename": "SEO",
       "path": "Topics/SEO.md"
     },

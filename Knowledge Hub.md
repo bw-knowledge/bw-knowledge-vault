@@ -99,7 +99,7 @@ In summary, [declarative statement about the most interesting finding].
 Knowledge Hub/
 ├── Clippings/
 │   └── Telegram/
-│       └── YYYY-MM-DD Article Title.md
+│       └── Article Title.md
 ├── Topics/
 │   └── Topic Name.md      ← curated by hand; bot suggests but you link
 ├── AI Summaries/

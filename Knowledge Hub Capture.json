@@ -1,0 +1,1101 @@
+{
+  "name": "Knowledge Hub Capture",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "id": "704042d8-e752-4a89-845a-e1532b2c9d98",
+      "name": "Telegram Trigger",
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -672,
+        160
+      ],
+      "webhookId": "e10abf88-43bd-4ec8-a56a-7e2d0136e168",
+      "credentials": {
+        "telegramApi": {
+          "id": "xmI58emhYOVxw0jo",
+          "name": "bwclipper_bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const staticData = $getWorkflowStaticData('global');\nconst sessions = staticData.knowledgeHubSessions || {};\nconst SESSION_TTL = 30 * 60 * 1000;\n\nconst msg = $input.first().json.message;\nconst chatId = msg.chat.id.toString();\nconst text = (msg.text || '').trim().replace(/@\\w+$/, '').trim();\nconst now = Date.now();\n\n// Clean expired sessions\nfor (const [id, s] of Object.entries(sessions)) {\n  if (now - s.lastActivity > SESSION_TTL) delete sessions[id];\n}\n\n// /cancel or /reset\nif (text === '/cancel' || text === '/reset') {\n  delete sessions[chatId];\n  staticData.knowledgeHubSessions = sessions;\n  return [{ json: { action: 'cancelled', chatId, text, message: msg } }];\n}\n\n// Touch/init session\nif (!sessions[chatId]) {\n  sessions[chatId] = { state: 'idle', lastActivity: now };\n} else {\n  sessions[chatId].lastActivity = now;\n}\nstaticData.knowledgeHubSessions = sessions;\n\nreturn [{ json: { action: 'continue', chatId, text, message: msg } }];"
+      },
+      "id": "4aa45d68-50d6-457a-b0d8-b3f73de4734d",
+      "name": "Session Manager",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -432,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 1
+                },
+                "conditions": [
+                  {
+                    "id": "cond-cancelled",
+                    "leftValue": "={{ $json.action }}",
+                    "rightValue": "cancelled",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "cancelled"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 1
+                },
+                "conditions": [
+                  {
+                    "id": "cond-list-topics",
+                    "leftValue": "={{ $json.text }}",
+                    "rightValue": "/list_topics",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "list_topics"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 1
+                },
+                "conditions": [
+                  {
+                    "id": "cond-help",
+                    "leftValue": "={{ $json.text }}",
+                    "rightValue": "/help",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "help"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 1
+                },
+                "conditions": [
+                  {
+                    "id": "cond-url",
+                    "leftValue": "={{ $json.text }}",
+                    "rightValue": "https?://",
+                    "operator": {
+                      "type": "string",
+                      "operation": "regex"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "capture"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra"
+        }
+      },
+      "id": "00c8e1c0-5690-41e8-8ae8-f7c7f3bd1ec1",
+      "name": "Route by Action",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3,
+      "position": [
+        -192,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.chatId }}",
+        "text": "Operation cancelled.",
+        "additionalFields": {}
+      },
+      "id": "4a3c924c-e043-40d0-b248-4a0b267cb1a6",
+      "name": "Cancelled Reply",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        48,
+        -144
+      ],
+      "webhookId": "76b577ca-c645-4a7c-8e68-b02c184c4951",
+      "credentials": {
+        "telegramApi": {
+          "id": "xmI58emhYOVxw0jo",
+          "name": "bwclipper_bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const text = $input.first().json.text || '';\nconst urlMatch = text.match(/https?:\\/\\/[^\\s]+/);\nconst url = urlMatch ? urlMatch[0] : null;\n\nreturn [{ json: { ...$input.first().json, url, hasUrl: url !== null } }];"
+      },
+      "id": "e796b26b-347b-46d7-81ce-0a38e4c44a4f",
+      "name": "Extract URL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        48,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "cond-has-url",
+              "leftValue": "={{ $json.hasUrl }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "60c41b90-a4b2-4394-849b-4f297e6a19a0",
+      "name": "URL Found?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        288,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Session Manager').first().json.chatId }}",
+        "text": "I didn't find a URL in your message. Forward me a link to capture, or use /help.",
+        "additionalFields": {}
+      },
+      "id": "e642d20b-1893-4b37-afbd-c4831f976d60",
+      "name": "No URL Reply",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        528,
+        336
+      ],
+      "webhookId": "21ed174d-bc2a-425b-a1e7-3a16f724e150",
+      "credentials": {
+        "telegramApi": {
+          "id": "xmI58emhYOVxw0jo",
+          "name": "bwclipper_bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Session Manager').first().json.chatId }}",
+        "text": "📥 Capturing... this takes about 30 seconds.",
+        "additionalFields": {}
+      },
+      "id": "687a71c0-04cc-412c-9997-0456ffb730a1",
+      "name": "Immediate Reply",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        528,
+        160
+      ],
+      "webhookId": "27400ca1-f9a9-43c0-b7f7-842f82abb7ba",
+      "credentials": {
+        "telegramApi": {
+          "id": "xmI58emhYOVxw0jo",
+          "name": "bwclipper_bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const firecrawlResult = $('Firecrawl Scrape').first().json;\nconst firecrawlData = firecrawlResult.data || firecrawlResult;\nconst markdown = firecrawlData.markdown || '';\nconst title = firecrawlData.metadata?.title || 'Untitled';\nconst url = $('Extract URL').first().json.url;\n\nconst topicsItems = $('GitHub List Topics Capture').all();\nconst topicListError = topicsItems.find(item => item.json.error);\nif (topicListError) {\n  const error = topicListError.json.error;\n  const message = typeof error === 'string' ? error : (error.message || JSON.stringify(error));\n  throw new Error('Unable to list topics from GitHub: ' + message);\n}\n\nconst existingTopics = topicsItems\n  .map(item => item.json.name)\n  .filter(name => name && name.endsWith('.md'))\n  .map(name => name.replace(/\\.md$/, ''))\n  .sort();\n\nconst matchedTopicsSection = existingTopics.length > 0\n  ? '## Matched Topics\\n\\n[From this list of existing vault topics - ' + existingTopics.join(', ') + ' - identify any this article clearly relates to, comma-separated. Be conservative. If none match, write \"None\".]'\n  : '';\n\nconst truncatedContent = markdown.length > 40000 ? markdown.substring(0, 40000) + '\\n\\n[Content truncated]' : markdown;\n\nconst prompt = [\n  'You are extracting key information from an article for a personal knowledge vault.',\n  '',\n  'Output the following sections in markdown. Do not include any preamble or explanation outside these sections.',\n  '',\n  'In summary, [the most interesting aspect, delivered as a complete declarative statement starting with this exact phrase].',\n  '',\n  '## Suggested Topics',\n  '',\n  '[Freely suggest 1-3 topic names that best describe this article. Choose names that are concise (1-3 words), specific enough to be useful but general enough to gather multiple articles. Plain text, comma-separated. Do NOT use [[wikilinks]].]',\n  '',\n  matchedTopicsSection,\n  '',\n  '## Headlines',\n  '',\n  '- **[A bold, declarative headline ending with a period.]** [1-2 supporting sentences with the specifics.]',\n  '- **[Next headline.]** [Supporting sentences.]',\n  '- [3-5 headlines total]',\n  '',\n  '## Things',\n  '',\n  '- **People:** [comma-separated names mentioned]',\n  '- **Places:** [comma-separated places or product surfaces]',\n  '- **Numbers:** [specific statistics, dates, quantities - semicolon-separated]',\n  '- **Things:** [products, tools, frameworks, named systems]',\n  '- **Concepts:** [abstract concepts, terms of art]',\n  '',\n  '---',\n  '',\n  'Article title: ' + title,\n  'Article source: ' + url,\n  '',\n  'Article content:',\n  truncatedContent,\n].join('\\n');\n\nreturn [{ json: { prompt, title, url } }];"
+      },
+      "id": "46467e87-d4ab-4076-92e5-086efd1b8431",
+      "name": "Build Anthropic Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1456,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const anthropicResponse = $input.first().json;\nconst body = anthropicResponse.text || '';\nconst promptData = $('Build Anthropic Prompt').first().json;\nconst title = promptData.title;\nconst url = promptData.url;\nconst firecrawlData = $('Firecrawl Scrape').first().json;\nconst firecrawlInner = firecrawlData.data || firecrawlData;\nconst fullText = firecrawlInner.markdown || '';\n\n\nconst now = new Date();\nconst isoTimestamp = now.toISOString();\nconst dateStr = isoTimestamp.split('T')[0];\n\nconst escapedTitle = title.replace(/\"/g, '\\\\\"');\n\nconst frontmatter = `---\\ntitle: \"${escapedTitle}\"\\ncreated: ${dateStr}\\nsource: \"${url}\"\\ntags:\\nContentType: \"Article\"\\ncaptured_via: \"Telegram\"\\ncaptured_at: \"${isoTimestamp}\"\\n---`;\n\nconst clipping = `${frontmatter}\\n\\n${body}\\n\\n---\\n\\n## Full Article\\n\\n${fullText}`;\n\nreturn [{ json: { clipping, body, title, url, dateStr } }];"
+      },
+      "id": "afe96192-4dc4-4ee8-acb9-70a121a48275",
+      "name": "Build Clipping",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2144,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const { title, clipping, body, url, dateStr } = $input.first().json;\n\n// Sanitise: strip / \\ : * ? \" < > |, collapse whitespace, trim to 100 chars\nconst sanitised = title\n  .replace(/[\\/\\\\:*?\"<>|]/g, '')\n  .replace(/\\s+/g, ' ')\n  .trim()\n  .substring(0, 100) || 'Untitled';\n\nconst filename = sanitised + '.md';\nconst path = 'Clippings/Telegram/' + filename;\n\nreturn [{ json: { filename, path, clipping, body, title, url, dateStr } }];"
+      },
+      "id": "c25d4fe5-ab5b-4b03-9df1-8061b0ad0a91",
+      "name": "Build Filename",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2384,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const checkResult = $input.first();\nconst buildData = $('Build Filename').first().json;\n\nconst fileExists = !checkResult.error && checkResult.json && checkResult.json.name;\n\nfunction normaliseUrl(value) {\n  if (!value) return '';\n  try {\n    const parsed = new URL(value.trim());\n    parsed.hash = '';\n    if (parsed.pathname !== '/') parsed.pathname = parsed.pathname.replace(/\\/+$/, '');\n    return parsed.toString();\n  } catch (error) {\n    return value.trim().replace(/\\/+$/, '');\n  }\n}\n\nfunction readExistingContent(json) {\n  if (!json) return '';\n  if (typeof json.fileContent === 'string') return json.fileContent;\n  if (typeof json.content === 'string') {\n    try {\n      return Buffer.from(json.content.replace(/\\s/g, ''), 'base64').toString('utf8');\n    } catch (error) {\n      return json.content;\n    }\n  }\n  return '';\n}\n\nfunction sourceFromFrontmatter(content) {\n  const match = content.match(/^source:\\s*[\"']?(.+?)[\"']?\\s*$/m);\n  return match ? match[1] : '';\n}\n\nfunction urlHash(value) {\n  let hash = 0;\n  for (const char of value) {\n    hash = ((hash << 5) - hash + char.charCodeAt(0)) | 0;\n  }\n  return Math.abs(hash).toString(36).padStart(6, '0').slice(0, 6);\n}\n\nlet filename = buildData.filename;\nlet path = buildData.path;\nlet duplicateArticle = false;\nlet needsCandidateCheck = false;\nlet duplicateReason = '';\n\nif (fileExists) {\n  const existingSource = sourceFromFrontmatter(readExistingContent(checkResult.json));\n  const sourceMatches = normaliseUrl(existingSource) === normaliseUrl(buildData.url);\n\n  if (sourceMatches) {\n    duplicateArticle = true;\n    duplicateReason = 'same title and source URL';\n  } else {\n    const suffix = urlHash(normaliseUrl(buildData.url));\n    filename = buildData.filename.replace(/\\.md$/, ' ' + suffix + '.md');\n    path = 'Clippings/Telegram/' + filename;\n    needsCandidateCheck = true;\n  }\n}\n\nconst commitMessage = 'Capture: ' + buildData.title;\nconst text = duplicateArticle\n  ? ['Already captured', '', buildData.title, '', 'Matched on ' + duplicateReason + '.', '', 'Vault path: ' + buildData.path].join('\\n')\n  : '';\n\nreturn [{ json: { filename, path, commitMessage, title: buildData.title, url: buildData.url, body: buildData.body, clipping: buildData.clipping, duplicateArticle, needsCandidateCheck, duplicateReason, chatId: $('Session Manager').first().json.chatId, text } }];"
+      },
+      "id": "5342585c-4e35-4708-be8b-c116a83117ab",
+      "name": "Resolve Filename",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3088,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const resolveData = $('Resolve Filename').first().json;\nconst body = resolveData.body || '';\nconst title = resolveData.title;\nconst filename = resolveData.filename;\nconst chatId = $('Session Manager').first().json.chatId;\n\n// Extract 'In summary,' sentence\nconst summaryMatch = body.match(/^In summary,\\s*(.+)/m);\nconst summaryLine = summaryMatch ? ('In summary, ' + summaryMatch[1].trim()).substring(0, 220) : body.substring(0, 200);\n\n// Extract Suggested Topics\nconst topicsMatch = body.match(/## Suggested Topics\\s*\\n+([^\\n#]+)/);\nconst suggestedTopics = topicsMatch ? topicsMatch[1].trim() : 'See clipping';\n\nconst text = [\n  'Captured',\n  '',\n  title,\n  '',\n  summaryLine,\n  '',\n  'Suggested topics: ' + suggestedTopics,\n  '',\n  'Vault path: Clippings/Telegram/' + filename,\n].join('\\n');\n\nreturn [{ json: { chatId, text } }];"
+      },
+      "id": "83f29c63-e206-439a-acaa-42990ac0dcc0",
+      "name": "Build Success Reply",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4384,
+        288
+      ]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.chatId }}",
+        "text": "={{ $json.text }}",
+        "additionalFields": {}
+      },
+      "id": "13f6c88b-41c0-4428-99ec-787a599be0e0",
+      "name": "Success Reply",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        4624,
+        288
+      ],
+      "webhookId": "18a12bb6-ba0f-4e9f-9a44-cb4d6b94ddae",
+      "credentials": {
+        "telegramApi": {
+          "id": "xmI58emhYOVxw0jo",
+          "name": "bwclipper_bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst chatId = $('Session Manager').first().json.chatId;\n\nconst errorItem = items.find(item => item.json.error);\nif (errorItem) {\n  const error = errorItem.json.error;\n  const message = typeof error === 'string' ? error : (error.message || JSON.stringify(error));\n  return [{ json: { chatId, text: 'Unable to list topics from GitHub: ' + message } }];\n}\n\nconst topics = items\n  .map(item => item.json.name)\n  .filter(name => name && name.endsWith('.md'))\n  .map(name => name.replace(/\\.md$/, ''))\n  .sort();\n\nconst text = topics.length === 0\n  ? 'No topics yet...'\n  : 'Available topics:\\n' + topics.map(t => '- ' + t).join('\\n');\n\nreturn [{ json: { chatId, text } }];"
+      },
+      "id": "8066c1d2-e8bb-4555-94f4-c9cb9ba363de",
+      "name": "Format Topics Reply",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        288,
+        464
+      ]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.chatId }}",
+        "text": "={{ $json.text }}",
+        "additionalFields": {}
+      },
+      "id": "eef6b60e-a797-410d-8b23-312e9a2c8d2f",
+      "name": "List Topics Reply",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        528,
+        464
+      ],
+      "webhookId": "bd5799c3-1829-4980-9ce5-52e2358a6303",
+      "credentials": {
+        "telegramApi": {
+          "id": "xmI58emhYOVxw0jo",
+          "name": "bwclipper_bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Session Manager').first().json.chatId }}",
+        "text": "📚 *Knowledge Hub Bot*\n\n*Commands:*\n• Forward or paste a URL → captures the article as a clipping\n• /list\\_topics → shows your current topic notes\n• /help → shows this message\n• /cancel or /reset → clears the current session\n\n*How it works:*\n1\\. Send me a link\n2\\. I fetch and summarise the article \\(\\~30 seconds\\)\n3\\. A formatted clipping appears in your Obsidian vault under Clippings/Telegram/\n4\\. The clipping includes a summary, headlines, entities, and suggested topics",
+        "additionalFields": {
+          "parse_mode": "MarkdownV2"
+        }
+      },
+      "id": "bdc1d8f1-9a08-4eb8-af89-b48a1c93c9a3",
+      "name": "Help Reply",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        48,
+        768
+      ],
+      "webhookId": "a0d7f280-e2cc-4840-b41b-ee60e415b23e",
+      "credentials": {
+        "telegramApi": {
+          "id": "xmI58emhYOVxw0jo",
+          "name": "bwclipper_bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Session Manager').first().json.chatId }}",
+        "text": "Forward me a link to capture, or use /help.",
+        "additionalFields": {}
+      },
+      "id": "a20461f2-320c-484a-908b-2393fb37e9c1",
+      "name": "Fallback Reply",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        48,
+        1056
+      ],
+      "webhookId": "378b4713-a8c5-4132-a928-25d167263722",
+      "credentials": {
+        "telegramApi": {
+          "id": "xmI58emhYOVxw0jo",
+          "name": "bwclipper_bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "scrape",
+        "url": "={{ $('Extract URL').first().json.url }}",
+        "requestOptions": {}
+      },
+      "type": "@mendable/n8n-nodes-firecrawl.firecrawl",
+      "typeVersion": 1,
+      "position": [
+        768,
+        160
+      ],
+      "id": "071c94f4-f02f-4665-a56d-4dade301143d",
+      "name": "Firecrawl Scrape",
+      "credentials": {
+        "firecrawlApi": {
+          "id": "QCAYeEppdfWzzkzj",
+          "name": "Firecrawl API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('Build Anthropic Prompt').first().json.prompt }}",
+        "messages": {
+          "messageValues": [
+            {
+              "message": "="
+            }
+          ]
+        },
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "position": [
+        1712,
+        160
+      ],
+      "id": "b8707c0b-a7e5-4637-8922-45dcbec9fe35",
+      "name": "Basic LLM Chain"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "claude-haiku-4-5-20251001",
+          "mode": "list",
+          "cachedResultName": "Claude Haiku 4.5"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.5,
+      "position": [
+        1632,
+        352
+      ],
+      "id": "760612a6-09b0-4c29-8ec7-25a3747e9f05",
+      "name": "Anthropic Chat Model",
+      "credentials": {
+        "anthropicApi": {
+          "id": "CmEP1YQpDRe6GVkt",
+          "name": "Doug Anthropic Account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "get",
+        "owner": {
+          "__rl": true,
+          "value": "https://github.com/bw-knowledge",
+          "mode": "url"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": "={{ 'Clippings/Telegram/' + $('Build Filename').first().json.filename }}",
+        "additionalParameters": {}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        2688,
+        160
+      ],
+      "id": "2ba4f7df-f77d-4fd0-8041-29716a40508e",
+      "name": "Get a file",
+      "webhookId": "153e4850-32cb-489d-9043-b7e7065b2003",
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "https://github.com/bw-knowledge",
+          "mode": "url"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": "={{ $json.path }}",
+        "fileContent": "={{ $json.clipping }}",
+        "commitMessage": "={{ $json.commitMessage }}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        4144,
+        288
+      ],
+      "id": "a19bc08c-1fa1-4b46-9a0d-22f718f930a2",
+      "name": "Create a file",
+      "webhookId": "4408ed46-af40-4d6a-8425-05c863830555",
+      "retryOnFail": true,
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "list",
+        "owner": {
+          "__rl": true,
+          "mode": "list",
+          "value": "bw-knowledge"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": "Topics/"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        1072,
+        160
+      ],
+      "id": "51f69729-f94c-4cdc-931c-7bf68279554f",
+      "name": "GitHub List Topics Capture",
+      "webhookId": "e46c0372-8463-4807-a769-00d61e555c23",
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "list",
+        "owner": {
+          "__rl": true,
+          "mode": "list",
+          "value": "bw-knowledge"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": "Topics/"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        112,
+        464
+      ],
+      "id": "8fed7fd7-713a-4576-a542-859e3c682bca",
+      "name": "List Topics",
+      "webhookId": "e46c0372-8463-4807-a769-00d61e555c23",
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "get",
+        "owner": {
+          "__rl": true,
+          "value": "https://github.com/bw-knowledge",
+          "mode": "url"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": "={{ $json.path }}",
+        "additionalParameters": {}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        3408,
+        -80
+      ],
+      "id": "b11bd4d8-8a0f-4e3a-b5c1-2fb4b4810d0d",
+      "name": "Get candidate file",
+      "webhookId": "153e4850-32cb-489d-9043-b7e7065b2003",
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const checkResult = $input.first();\nconst resolveData = $('Resolve Filename').first().json;\nconst candidateExists = !checkResult.error && checkResult.json && checkResult.json.name;\n\nif (candidateExists) {\n  const text = [\n    'Already captured',\n    '',\n    resolveData.title,\n    '',\n    'Matched on title and source URL.',\n    '',\n    'Vault path: ' + resolveData.path,\n  ].join('\\n');\n\n  return [{ json: { ...resolveData, duplicateArticle: true, needsCandidateCheck: false, duplicateReason: 'same title and source URL', text } }];\n}\n\nreturn [{ json: { ...resolveData, duplicateArticle: false, needsCandidateCheck: false } }];"
+      },
+      "id": "33f5a804-7a80-49cf-8b08-45bd390a0b2d",
+      "name": "Resolve Candidate Filename",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3648,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "cond-needs-candidate-check",
+              "leftValue": "={{ $json.needsCandidateCheck }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a95c92d2-c4d2-43db-a772-b02b26dd50cc",
+      "name": "Needs Candidate Check?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        3328,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "cond-duplicate-article",
+              "leftValue": "={{ $json.duplicateArticle }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "9554f8e4-4c87-4352-bb5b-eed159d58047",
+      "name": "Duplicate Article?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        3888,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.chatId }}",
+        "text": "={{ $json.text }}",
+        "additionalFields": {}
+      },
+      "id": "d128f8ec-5c92-4ef0-a914-169bc54f8201",
+      "name": "Duplicate Reply",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        4144,
+        32
+      ],
+      "credentials": {
+        "telegramApi": {
+          "id": "xmI58emhYOVxw0jo",
+          "name": "bwclipper_bot"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Session Manager",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Session Manager": {
+      "main": [
+        [
+          {
+            "node": "Route by Action",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Route by Action": {
+      "main": [
+        [
+          {
+            "node": "Cancelled Reply",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "List Topics",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Help Reply",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract URL",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Fallback Reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract URL": {
+      "main": [
+        [
+          {
+            "node": "URL Found?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "URL Found?": {
+      "main": [
+        [
+          {
+            "node": "Immediate Reply",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No URL Reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Immediate Reply": {
+      "main": [
+        [
+          {
+            "node": "Firecrawl Scrape",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Anthropic Prompt": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Clipping": {
+      "main": [
+        [
+          {
+            "node": "Build Filename",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Filename": {
+      "main": [
+        [
+          {
+            "node": "Get a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resolve Filename": {
+      "main": [
+        [
+          {
+            "node": "Needs Candidate Check?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Success Reply": {
+      "main": [
+        [
+          {
+            "node": "Success Reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Topics Reply": {
+      "main": [
+        [
+          {
+            "node": "List Topics Reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Firecrawl Scrape": {
+      "main": [
+        [
+          {
+            "node": "GitHub List Topics Capture",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anthropic Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "Build Clipping",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a file": {
+      "main": [
+        [
+          {
+            "node": "Resolve Filename",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a file": {
+      "main": [
+        [
+          {
+            "node": "Build Success Reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GitHub List Topics Capture": {
+      "main": [
+        [
+          {
+            "node": "Build Anthropic Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "List Topics": {
+      "main": [
+        [
+          {
+            "node": "Format Topics Reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Needs Candidate Check?": {
+      "main": [
+        [
+          {
+            "node": "Get candidate file",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Duplicate Article?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get candidate file": {
+      "main": [
+        [
+          {
+            "node": "Resolve Candidate Filename",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resolve Candidate Filename": {
+      "main": [
+        [
+          {
+            "node": "Duplicate Article?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Duplicate Article?": {
+      "main": [
+        [
+          {
+            "node": "Duplicate Reply",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Create a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "timeSavedMode": "fixed",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": true
+  },
+  "versionId": "19a0a872-32c4-416c-9aa6-56ca0b50f9bf",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f05a478acf53faa792a63a68536b8465e780fffe48db0488a2724497ce50241e"
+  },
+  "id": "xo9M1ItRvwkrTRqx",
+  "tags": []
+}

@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 319.5
   },
   "right": {
     "id": "2b8a47ae85ec3eea",
@@ -181,7 +181,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -202,20 +202,25 @@
   },
   "active": "5891e8eda648958a",
   "lastOpenFiles": [
+    "Unconfirmed 514648.crdownload",
+    "Bases/Articles.base",
+    "Clippings/Telegram/The personalized Internet is here.md",
+    "Clippings/Telegram/Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
+    "Clippings/Telegram/Google Drops FAQ Rich Results From Search.md",
+    "Clippings/Telegram/Digital PR is the way to win over LLMs The Drum.md",
+    "Clippings/Telegram/Condé Nast CEO Plan As If Search Traffic Will Be Zero.md",
+    "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md",
     "Topics/SEO.md",
     "Topics/Generative Engine Optimisation (GEO).md",
     "Topics/Digital PR.md",
     "Topics/Anthropic.md",
-    "Bases/Articles.base",
-    "Clippings/Telegram/2026-05-13 The personalized Internet is here.md",
-    "Clippings/Telegram/2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
-    "Clippings/Telegram/2026-05-13 Google Drops FAQ Rich Results From Search.md",
-    "Clippings/Telegram/2026-05-13 Digital PR is the way to win over LLMs The Drum.md",
-    "Clippings/Telegram/2026-05-13 Anthropic Education Report The AI Fluency Index.md",
-    "Templates/resources-dynamic.md",
-    "Knowledge Hub.md",
-    "Attachments",
     "Topics/Untitled.md",
+    "Knowledge Hub.md",
+    "ai_video_summary.py",
+    "ai_article_summary.py",
+    "Knowledge Hub Capture.json",
+    "Templates/resources-dynamic.md",
+    "Attachments",
     "Templates/Topic.md",
     "Welcome.md",
     "Knowledge Hub — What We've Built.md.tmp.122652.1778685163068",
@@ -223,9 +228,6 @@
     "Knowledge Hub — What We've Built.md.tmp.122652.1778685153632",
     "Bases",
     "Templates",
-    "Clippings/Telegram/2026-05-13 Untitled.md",
-    "AI Summaries",
-    "Topics",
-    "Clippings/Telegram"
+    "Clippings/Telegram/2026-05-13 Untitled.md"
   ]
 }
