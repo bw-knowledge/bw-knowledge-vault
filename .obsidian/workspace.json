@@ -11,10 +11,24 @@
             "id": "d77466c8a71df72c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Clippings/Telegram/The personalized Internet is here.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "The personalized Internet is here"
             }
           }
         ]
@@ -100,6 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Clippings/Telegram/The personalized Internet is here.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for The personalized Internet is here"
             }
           },
           {
@@ -118,11 +133,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Clippings/Telegram/The personalized Internet is here.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from The personalized Internet is here"
             }
           },
           {
@@ -145,12 +161,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Clippings/Telegram/The personalized Internet is here.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of The personalized Internet is here"
             }
           },
           {
@@ -183,23 +200,23 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8e25d52f3a22bdd6",
+  "active": "d77466c8a71df72c",
   "lastOpenFiles": [
+    "Clippings/Telegram/Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
+    "Clippings/Telegram/Google Drops FAQ Rich Results From Search.md",
+    "Clippings/Telegram/Digital PR is the way to win over LLMs The Drum.md",
+    "Clippings/Telegram/Condé Nast CEO Plan As If Search Traffic Will Be Zero.md",
+    "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md",
     "Templates/sources.json",
     "Templates/Knowledge Hub Capture.json",
     "sources.json",
     "Indexes/sources.json",
     "Indexes",
-    "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md",
     "Knowledge Hub.md",
     "conflict-files-obsidian-git.md",
     "Unconfirmed 514648.crdownload",
     "Bases/Articles.base",
     "Clippings/Telegram/The personalized Internet is here.md",
-    "Clippings/Telegram/Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
-    "Clippings/Telegram/Google Drops FAQ Rich Results From Search.md",
-    "Clippings/Telegram/Digital PR is the way to win over LLMs The Drum.md",
-    "Clippings/Telegram/Condé Nast CEO Plan As If Search Traffic Will Be Zero.md",
     "Topics/SEO.md",
     "Topics/Generative Engine Optimisation (GEO).md",
     "Topics/Digital PR.md",
@@ -209,7 +226,6 @@
     "ai_article_summary.py",
     "Knowledge Hub Capture.json",
     "Templates/resources-dynamic.md",
-    "Attachments",
     "Templates/Topic.md",
     "Welcome.md",
     "Clippings/Telegram/2026-05-13 Untitled.md"
