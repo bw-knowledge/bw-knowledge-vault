@@ -5,7 +5,7 @@ source: "https://www.anthropic.com/research/AI-fluency-index"
 tags:
 ContentType: "Article"
 captured_via: "Telegram"
-<<<<<<< HEAD
+
 captured_at: "2026-05-13T12:08:38.952Z"
 ---
 
