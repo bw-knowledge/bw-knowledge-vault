@@ -4,20 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "f81990760dcd334d",
+        "id": "25f5a1b0000d13d8",
         "type": "tabs",
         "children": [
           {
-            "id": "f52f030689cdcbff",
+            "id": "5891e8eda648958a",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Bases/Articles.base",
-                "viewName": "Anthropic"
+                "file": "Knowledge Hub.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-table",
-              "title": "Articles"
+              "icon": "lucide-file",
+              "title": "Knowledge Hub"
             }
           }
         ]
@@ -72,6 +83,16 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "8d25070d4e1f1b9b",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent files"
+            }
           }
         ]
       }
@@ -93,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bases/Articles.base",
+                "file": "Knowledge Hub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Articles"
+              "title": "Backlinks for Knowledge Hub"
             }
           },
           {
@@ -112,27 +133,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bases/Articles.base",
+                "file": "Knowledge Hub.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Articles"
-            }
-          },
-          {
-            "id": "e7c133c0646b02de",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Outgoing links from Knowledge Hub"
             }
           },
           {
@@ -155,13 +161,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bases/Articles.base",
+                "file": "Knowledge Hub.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Articles"
+              "title": "Outline of Knowledge Hub"
             }
           },
           {
@@ -175,7 +181,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -194,26 +200,32 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f52f030689cdcbff",
+  "active": "5891e8eda648958a",
   "lastOpenFiles": [
     "Topics/SEO.md",
-    "Bases/Articles.base",
     "Topics/Generative Engine Optimisation (GEO).md",
-    "Topics/Anthropic.md",
-    "Clippings/Telegram/2026-05-13 The personalized Internet is here.md",
-    "Clippings/Telegram/2026-05-13 Anthropic Education Report The AI Fluency Index.md",
-    "Clippings/Telegram/2026-05-13 Digital PR is the way to win over LLMs The Drum.md",
-    "Clippings/Telegram/2026-05-13 Google Drops FAQ Rich Results From Search.md",
-    "Clippings/Telegram/2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
     "Topics/Digital PR.md",
+    "Topics/Anthropic.md",
+    "Bases/Articles.base",
+    "Clippings/Telegram/2026-05-13 The personalized Internet is here.md",
+    "Clippings/Telegram/2026-05-13 Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
+    "Clippings/Telegram/2026-05-13 Google Drops FAQ Rich Results From Search.md",
+    "Clippings/Telegram/2026-05-13 Digital PR is the way to win over LLMs The Drum.md",
+    "Clippings/Telegram/2026-05-13 Anthropic Education Report The AI Fluency Index.md",
     "Templates/resources-dynamic.md",
+    "Knowledge Hub.md",
+    "Attachments",
+    "Topics/Untitled.md",
+    "Templates/Topic.md",
+    "Welcome.md",
+    "Knowledge Hub — What We've Built.md.tmp.122652.1778685163068",
+    "Knowledge Hub — What We've Built.md.tmp.122652.1778685157783",
+    "Knowledge Hub — What We've Built.md.tmp.122652.1778685153632",
     "Bases",
     "Templates",
-    "Welcome.md",
     "Clippings/Telegram/2026-05-13 Untitled.md",
     "AI Summaries",
     "Topics",
-    "Clippings/Telegram",
-    "Clippings"
+    "Clippings/Telegram"
   ]
 }

@@ -12,7 +12,7 @@ In summary, Google's AI-powered personalized search fundamentally restructures h
 
 ## Suggested Topics
 
-SEO, Generative Engine Optimisation (GEO)
+[[SEO]], [[Generative Engine Optimisation (GEO)]]
 
 ## Headlines
 

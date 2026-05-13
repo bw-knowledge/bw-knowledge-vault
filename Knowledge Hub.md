@@ -1,8 +1,6 @@
-# Knowledge Hub — What We've Built
-
 ## Overview
 
-Knowledge Hub is a personal (and team-scalable) knowledge capture pipeline. You send a link to a Telegram bot, and within ~30 seconds a structured clipping appears in your Obsidian vault — fully formatted, AI-summarised, and version-controlled in GitHub.
+Knowledge Hub is a knowledge capture pipeline. You send a link to a Telegram bot, and within ~30 seconds a structured clipping appears in your Obsidian vault — fully formatted, AI-summarised, and version-controlled in GitHub.
 
 ---
 
@@ -25,9 +23,10 @@ Knowledge Hub is a personal (and team-scalable) knowledge capture pipeline. You 
 2. **Session Manager** routes the message: capture, `/list_topics`, `/help`, `/cancel`, or fallback.
 3. **Firecrawl** scrapes the article and returns clean markdown.
 4. **GitHub List Topics** reads your `Topics/` folder so Claude knows what topic notes already exist.
-5. **Claude Haiku 4.5** produces a structured summary with four sections:
+5. **Claude Haiku 4.5** produces a structured summary with five sections:
    - *In summary* — one declarative sentence capturing the most interesting finding
-   - *Suggested Topics* — 1–3 topics drawn from your existing topic notes (or bootstrapped if none exist)
+   - *Suggested Topics* — 1–3 topic names Claude freely proposes (unconstrained, best fit for the article)
+   - *Matched Topics* — which existing `Topics/` notes apply (only present when vault topics exist; omitted if the vault is empty)
    - *Headlines* — 3–5 bold, declarative bullets with supporting detail
    - *Things* — People, Places, Numbers, Things, Concepts
 6. **Build Clipping** assembles the full markdown file: frontmatter + AI summary + full article text.
@@ -56,7 +55,11 @@ In summary, [declarative statement about the most interesting finding].
 
 ## Suggested Topics
 
-[1–3 topics from your Topics/ folder]
+[1–3 topic names freely suggested by Claude — unconstrained]
+
+## Matched Topics
+
+[Existing vault topics that apply — omitted if vault has no topics yet]
 
 ## Headlines
 
@@ -107,7 +110,7 @@ Knowledge Hub/
 
 ## Design Decisions
 
-- **Topics are curated, not auto-created.** The bot suggests topics from your existing `Topics/` notes. You add `[[wikilinks]]` during reading. This keeps the taxonomy intentional.
+- **Suggested Topics and Matched Topics are separate concerns.** Suggested Topics are Claude's unconstrained recommendations — the best names for this article regardless of what's in the vault. Matched Topics cross-references your existing `Topics/` notes and only appears when vault topics exist. You add `[[wikilinks]]` during reading. This keeps taxonomy suggestions creative while linking stays intentional.
 - **Full article is preserved.** The scraped markdown is appended after the AI summary so nothing is lost.
 - **GitHub is the source of truth.** Obsidian Git pulls from GitHub, so the vault works across devices and is ready for team sharing.
 - **Session management** uses n8n static data with a 30-minute TTL, namespaced under `knowledgeHubSessions`.

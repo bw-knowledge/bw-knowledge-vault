@@ -1,0 +1,28 @@
+{
+  "recentFiles": [
+    {
+      "basename": "Knowledge Hub",
+      "path": "Knowledge Hub.md"
+    },
+    {
+      "basename": "SEO",
+      "path": "Topics/SEO.md"
+    },
+    {
+      "basename": "Generative Engine Optimisation (GEO)",
+      "path": "Topics/Generative Engine Optimisation (GEO).md"
+    },
+    {
+      "basename": "Digital PR",
+      "path": "Topics/Digital PR.md"
+    },
+    {
+      "basename": "Anthropic",
+      "path": "Topics/Anthropic.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}

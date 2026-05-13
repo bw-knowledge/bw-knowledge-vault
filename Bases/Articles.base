@@ -90,3 +90,19 @@ views:
       file.name: 261
       formula.Domain: 120
       note.source: 218
+  - type: table
+    name: Untitled
+    filters:
+      or:
+        - file.hasLink("Topics/Untitled.md")
+    order:
+      - file.name
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      note.source: 218
