@@ -253,7 +253,7 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        528,
+        1248,
         160
       ],
       "webhookId": "27400ca1-f9a9-43c0-b7f7-842f82abb7ba",
@@ -273,7 +273,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1456,
+        2176,
         160
       ]
     },
@@ -286,7 +286,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2144,
+        2864,
         160
       ]
     },
@@ -299,33 +299,33 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2384,
+        3104,
         160
       ]
     },
     {
       "parameters": {
-        "jsCode": "const checkResult = $input.first();\nconst buildData = $('Build Filename').first().json;\n\nconst fileExists = !checkResult.error && checkResult.json && checkResult.json.name;\n\nfunction normaliseUrl(value) {\n  if (!value) return '';\n  try {\n    const parsed = new URL(value.trim());\n    parsed.hash = '';\n    if (parsed.pathname !== '/') parsed.pathname = parsed.pathname.replace(/\\/+$/, '');\n    return parsed.toString();\n  } catch (error) {\n    return value.trim().replace(/\\/+$/, '');\n  }\n}\n\nfunction readExistingContent(json) {\n  if (!json) return '';\n  if (typeof json.fileContent === 'string') return json.fileContent;\n  if (typeof json.content === 'string') {\n    try {\n      return Buffer.from(json.content.replace(/\\s/g, ''), 'base64').toString('utf8');\n    } catch (error) {\n      return json.content;\n    }\n  }\n  return '';\n}\n\nfunction sourceFromFrontmatter(content) {\n  const match = content.match(/^source:\\s*[\"']?(.+?)[\"']?\\s*$/m);\n  return match ? match[1] : '';\n}\n\nfunction urlHash(value) {\n  let hash = 0;\n  for (const char of value) {\n    hash = ((hash << 5) - hash + char.charCodeAt(0)) | 0;\n  }\n  return Math.abs(hash).toString(36).padStart(6, '0').slice(0, 6);\n}\n\nlet filename = buildData.filename;\nlet path = buildData.path;\nlet duplicateArticle = false;\nlet needsCandidateCheck = false;\nlet duplicateReason = '';\n\nif (fileExists) {\n  const existingSource = sourceFromFrontmatter(readExistingContent(checkResult.json));\n  const sourceMatches = normaliseUrl(existingSource) === normaliseUrl(buildData.url);\n\n  if (sourceMatches) {\n    duplicateArticle = true;\n    duplicateReason = 'same title and source URL';\n  } else {\n    const suffix = urlHash(normaliseUrl(buildData.url));\n    filename = buildData.filename.replace(/\\.md$/, ' ' + suffix + '.md');\n    path = 'Clippings/Telegram/' + filename;\n    needsCandidateCheck = true;\n  }\n}\n\nconst commitMessage = 'Capture: ' + buildData.title;\nconst text = duplicateArticle\n  ? ['Already captured', '', buildData.title, '', 'Matched on ' + duplicateReason + '.', '', 'Vault path: ' + buildData.path].join('\\n')\n  : '';\n\nreturn [{ json: { filename, path, commitMessage, title: buildData.title, url: buildData.url, body: buildData.body, clipping: buildData.clipping, duplicateArticle, needsCandidateCheck, duplicateReason, chatId: $('Session Manager').first().json.chatId, text } }];"
+        "jsCode": "const checkResult = $input.first();\nconst buildData = $('Build Filename').first().json;\n\n// With onError: continueRegularOutput, a missing GitHub file appears as an error item.\n// If there is no error, the title-derived path already exists and should not be captured again.\nconst fileExists = !checkResult.error && !checkResult.json?.error;\n\nfunction escapeHtml(value) {\n  return String(value || '')\n    .replace(/&/g, '&amp;')\n    .replace(/</g, '&lt;')\n    .replace(/>/g, '&gt;');\n}\n\nlet filename = buildData.filename;\nlet path = buildData.path;\nlet duplicateArticle = false;\nlet duplicateReason = '';\n\nif (fileExists) {\n  duplicateArticle = true;\n  duplicateReason = 'same filename already exists';\n}\n\nconst commitMessage = 'Capture: ' + buildData.title;\nconst text = duplicateArticle\n  ? [\n      'Already captured',\n      '',\n      escapeHtml(buildData.title),\n      '',\n      'Matched on ' + escapeHtml(duplicateReason) + '.',\n      '',\n      'Vault path: <code>' + escapeHtml(buildData.path) + '</code>',\n    ].join('\\n')\n  : '';\n\nreturn [{ json: { filename, path, commitMessage, title: buildData.title, url: buildData.url, body: buildData.body, clipping: buildData.clipping, duplicateArticle, duplicateReason, chatId: $('Session Manager').first().json.chatId, text } }];"
       },
       "id": "5342585c-4e35-4708-be8b-c116a83117ab",
       "name": "Resolve Filename",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3088,
+        3648,
         160
       ]
     },
     {
       "parameters": {
-        "jsCode": "const resolveData = $('Resolve Filename').first().json;\nconst body = resolveData.body || '';\nconst title = resolveData.title;\nconst filename = resolveData.filename;\nconst chatId = $('Session Manager').first().json.chatId;\n\n// Extract 'In summary,' sentence\nconst summaryMatch = body.match(/^In summary,\\s*(.+)/m);\nconst summaryLine = summaryMatch ? ('In summary, ' + summaryMatch[1].trim()).substring(0, 220) : body.substring(0, 200);\n\n// Extract Suggested Topics\nconst topicsMatch = body.match(/## Suggested Topics\\s*\\n+([^\\n#]+)/);\nconst suggestedTopics = topicsMatch ? topicsMatch[1].trim() : 'See clipping';\n\nconst text = [\n  'Captured',\n  '',\n  title,\n  '',\n  summaryLine,\n  '',\n  'Suggested topics: ' + suggestedTopics,\n  '',\n  'Vault path: Clippings/Telegram/' + filename,\n].join('\\n');\n\nreturn [{ json: { chatId, text } }];"
+        "jsCode": "const resolveData = $('Resolve Filename').first().json;\nconst body = resolveData.body || '';\nconst title = resolveData.title;\nconst filename = resolveData.filename;\nconst chatId = $('Session Manager').first().json.chatId;\n\nfunction escapeHtml(value) {\n  return String(value || '')\n    .replace(/&/g, '&amp;')\n    .replace(/</g, '&lt;')\n    .replace(/>/g, '&gt;');\n}\n\n// Extract 'In summary,' sentence\nconst summaryMatch = body.match(/^In summary,\\s*(.+)/m);\nconst summaryLine = summaryMatch ? ('In summary, ' + summaryMatch[1].trim()).substring(0, 220) : body.substring(0, 200);\n\n// Extract Suggested Topics\nconst topicsMatch = body.match(/## Suggested Topics\\s*\\n+([^\\n#]+)/);\nconst suggestedTopics = topicsMatch ? topicsMatch[1].trim() : 'See clipping';\n\nconst text = [\n  'Captured',\n  '',\n  escapeHtml(title),\n  '',\n  escapeHtml(summaryLine),\n  '',\n  'Suggested topics: ' + escapeHtml(suggestedTopics),\n  '',\n  'Vault path: <code>Clippings/Telegram/' + escapeHtml(filename) + '</code>',\n].join('\\n');\n\nreturn [{ json: { chatId, text } }];"
       },
       "id": "83f29c63-e206-439a-acaa-42990ac0dcc0",
       "name": "Build Success Reply",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        4384,
+        5104,
         288
       ]
     },
@@ -333,14 +333,16 @@
       "parameters": {
         "chatId": "={{ $json.chatId }}",
         "text": "={{ $json.text }}",
-        "additionalFields": {}
+        "additionalFields": {
+          "parse_mode": "HTML"
+        }
       },
       "id": "13f6c88b-41c0-4428-99ec-787a599be0e0",
       "name": "Success Reply",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4624,
+        5344,
         288
       ],
       "webhookId": "18a12bb6-ba0f-4e9f-9a44-cb4d6b94ddae",
@@ -441,7 +443,7 @@
       "type": "@mendable/n8n-nodes-firecrawl.firecrawl",
       "typeVersion": 1,
       "position": [
-        768,
+        1488,
         160
       ],
       "id": "071c94f4-f02f-4665-a56d-4dade301143d",
@@ -469,7 +471,7 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.9,
       "position": [
-        1712,
+        2432,
         160
       ],
       "id": "b8707c0b-a7e5-4637-8922-45dcbec9fe35",
@@ -488,7 +490,7 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.5,
       "position": [
-        1632,
+        2352,
         352
       ],
       "id": "760612a6-09b0-4c29-8ec7-25a3747e9f05",
@@ -522,7 +524,7 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        2688,
+        3408,
         160
       ],
       "id": "2ba4f7df-f77d-4fd0-8041-29716a40508e",
@@ -593,7 +595,7 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        1072,
+        1792,
         160
       ],
       "id": "51f69729-f94c-4cdc-931c-7bf68279554f",
@@ -644,88 +646,6 @@
     },
     {
       "parameters": {
-        "resource": "file",
-        "operation": "get",
-        "owner": {
-          "__rl": true,
-          "value": "https://github.com/bw-knowledge",
-          "mode": "url"
-        },
-        "repository": {
-          "__rl": true,
-          "value": "bw-knowledge-vault",
-          "mode": "list",
-          "cachedResultName": "bw-knowledge-vault",
-          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
-        },
-        "filePath": "={{ $json.path }}",
-        "additionalParameters": {}
-      },
-      "type": "n8n-nodes-base.github",
-      "typeVersion": 1.1,
-      "position": [
-        3408,
-        -80
-      ],
-      "id": "b11bd4d8-8a0f-4e3a-b5c1-2fb4b4810d0d",
-      "name": "Get candidate file",
-      "webhookId": "153e4850-32cb-489d-9043-b7e7065b2003",
-      "credentials": {
-        "githubApi": {
-          "id": "uKzLxAYe4LsCFnJt",
-          "name": "GitHub account"
-        }
-      },
-      "onError": "continueRegularOutput"
-    },
-    {
-      "parameters": {
-        "jsCode": "const checkResult = $input.first();\nconst resolveData = $('Resolve Filename').first().json;\nconst candidateExists = !checkResult.error && checkResult.json && checkResult.json.name;\n\nif (candidateExists) {\n  const text = [\n    'Already captured',\n    '',\n    resolveData.title,\n    '',\n    'Matched on title and source URL.',\n    '',\n    'Vault path: ' + resolveData.path,\n  ].join('\\n');\n\n  return [{ json: { ...resolveData, duplicateArticle: true, needsCandidateCheck: false, duplicateReason: 'same title and source URL', text } }];\n}\n\nreturn [{ json: { ...resolveData, duplicateArticle: false, needsCandidateCheck: false } }];"
-      },
-      "id": "33f5a804-7a80-49cf-8b08-45bd390a0b2d",
-      "name": "Resolve Candidate Filename",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        3648,
-        -80
-      ]
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "strict",
-            "version": 1
-          },
-          "conditions": [
-            {
-              "id": "cond-needs-candidate-check",
-              "leftValue": "={{ $json.needsCandidateCheck }}",
-              "rightValue": true,
-              "operator": {
-                "type": "boolean",
-                "operation": "equals"
-              }
-            }
-          ],
-          "combinator": "and"
-        },
-        "options": {}
-      },
-      "id": "a95c92d2-c4d2-43db-a772-b02b26dd50cc",
-      "name": "Needs Candidate Check?",
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2,
-      "position": [
-        3328,
-        160
-      ]
-    },
-    {
-      "parameters": {
         "conditions": {
           "options": {
             "caseSensitive": true,
@@ -761,7 +681,9 @@
       "parameters": {
         "chatId": "={{ $json.chatId }}",
         "text": "={{ $json.text }}",
-        "additionalFields": {}
+        "additionalFields": {
+          "parse_mode": "HTML"
+        }
       },
       "id": "d128f8ec-5c92-4ef0-a914-169bc54f8201",
       "name": "Duplicate Reply",
@@ -775,6 +697,207 @@
         "telegramApi": {
           "id": "xmI58emhYOVxw0jo",
           "name": "bwclipper_bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "get",
+        "owner": {
+          "__rl": true,
+          "value": "https://github.com/bw-knowledge",
+          "mode": "url"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": "Indexes/sources.json",
+        "additionalParameters": {}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        528,
+        80
+      ],
+      "id": "2ebf4bde-f8e7-4587-9d92-e71bc5afda54",
+      "name": "Get Source Index",
+      "webhookId": "153e4850-32cb-489d-9043-b7e7065b2003",
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const checkResult = $input.first();\nconst sourceIndexExists = !checkResult.error && !checkResult.json?.error;\nconst incoming = $('Extract URL').first().json;\nconst chatId = $('Session Manager').first().json.chatId;\n\nfunction normaliseUrl(value) {\n  if (!value) return '';\n  try {\n    const parsed = new URL(value.trim());\n    parsed.hash = '';\n    if (parsed.pathname !== '/') parsed.pathname = parsed.pathname.replace(/\\/+$/, '');\n    return parsed.toString();\n  } catch (error) {\n    return value.trim().replace(/\\/+$/, '');\n  }\n}\n\nfunction readContent(json) {\n  if (!json) return '';\n  if (typeof json.fileContent === 'string') return json.fileContent;\n  if (typeof json.content === 'string') {\n    try {\n      return Buffer.from(json.content.replace(/\\s/g, ''), 'base64').toString('utf8');\n    } catch (error) {\n      return json.content;\n    }\n  }\n  if (typeof json.data === 'string') return json.data;\n  if (json.data && typeof json.data.content === 'string') {\n    try {\n      return Buffer.from(json.data.content.replace(/\\s/g, ''), 'base64').toString('utf8');\n    } catch (error) {\n      return json.data.content;\n    }\n  }\n  return '';\n}\n\nfunction parseSources(content) {\n  if (!content.trim()) return {};\n  try {\n    const parsed = JSON.parse(content);\n    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};\n  } catch (error) {\n    throw new Error('Unable to parse Indexes/sources.json: ' + error.message);\n  }\n}\n\nfunction escapeHtml(value) {\n  return String(value || '')\n    .replace(/&/g, '&amp;')\n    .replace(/</g, '&lt;')\n    .replace(/>/g, '&gt;');\n}\n\nconst sources = parseSources(readContent(checkResult.json));\nconst normalisedUrl = normaliseUrl(incoming.url);\nconst existingPath = sources[normalisedUrl];\nconst duplicateArticle = Boolean(existingPath);\nconst text = duplicateArticle\n  ? ['Already captured', '', escapeHtml(incoming.url), '', 'Matched on source URL.', '', 'Vault path: <code>' + escapeHtml(existingPath) + '</code>'].join('\\n')\n  : '';\n\nreturn [{ json: { ...incoming, chatId, sourceIndexExists, sources, normalisedUrl, duplicateArticle, duplicateReason: duplicateArticle ? 'same source URL' : '', path: existingPath || '', text } }];"
+      },
+      "id": "d30895cd-c8a1-41f4-a34d-255e0dc17fe8",
+      "name": "Check Source Index",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        768,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "cond-source-duplicate",
+              "leftValue": "={{ $json.duplicateArticle }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "3e915a99-e29c-463d-9379-1800c2a56634",
+      "name": "Source Duplicate?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1008,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const resolveData = $('Resolve Filename').first().json;\nconst sourceIndexData = $('Check Source Index').first().json;\nconst sources = sourceIndexData.sources && typeof sourceIndexData.sources === 'object' ? sourceIndexData.sources : {};\nsources[sourceIndexData.normalisedUrl] = resolveData.path;\n\nconst sourceIndexContent = JSON.stringify(sources, Object.keys(sources).sort(), 2) + '\\n';\nconst commitMessage = 'Update source index: ' + resolveData.title;\n\nreturn [{ json: { ...resolveData, sourceIndexExists: sourceIndexData.sourceIndexExists, sourceIndexPath: 'Indexes/sources.json', sourceIndexContent, commitMessage } }];"
+      },
+      "id": "cf3d2c7c-d2d2-4529-82b1-36cc52febcb4",
+      "name": "Build Source Index Update",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4384,
+        288
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "cond-source-index-exists",
+              "leftValue": "={{ $json.sourceIndexExists }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "bd68f7ea-b94d-4c09-a61e-39f6978dfef1",
+      "name": "Source Index Exists?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        4624,
+        288
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "https://github.com/bw-knowledge",
+          "mode": "url"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": "={{ $json.sourceIndexPath }}",
+        "fileContent": "={{ $json.sourceIndexContent }}",
+        "commitMessage": "={{ $json.commitMessage }}",
+        "operation": "edit"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        4864,
+        192
+      ],
+      "id": "f421c5e2-16c7-4eba-b399-6fe2d5413396",
+      "name": "Update Source Index",
+      "webhookId": "4408ed46-af40-4d6a-8425-05c863830555",
+      "retryOnFail": true,
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "https://github.com/bw-knowledge",
+          "mode": "url"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": "={{ $json.sourceIndexPath }}",
+        "fileContent": "={{ $json.sourceIndexContent }}",
+        "commitMessage": "={{ $json.commitMessage }}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        4864,
+        384
+      ],
+      "id": "10b3ad40-bce6-41bc-bc6f-091b555f5f2a",
+      "name": "Create Source Index",
+      "webhookId": "4408ed46-af40-4d6a-8425-05c863830555",
+      "retryOnFail": true,
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
         }
       }
     }
@@ -856,7 +979,7 @@
       "main": [
         [
           {
-            "node": "Immediate Reply",
+            "node": "Get Source Index",
             "type": "main",
             "index": 0
           }
@@ -918,7 +1041,7 @@
       "main": [
         [
           {
-            "node": "Needs Candidate Check?",
+            "node": "Duplicate Article?",
             "type": "main",
             "index": 0
           }
@@ -995,7 +1118,7 @@
       "main": [
         [
           {
-            "node": "Build Success Reply",
+            "node": "Build Source Index Update",
             "type": "main",
             "index": 0
           }
@@ -1024,46 +1147,6 @@
         ]
       ]
     },
-    "Needs Candidate Check?": {
-      "main": [
-        [
-          {
-            "node": "Get candidate file",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Duplicate Article?",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Get candidate file": {
-      "main": [
-        [
-          {
-            "node": "Resolve Candidate Filename",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Resolve Candidate Filename": {
-      "main": [
-        [
-          {
-            "node": "Duplicate Article?",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Duplicate Article?": {
       "main": [
         [
@@ -1076,6 +1159,97 @@
         [
           {
             "node": "Create a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Source Index": {
+      "main": [
+        [
+          {
+            "node": "Check Source Index",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Source Index": {
+      "main": [
+        [
+          {
+            "node": "Source Duplicate?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Source Duplicate?": {
+      "main": [
+        [
+          {
+            "node": "Duplicate Reply",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Immediate Reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Source Index Update": {
+      "main": [
+        [
+          {
+            "node": "Source Index Exists?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Source Index Exists?": {
+      "main": [
+        [
+          {
+            "node": "Update Source Index",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Create Source Index",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update Source Index": {
+      "main": [
+        [
+          {
+            "node": "Build Success Reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Source Index": {
+      "main": [
+        [
+          {
+            "node": "Build Success Reply",
             "type": "main",
             "index": 0
           }

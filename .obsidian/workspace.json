@@ -183,8 +183,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "92b82e6af91c08d4",
+  "active": "8e25d52f3a22bdd6",
   "lastOpenFiles": [
+    "Templates/sources.json",
+    "Templates/Knowledge Hub Capture.json",
+    "sources.json",
+    "Indexes/sources.json",
+    "Indexes",
     "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md",
     "Knowledge Hub.md",
     "conflict-files-obsidian-git.md",
@@ -207,10 +212,6 @@
     "Attachments",
     "Templates/Topic.md",
     "Welcome.md",
-    "Knowledge Hub — What We've Built.md.tmp.122652.1778685163068",
-    "Knowledge Hub — What We've Built.md.tmp.122652.1778685157783",
-    "Knowledge Hub — What We've Built.md.tmp.122652.1778685153632",
-    "Bases",
     "Clippings/Telegram/2026-05-13 Untitled.md"
   ]
 }
