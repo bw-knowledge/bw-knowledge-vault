@@ -8,7 +8,7 @@ captured_via: "Telegram"
 captured_at: "2026-05-14T11:05:53.962Z"
 ---
 
-In summary, `the most effective approach to working with AI is to onboard it like a human teammate by providing comprehensive context about your identity, voice, and work, rather than repeatedly reintroducing yourself through better prompts.`
+In summary, the most effective approach to working with AI is to onboard it like a human teammate by providing comprehensive context about your identity, voice, and work, rather than repeatedly reintroducing yourself through better prompts.
 
 ## Suggested Topics
 
