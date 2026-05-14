@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "README.md"
+              "title": "README"
             }
           }
         ]
@@ -226,7 +226,7 @@
     "sources.json",
     "Indexes/sources.json",
     "Indexes",
-    "README.md.md",
+    "README.md",
     "conflict-files-obsidian-git.md",
     "Unconfirmed 514648.crdownload",
     "Bases/Articles.base",
