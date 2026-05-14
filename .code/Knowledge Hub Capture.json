@@ -950,6 +950,177 @@
         }
       },
       "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $('Resolve Filename').first().json;\nconst entry = {\n  timestamp: new Date().toISOString(),\n  chat_id: data.chatId,\n  url: data.url,\n  status: 'success',\n  vault_path: data.path\n};\nreturn [{ json: { logEntry: JSON.stringify(entry) + '\\n', logFileExists: false, sha: undefined } }];"
+      },
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "name": "Build Capture Log Entry",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        15600,
+        1472
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "get",
+        "owner": {
+          "__rl": true,
+          "value": "https://github.com/bw-knowledge",
+          "mode": "url"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": ".code/capture-log.jsonl",
+        "additionalParameters": {}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        15824,
+        1472
+      ],
+      "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+      "name": "Get Capture Log",
+      "webhookId": "153e4850-32cb-489d-9043-b7e7065b2003",
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const logEntry = $('Build Capture Log Entry').first().json.logEntry;\nconst getResult = $input.first();\nconst fileExists = !getResult.error && !getResult.json?.error;\n\nlet existingContent = '';\nlet sha = undefined;\n\nif (fileExists) {\n  const content = getResult.json.content || '';\n  existingContent = Buffer.from(content.replace(/\\s/g, ''), 'base64').toString('utf8');\n  sha = getResult.json.sha;\n}\n\nconst newContent = existingContent + logEntry;\nconst encoded = Buffer.from(newContent).toString('base64');\n\nreturn [{ json: { encoded, sha, fileExists } }];"
+      },
+      "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+      "name": "Append Log Entry",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        16048,
+        1472
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "cond-log-file-exists",
+              "leftValue": "={{ $json.fileExists }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "d4e5f6a7-b8c9-0123-defa-234567890123",
+      "name": "Log File Exists?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        16272,
+        1472
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "edit",
+        "owner": {
+          "__rl": true,
+          "value": "https://github.com/bw-knowledge",
+          "mode": "url"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": ".code/capture-log.jsonl",
+        "fileContent": "={{ Buffer.from($json.encoded, 'base64').toString('utf8') }}",
+        "commitMessage": "Capture log: append entry",
+        "additionalParameters": {
+          "sha": "={{ $json.sha }}"
+        }
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        16496,
+        1472
+      ],
+      "id": "e5f6a7b8-c9d0-1234-efab-345678901234",
+      "name": "Update Capture Log",
+      "webhookId": "4408ed46-af40-4d6a-8425-05c863830555",
+      "retryOnFail": true,
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "https://github.com/bw-knowledge",
+          "mode": "url"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": ".code/capture-log.jsonl",
+        "fileContent": "={{ Buffer.from($json.encoded, 'base64').toString('utf8') }}",
+        "commitMessage": "Capture log: create"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        16496,
+        1696
+      ],
+      "id": "f6a7b8c9-d0e1-2345-fabc-456789012345",
+      "name": "Create Capture Log",
+      "webhookId": "4408ed46-af40-4d6a-8425-05c863830555",
+      "retryOnFail": true,
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
+        }
+      }
     }
   ],
   "pinData": {},
@@ -1172,6 +1343,11 @@
             "node": "Build Source Index Update",
             "type": "main",
             "index": 0
+          },
+          {
+            "node": "Build Capture Log Entry",
+            "type": "main",
+            "index": 0
           }
         ]
       ]
@@ -1312,6 +1488,57 @@
         [
           {
             "node": "GitHub List Topics Capture",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Capture Log Entry": {
+      "main": [
+        [
+          {
+            "node": "Get Capture Log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Capture Log": {
+      "main": [
+        [
+          {
+            "node": "Append Log Entry",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Append Log Entry": {
+      "main": [
+        [
+          {
+            "node": "Log File Exists?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log File Exists?": {
+      "main": [
+        [
+          {
+            "node": "Update Capture Log",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Create Capture Log",
             "type": "main",
             "index": 0
           }
