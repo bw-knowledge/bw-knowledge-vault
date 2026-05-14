@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "README.md",
+      "path": "README.md.md"
+    },
+    {
       "basename": "The personalized Internet is here",
       "path": "Clippings/Telegram/The personalized Internet is here.md"
     },
@@ -23,10 +27,6 @@
     {
       "basename": "Anthropic Education Report The AI Fluency Index",
       "path": "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md"
-    },
-    {
-      "basename": "Knowledge Hub",
-      "path": "Knowledge Hub.md"
     },
     {
       "basename": "Articles",
