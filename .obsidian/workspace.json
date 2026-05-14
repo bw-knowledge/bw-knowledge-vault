@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b2ba931242723cec",
+        "id": "992c12471cdd1e9b",
         "type": "tabs",
         "children": [
           {
-            "id": "1fb7bda349d8ce94",
+            "id": "bef7ab3ba54fb276",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clippings/Telegram/With ‘AI slop’ distorting our reality, the world is sleepwalking into disaster Nesrine Malik The Gua.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "With ‘AI slop’ distorting our reality, the world is sleepwalking into disaster Nesrine Malik The Gua"
+              "title": "New tab"
             }
           }
         ]
@@ -214,8 +200,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1fb7bda349d8ce94",
+  "active": "92b82e6af91c08d4",
   "lastOpenFiles": [
+    "Templates/URL Interpreter Prompt.md",
     "Clippings/Telegram/Digital PR is the way to win over LLMs The Drum.md",
     "Clippings/Telegram/With ‘AI slop’ distorting our reality, the world is sleepwalking into disaster Nesrine Malik The Gua.md",
     "Code/sources.json",
