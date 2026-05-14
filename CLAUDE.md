@@ -117,6 +117,6 @@ GitHub is the source of truth. Obsidian Git pulls commits automatically into the
 
 ## Topics and Wikilinks
 
-`Topics/` notes are hand-curated. The bot's **Suggested Topics** are Claude's unconstrained proposals; **Matched Topics** cross-reference existing `Topics/` notes. Wikilinks (`[[Topic Name]]`) are added manually during reading — the automation never writes wikilinks.
+`Topics/` notes are hand-curated. The bot's **Suggested Topics** are Claude's unconstrained proposals; **Matched Topics** cross-reference existing `Topics/` notes. Wikilinks (`[[Topic Name]]`) are currently added manually during reading.
 
 The `Bases/Articles.base` database auto-filters clippings by linked topic using `file.hasLink()` and extracts domains via a regex formula on the `source` field.
