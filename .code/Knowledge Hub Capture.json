@@ -14,7 +14,7 @@
       "typeVersion": 1.1,
       "position": [
         11216,
-        1456
+        1552
       ],
       "webhookId": "e10abf88-43bd-4ec8-a56a-7e2d0136e168",
       "credentials": {
@@ -34,7 +34,7 @@
       "typeVersion": 2,
       "position": [
         11440,
-        1456
+        1552
       ]
     },
     {
@@ -149,7 +149,7 @@
       "typeVersion": 3,
       "position": [
         11664,
-        1408
+        1504
       ]
     },
     {
@@ -164,7 +164,7 @@
       "typeVersion": 1.2,
       "position": [
         11888,
-        976
+        1360
       ],
       "webhookId": "76b577ca-c645-4a7c-8e68-b02c184c4951",
       "credentials": {
@@ -266,14 +266,14 @@
     },
     {
       "parameters": {
-        "jsCode": "const firecrawlResult = $('Firecrawl Scrape').first().json;\nconst firecrawlData = firecrawlResult.data || firecrawlResult;\nconst markdown = firecrawlData.markdown || '';\nconst title = firecrawlData.metadata?.title || 'Untitled';\nconst url = $('Extract URL').first().json.url;\n\nconst topicsItems = $('GitHub List Topics Capture').all();\nconst topicListError = topicsItems.find(item => item.json.error);\nif (topicListError) {\n  const error = topicListError.json.error;\n  const message = typeof error === 'string' ? error : (error.message || JSON.stringify(error));\n  throw new Error('Unable to list topics from GitHub: ' + message);\n}\n\nconst existingTopics = topicsItems\n  .map(item => item.json.name)\n  .filter(name => name && name.endsWith('.md'))\n  .map(name => name.replace(/\\.md$/, ''))\n  .sort();\n\nconst matchedTopicsSection = existingTopics.length > 0\n  ? '## Matched Topics\\n\\n[From this list of existing vault topics - ' + existingTopics.join(', ') + ' - identify any this article clearly relates to, comma-separated. Be conservative. If none match, write \"None\".]'\n  : '';\n\nconst truncatedContent = markdown.length > 40000 ? markdown.substring(0, 40000) + '\\n\\n[Content truncated]' : markdown;\n\nconst prompt = [\n  'You are extracting key information from an article for a personal knowledge vault.',\n  '',\n  'Output the following sections in markdown. Do not include any preamble or explanation outside these sections.',\n  '',\n  'In summary, [the most interesting aspect, delivered as a complete declarative statement starting with this exact phrase].',\n  '',\n  '## Suggested Topics',\n  '',\n  '[Freely suggest 1-3 topic names that best describe this article. Choose names that are concise (1-3 words), specific enough to be useful but general enough to gather multiple articles. Plain text, comma-separated. Do NOT use [[wikilinks]].]',\n  '',\n  matchedTopicsSection,\n  '',\n  '## Headlines',\n  '',\n  '- **[A bold, declarative headline ending with a period.]** [1-2 supporting sentences with the specifics.]',\n  '- **[Next headline.]** [Supporting sentences.]',\n  '- [3-5 headlines total]',\n  '',\n  '## Things',\n  '',\n  '- **People:** [comma-separated names mentioned]',\n  '- **Places:** [comma-separated places or product surfaces]',\n  '- **Numbers:** [specific statistics, dates, quantities - semicolon-separated]',\n  '- **Things:** [products, tools, frameworks, named systems]',\n  '- **Concepts:** [abstract concepts, terms of art]',\n  '',\n  '---',\n  '',\n  'Article title: ' + title,\n  'Article source: ' + url,\n  '',\n  'Article content:',\n  truncatedContent,\n].join('\\n');\n\nreturn [{ json: { prompt, title, url } }];"
+        "jsCode": "const firecrawlResult = $('Firecrawl Scrape').first().json;\nconst firecrawlData = firecrawlResult.data || firecrawlResult;\nconst markdown = firecrawlData.markdown || '';\nconst title = firecrawlData.metadata?.title || 'Untitled';\nconst url = $('Extract URL').first().json.url;\n\n// --- Fetch and decode the prompt template ---\n\nconst promptResult = $('Get Prompt Template').first();\n\nif (promptResult.error || promptResult.json?.error) {\n  const error = promptResult.error || promptResult.json.error;\n  const message = typeof error === 'string' ? error : (error.message || JSON.stringify(error));\n  throw new Error('Unable to fetch Templates/URL Interpreter Prompt.md: ' + message);\n}\n\nfunction decodeContent(item) {\n  const json = item.json || {};\n  if (typeof json.content === 'string') {\n    try {\n      return Buffer.from(json.content.replace(/\\s/g, ''), 'base64').toString('utf8');\n    } catch (error) {\n      return json.content;\n    }\n  }\n  if (typeof json.fileContent === 'string') return json.fileContent;\n  if (typeof json.data === 'string') return json.data;\n  return '';\n}\n\nconst promptTemplate = decodeContent(promptResult);\nif (!promptTemplate.trim()) {\n  throw new Error('Templates/URL Interpreter Prompt.md is empty');\n}\n\n// --- Build topic list and matched topics section ---\n\nconst topicsItems = $('GitHub List Topics Capture').all();\nconst topicListError = topicsItems.find(item => item.json.error);\nif (topicListError) {\n  const error = topicListError.json.error;\n  const message = typeof error === 'string' ? error : (error.message || JSON.stringify(error));\n  throw new Error('Unable to list topics from GitHub: ' + message);\n}\n\nconst existingTopics = topicsItems\n  .map(item => item.json.name)\n  .filter(name => name && name.endsWith('.md'))\n  .map(name => name.replace(/\\.md$/, ''))\n  .sort();\n\nconst matchedTopicsSection = existingTopics.length > 0\n  ? `## Matched Topics\n\nFrom the following list of existing vault topic notes, identify any that this article is PRIMARILY ABOUT (not merely mentioned in passing or published by):\n\n${existingTopics.join(', ')}\n\nA topic only matches if the article would meaningfully contribute to that topic's note when synthesised. \n- An article about FAQ schema deprecation is ABOUT [[Schema Markup]] and [[Technical SEO]], not [[Google]] — Google is the actor, not the topic.\nFormat each matched topic as an Obsidian wikilink in double square brackets, comma-separated. For example: [[Digital PR]], [[Generative Engine Optimisation (GEO)]]. Be conservative. If no topic from the list applies, write \"None\" with no wikilinks.`\n  : '';\n\n// --- Substitute placeholders ---\n\nconst truncatedContent = markdown.length > 40000\n  ? markdown.substring(0, 40000) + '\\n\\n[Content truncated]'\n  : markdown;\n\nconst prompt = promptTemplate\n  .replace('{MATCHED_TOPICS_SECTION}', matchedTopicsSection)\n  .replace('{TITLE}', title)\n  .replace('{URL}', url)\n  .replace('{CONTENT}', truncatedContent);\n\nreturn [{ json: { prompt, title, url } }];"
       },
       "id": "0c82319f-ecac-4730-bed7-e65070ae9365",
       "name": "Build Anthropic Prompt",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        13680,
+        13904,
         1200
       ]
     },
@@ -286,7 +286,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        14256,
+        14480,
         1200
       ]
     },
@@ -299,7 +299,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        14480,
+        14704,
         1200
       ]
     },
@@ -312,7 +312,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        14928,
+        15152,
         1200
       ]
     },
@@ -325,7 +325,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        16272,
+        16496,
         1248
       ]
     },
@@ -342,7 +342,7 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        16496,
+        16720,
         1248
       ],
       "webhookId": "18a12bb6-ba0f-4e9f-9a44-cb4d6b94ddae",
@@ -363,7 +363,7 @@
       "typeVersion": 2,
       "position": [
         12112,
-        1456
+        1552
       ]
     },
     {
@@ -378,7 +378,7 @@
       "typeVersion": 1.2,
       "position": [
         12336,
-        1456
+        1552
       ],
       "webhookId": "bd5799c3-1829-4980-9ce5-52e2358a6303",
       "credentials": {
@@ -402,7 +402,7 @@
       "typeVersion": 1.2,
       "position": [
         11888,
-        1648
+        1744
       ],
       "webhookId": "a0d7f280-e2cc-4840-b41b-ee60e415b23e",
       "credentials": {
@@ -424,7 +424,7 @@
       "typeVersion": 1.2,
       "position": [
         11888,
-        1840
+        1936
       ],
       "webhookId": "378b4713-a8c5-4132-a928-25d167263722",
       "credentials": {
@@ -438,6 +438,16 @@
       "parameters": {
         "operation": "scrape",
         "url": "={{ $('Extract URL').first().json.url }}",
+        "scrapeOptions": {
+          "options": {
+            "formats": {
+              "format": [
+                {}
+              ]
+            },
+            "headers": {}
+          }
+        },
         "requestOptions": {}
       },
       "type": "@mendable/n8n-nodes-firecrawl.firecrawl",
@@ -471,7 +481,7 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.9,
       "position": [
-        13904,
+        14128,
         1200
       ],
       "id": "e3c0953a-4348-4ec6-822e-e45feaedd281",
@@ -490,7 +500,7 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.5,
       "position": [
-        13984,
+        14208,
         1424
       ],
       "id": "e974841a-5b40-4bbf-9491-f5a3cba90173",
@@ -524,7 +534,7 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        14704,
+        14928,
         1200
       ],
       "id": "c3e220aa-fe16-473e-bec5-7fca9ca7e2cd",
@@ -560,7 +570,7 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        15376,
+        15600,
         1248
       ],
       "id": "03cd3c04-5764-4be0-b8b2-2f8726cad437",
@@ -595,7 +605,7 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        13456,
+        13680,
         1200
       ],
       "id": "53949baa-057e-409e-888d-7b0b68288d1b",
@@ -631,7 +641,7 @@
       "typeVersion": 1.1,
       "position": [
         11888,
-        1456
+        1552
       ],
       "id": "319dbce7-0451-4be0-b4a9-5d47e9508c45",
       "name": "List Topics",
@@ -673,7 +683,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        15152,
+        15376,
         1200
       ]
     },
@@ -690,7 +700,7 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        15376,
+        15600,
         976
       ],
       "webhookId": "f9f87497-8197-4c50-ad3c-b9d9e123a348",
@@ -717,7 +727,7 @@
           "cachedResultName": "bw-knowledge-vault",
           "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
         },
-        "filePath": "Templates/sources.json",
+        "filePath": ".code/sources.json",
         "additionalParameters": {}
       },
       "type": "n8n-nodes-base.github",
@@ -785,14 +795,14 @@
     },
     {
       "parameters": {
-        "jsCode": "const resolveData = $('Resolve Filename').first().json;\nconst sourceIndexData = $('Check Source Index').first().json;\nconst sources = sourceIndexData.sources && typeof sourceIndexData.sources === 'object' ? sourceIndexData.sources : {};\nsources[sourceIndexData.normalisedUrl] = resolveData.path;\n\nconst sourceIndexContent = JSON.stringify(sources, Object.keys(sources).sort(), 2) + '\\n';\nconst commitMessage = 'Update source index: ' + resolveData.title;\n\nreturn [{ json: { ...resolveData, sourceIndexExists: sourceIndexData.sourceIndexExists, sourceIndexPath: 'Indexes/sources.json', sourceIndexContent, commitMessage } }];"
+        "jsCode": "const resolveData = $('Resolve Filename').first().json;\nconst sourceIndexData = $('Check Source Index').first().json;\nconst sources = sourceIndexData.sources && typeof sourceIndexData.sources === 'object' ? sourceIndexData.sources : {};\nsources[sourceIndexData.normalisedUrl] = resolveData.path;\n\nconst sourceIndexContent = JSON.stringify(sources, Object.keys(sources).sort(), 2) + '\\n';\nconst commitMessage = 'Update source index: ' + resolveData.title;\n\nreturn [{ json: { ...resolveData, sourceIndexExists: sourceIndexData.sourceIndexExists, sourceIndexPath: '.code/sources.json', sourceIndexContent, commitMessage } }];"
       },
       "id": "6fbd2c35-19d1-4a41-bb57-d6c4a8820bc2",
       "name": "Build Source Index Update",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        15600,
+        15824,
         1248
       ]
     },
@@ -825,7 +835,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        15824,
+        16048,
         1248
       ]
     },
@@ -852,7 +862,7 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        16048,
+        16272,
         1152
       ],
       "id": "b913312b-ebde-448e-a18d-c36e010e60bf",
@@ -888,7 +898,7 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        16048,
+        16272,
         1344
       ],
       "id": "c922cefd-9591-4f12-b5ef-69a1d253e891",
@@ -901,6 +911,45 @@
           "name": "GitHub account"
         }
       }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "get",
+        "owner": {
+          "__rl": true,
+          "value": "bw-knowledge",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge",
+          "cachedResultUrl": "https://github.com/bw-knowledge"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "bw-knowledge-vault",
+          "mode": "list",
+          "cachedResultName": "bw-knowledge-vault",
+          "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
+        },
+        "filePath": "Templates/URL Interpreter Prompt.md",
+        "asBinaryProperty": false,
+        "additionalParameters": {}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        13456,
+        1200
+      ],
+      "id": "004fa0d9-d790-4232-aa03-1c59704eb48d",
+      "name": "Get Prompt Template",
+      "webhookId": "2351603f-e72e-4837-8a39-c3acb349cc11",
+      "credentials": {
+        "githubApi": {
+          "id": "uKzLxAYe4LsCFnJt",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
     }
   ],
   "pinData": {},
@@ -1076,7 +1125,7 @@
       "main": [
         [
           {
-            "node": "GitHub List Topics Capture",
+            "node": "Get Prompt Template",
             "type": "main",
             "index": 0
           }
@@ -1257,6 +1306,17 @@
           }
         ]
       ]
+    },
+    "Get Prompt Template": {
+      "main": [
+        [
+          {
+            "node": "GitHub List Topics Capture",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": true,
@@ -1264,10 +1324,12 @@
     "executionOrder": "v1",
     "binaryMode": "separate",
     "timeSavedMode": "fixed",
-    "callerPolicy": "workflowsFromSameOwner",
-    "availableInMCP": true
+    "callerPolicy": "any",
+    "availableInMCP": true,
+    "errorWorkflow": "hUQXitUsEfcl3X06",
+    "timeSavedPerExecution": 10
   },
-  "versionId": "ccdac949-ff01-4e54-812c-da1e76bf812d",
+  "versionId": "71a2b6ae-b28a-4375-b92a-28925fd41816",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "f05a478acf53faa792a63a68536b8465e780fffe48db0488a2724497ce50241e"
