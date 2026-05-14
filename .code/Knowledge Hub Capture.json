@@ -1002,7 +1002,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const logEntry = $('Build Capture Log Entry').first().json.logEntry;\nconst getResult = $input.first();\nconst fileExists = !getResult.error && !getResult.json?.error;\n\nlet existingContent = '';\nlet sha = undefined;\n\nif (fileExists) {\n  const content = getResult.json.content || '';\n  existingContent = Buffer.from(content.replace(/\\s/g, ''), 'base64').toString('utf8');\n  sha = getResult.json.sha;\n}\n\nconst newContent = existingContent + logEntry;\nconst encoded = Buffer.from(newContent).toString('base64');\n\nreturn [{ json: { encoded, sha, fileExists } }];"
+        "jsCode": "const logEntry = $('Build Capture Log Entry').first().json.logEntry;\nconst getResult = $input.first();\nconst fileExists = !getResult.error && !getResult.json?.error;\n\nlet existingContent = '';\nlet sha = undefined;\n\nif (fileExists) {\n  const content = getResult.json.content || '';\n  existingContent = Buffer.from(content.replace(/\\s/g, ''), 'base64').toString('utf8');\n  sha = getResult.json.sha;\n}\n\nconst newContent = existingContent + logEntry;\n\nreturn [{ json: { newContent, sha, fileExists } }];"
       },
       "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
       "name": "Append Log Entry",
@@ -1063,7 +1063,7 @@
           "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
         },
         "filePath": ".code/capture-log.jsonl",
-        "fileContent": "={{ Buffer.from($json.encoded, 'base64').toString('utf8') }}",
+        "fileContent": "={{ $json.newContent }}",
         "commitMessage": "Capture log: append entry",
         "additionalParameters": {
           "sha": "={{ $json.sha }}"
@@ -1102,7 +1102,7 @@
           "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
         },
         "filePath": ".code/capture-log.jsonl",
-        "fileContent": "={{ Buffer.from($json.encoded, 'base64').toString('utf8') }}",
+        "fileContent": "={{ $json.newContent }}",
         "commitMessage": "Capture log: create"
       },
       "type": "n8n-nodes-base.github",
