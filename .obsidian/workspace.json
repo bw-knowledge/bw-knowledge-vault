@@ -11,10 +11,24 @@
             "id": "bef7ab3ba54fb276",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Clippings/Telegram/Condé Nast CEO Plan As If Search Traffic Will Be Zero.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Condé Nast CEO Plan As If Search Traffic Will Be Zero"
             }
           }
         ]
@@ -200,7 +214,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "92b82e6af91c08d4",
+  "active": "bef7ab3ba54fb276",
   "lastOpenFiles": [
     "Templates/URL Interpreter Prompt.md",
     "Clippings/Telegram/Digital PR is the way to win over LLMs The Drum.md",
