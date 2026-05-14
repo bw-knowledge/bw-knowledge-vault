@@ -16,7 +16,7 @@ LLM brand visibility, AI-driven discovery, PR and search algorithms
 
 ## Matched Topics
 
-Digital PR, Generative Engine Optimisation (GEO)
+[[Digital PR]], [[Generative Engine Optimisation (GEO)]]
 
 ## Headlines
 
