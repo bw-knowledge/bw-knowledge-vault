@@ -1002,7 +1002,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const logEntry = $('Build Capture Log Entry').first().json.logEntry;\nconst getResult = $input.first();\nconst fileExists = !getResult.error && !getResult.json?.error;\n\nlet existingContent = '';\nlet sha = undefined;\n\nif (fileExists) {\n  const content = getResult.json.content || '';\n  existingContent = Buffer.from(content.replace(/\\s/g, ''), 'base64').toString('utf8');\n  sha = getResult.json.sha;\n}\n\nconst newContent = existingContent + logEntry;\n\nreturn [{ json: { newContent, sha, fileExists } }];"
+        "jsCode": "const logEntry = $('Build Capture Log Entry').first().json.logEntry;\nconst getResult = $input.first();\nconst fileExists = !getResult.error && !getResult.json?.error;\n\nlet existingContent = '';\nlet sha = undefined;\n\nif (fileExists) {\n  const json = getResult.json || {};\n  sha = json.sha || json.data?.sha;\n\n  function decodeContent(j) {\n    if (typeof j.content === 'string') {\n      try { return Buffer.from(j.content.replace(/\\s/g, ''), 'base64').toString('utf8'); } catch(e) { return j.content; }\n    }\n    if (typeof j.fileContent === 'string') return j.fileContent;\n    if (typeof j.data === 'string') return j.data;\n    if (j.data && typeof j.data.content === 'string') {\n      try { return Buffer.from(j.data.content.replace(/\\s/g, ''), 'base64').toString('utf8'); } catch(e) { return j.data.content; }\n    }\n    return '';\n  }\n\n  existingContent = decodeContent(json);\n}\n\nconst newContent = existingContent + logEntry;\nreturn [{ json: { newContent, sha, fileExists } }];"
       },
       "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
       "name": "Append Log Entry",
