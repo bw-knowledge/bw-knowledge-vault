@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Anthropic Education Report The AI Fluency Index",
+      "path": "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md"
+    },
+    {
+      "basename": "Anthropic",
+      "path": "Topics/Anthropic.md"
+    },
+    {
       "basename": "README",
       "path": "README.md"
     },
@@ -25,10 +33,6 @@
       "path": "Clippings/Telegram/Condé Nast CEO Plan As If Search Traffic Will Be Zero.md"
     },
     {
-      "basename": "Anthropic Education Report The AI Fluency Index",
-      "path": "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md"
-    },
-    {
       "basename": "Articles",
       "path": "Bases/Articles.base"
     },
@@ -43,10 +47,6 @@
     {
       "basename": "Digital PR",
       "path": "Topics/Digital PR.md"
-    },
-    {
-      "basename": "Anthropic",
-      "path": "Topics/Anthropic.md"
     }
   ],
   "omittedPaths": [],

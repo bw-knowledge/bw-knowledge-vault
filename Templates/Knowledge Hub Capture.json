@@ -8,13 +8,13 @@
         ],
         "additionalFields": {}
       },
-      "id": "704042d8-e752-4a89-845a-e1532b2c9d98",
+      "id": "8e552012-eeb6-468d-82ba-ecda976ff358",
       "name": "Telegram Trigger",
       "type": "n8n-nodes-base.telegramTrigger",
       "typeVersion": 1.1,
       "position": [
-        -672,
-        160
+        11216,
+        1456
       ],
       "webhookId": "e10abf88-43bd-4ec8-a56a-7e2d0136e168",
       "credentials": {
@@ -28,13 +28,13 @@
       "parameters": {
         "jsCode": "const staticData = $getWorkflowStaticData('global');\nconst sessions = staticData.knowledgeHubSessions || {};\nconst SESSION_TTL = 30 * 60 * 1000;\n\nconst msg = $input.first().json.message;\nconst chatId = msg.chat.id.toString();\nconst text = (msg.text || '').trim().replace(/@\\w+$/, '').trim();\nconst now = Date.now();\n\n// Clean expired sessions\nfor (const [id, s] of Object.entries(sessions)) {\n  if (now - s.lastActivity > SESSION_TTL) delete sessions[id];\n}\n\n// /cancel or /reset\nif (text === '/cancel' || text === '/reset') {\n  delete sessions[chatId];\n  staticData.knowledgeHubSessions = sessions;\n  return [{ json: { action: 'cancelled', chatId, text, message: msg } }];\n}\n\n// Touch/init session\nif (!sessions[chatId]) {\n  sessions[chatId] = { state: 'idle', lastActivity: now };\n} else {\n  sessions[chatId].lastActivity = now;\n}\nstaticData.knowledgeHubSessions = sessions;\n\nreturn [{ json: { action: 'continue', chatId, text, message: msg } }];"
       },
-      "id": "4aa45d68-50d6-457a-b0d8-b3f73de4734d",
+      "id": "ecec3cf8-0502-43e1-acbe-35675af6192c",
       "name": "Session Manager",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -432,
-        160
+        11440,
+        1456
       ]
     },
     {
@@ -143,13 +143,13 @@
           "fallbackOutput": "extra"
         }
       },
-      "id": "00c8e1c0-5690-41e8-8ae8-f7c7f3bd1ec1",
+      "id": "59975e22-e413-4f0b-b0d8-e32947b99462",
       "name": "Route by Action",
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3,
       "position": [
-        -192,
-        160
+        11664,
+        1408
       ]
     },
     {
@@ -158,13 +158,13 @@
         "text": "Operation cancelled.",
         "additionalFields": {}
       },
-      "id": "4a3c924c-e043-40d0-b248-4a0b267cb1a6",
+      "id": "3b2a0c49-5c39-43ff-81d8-64a3f7e5f229",
       "name": "Cancelled Reply",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        48,
-        -144
+        11888,
+        976
       ],
       "webhookId": "76b577ca-c645-4a7c-8e68-b02c184c4951",
       "credentials": {
@@ -178,13 +178,13 @@
       "parameters": {
         "jsCode": "const text = $input.first().json.text || '';\nconst urlMatch = text.match(/https?:\\/\\/[^\\s]+/);\nconst url = urlMatch ? urlMatch[0] : null;\n\nreturn [{ json: { ...$input.first().json, url, hasUrl: url !== null } }];"
       },
-      "id": "e796b26b-347b-46d7-81ce-0a38e4c44a4f",
+      "id": "90f44f8e-f8aa-4956-84c2-895e4667b529",
       "name": "Extract URL",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        48,
-        160
+        11888,
+        1168
       ]
     },
     {
@@ -211,13 +211,13 @@
         },
         "options": {}
       },
-      "id": "60c41b90-a4b2-4394-849b-4f297e6a19a0",
+      "id": "94d61677-9abe-43a1-8190-ae2752798b7f",
       "name": "URL Found?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        288,
-        160
+        12112,
+        1168
       ]
     },
     {
@@ -226,13 +226,13 @@
         "text": "I didn't find a URL in your message. Forward me a link to capture, or use /help.",
         "additionalFields": {}
       },
-      "id": "e642d20b-1893-4b37-afbd-c4831f976d60",
+      "id": "bb205080-a150-4e0f-8d3a-fd776d3795cf",
       "name": "No URL Reply",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        528,
-        336
+        12336,
+        1264
       ],
       "webhookId": "21ed174d-bc2a-425b-a1e7-3a16f724e150",
       "credentials": {
@@ -248,13 +248,13 @@
         "text": "📥 Capturing... this takes about 30 seconds.",
         "additionalFields": {}
       },
-      "id": "687a71c0-04cc-412c-9997-0456ffb730a1",
+      "id": "6900c7a8-c3d3-4667-a46c-4574040b769d",
       "name": "Immediate Reply",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        1248,
-        160
+        13008,
+        1200
       ],
       "webhookId": "27400ca1-f9a9-43c0-b7f7-842f82abb7ba",
       "credentials": {
@@ -268,65 +268,65 @@
       "parameters": {
         "jsCode": "const firecrawlResult = $('Firecrawl Scrape').first().json;\nconst firecrawlData = firecrawlResult.data || firecrawlResult;\nconst markdown = firecrawlData.markdown || '';\nconst title = firecrawlData.metadata?.title || 'Untitled';\nconst url = $('Extract URL').first().json.url;\n\nconst topicsItems = $('GitHub List Topics Capture').all();\nconst topicListError = topicsItems.find(item => item.json.error);\nif (topicListError) {\n  const error = topicListError.json.error;\n  const message = typeof error === 'string' ? error : (error.message || JSON.stringify(error));\n  throw new Error('Unable to list topics from GitHub: ' + message);\n}\n\nconst existingTopics = topicsItems\n  .map(item => item.json.name)\n  .filter(name => name && name.endsWith('.md'))\n  .map(name => name.replace(/\\.md$/, ''))\n  .sort();\n\nconst matchedTopicsSection = existingTopics.length > 0\n  ? '## Matched Topics\\n\\n[From this list of existing vault topics - ' + existingTopics.join(', ') + ' - identify any this article clearly relates to, comma-separated. Be conservative. If none match, write \"None\".]'\n  : '';\n\nconst truncatedContent = markdown.length > 40000 ? markdown.substring(0, 40000) + '\\n\\n[Content truncated]' : markdown;\n\nconst prompt = [\n  'You are extracting key information from an article for a personal knowledge vault.',\n  '',\n  'Output the following sections in markdown. Do not include any preamble or explanation outside these sections.',\n  '',\n  'In summary, [the most interesting aspect, delivered as a complete declarative statement starting with this exact phrase].',\n  '',\n  '## Suggested Topics',\n  '',\n  '[Freely suggest 1-3 topic names that best describe this article. Choose names that are concise (1-3 words), specific enough to be useful but general enough to gather multiple articles. Plain text, comma-separated. Do NOT use [[wikilinks]].]',\n  '',\n  matchedTopicsSection,\n  '',\n  '## Headlines',\n  '',\n  '- **[A bold, declarative headline ending with a period.]** [1-2 supporting sentences with the specifics.]',\n  '- **[Next headline.]** [Supporting sentences.]',\n  '- [3-5 headlines total]',\n  '',\n  '## Things',\n  '',\n  '- **People:** [comma-separated names mentioned]',\n  '- **Places:** [comma-separated places or product surfaces]',\n  '- **Numbers:** [specific statistics, dates, quantities - semicolon-separated]',\n  '- **Things:** [products, tools, frameworks, named systems]',\n  '- **Concepts:** [abstract concepts, terms of art]',\n  '',\n  '---',\n  '',\n  'Article title: ' + title,\n  'Article source: ' + url,\n  '',\n  'Article content:',\n  truncatedContent,\n].join('\\n');\n\nreturn [{ json: { prompt, title, url } }];"
       },
-      "id": "46467e87-d4ab-4076-92e5-086efd1b8431",
+      "id": "0c82319f-ecac-4730-bed7-e65070ae9365",
       "name": "Build Anthropic Prompt",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2176,
-        160
+        13680,
+        1200
       ]
     },
     {
       "parameters": {
         "jsCode": "const anthropicResponse = $input.first().json;\nconst body = anthropicResponse.text || '';\nconst promptData = $('Build Anthropic Prompt').first().json;\nconst title = promptData.title;\nconst url = promptData.url;\nconst firecrawlData = $('Firecrawl Scrape').first().json;\nconst firecrawlInner = firecrawlData.data || firecrawlData;\nconst fullText = firecrawlInner.markdown || '';\n\n\nconst now = new Date();\nconst isoTimestamp = now.toISOString();\nconst dateStr = isoTimestamp.split('T')[0];\n\nconst escapedTitle = title.replace(/\"/g, '\\\\\"');\n\nconst frontmatter = `---\\ntitle: \"${escapedTitle}\"\\ncreated: ${dateStr}\\nsource: \"${url}\"\\ntags:\\nContentType: \"Article\"\\ncaptured_via: \"Telegram\"\\ncaptured_at: \"${isoTimestamp}\"\\n---`;\n\nconst clipping = `${frontmatter}\\n\\n${body}\\n\\n---\\n\\n## Full Article\\n\\n${fullText}`;\n\nreturn [{ json: { clipping, body, title, url, dateStr } }];"
       },
-      "id": "afe96192-4dc4-4ee8-acb9-70a121a48275",
+      "id": "f2a3bdd2-15c9-4ef2-aa9c-02ec6fd67c51",
       "name": "Build Clipping",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2864,
-        160
+        14256,
+        1200
       ]
     },
     {
       "parameters": {
         "jsCode": "const { title, clipping, body, url, dateStr } = $input.first().json;\n\n// Sanitise: strip / \\ : * ? \" < > |, collapse whitespace, trim to 100 chars\nconst sanitised = title\n  .replace(/[\\/\\\\:*?\"<>|]/g, '')\n  .replace(/\\s+/g, ' ')\n  .trim()\n  .substring(0, 100) || 'Untitled';\n\nconst filename = sanitised + '.md';\nconst path = 'Clippings/Telegram/' + filename;\n\nreturn [{ json: { filename, path, clipping, body, title, url, dateStr } }];"
       },
-      "id": "c25d4fe5-ab5b-4b03-9df1-8061b0ad0a91",
+      "id": "396e0cd1-2019-4414-bbe2-8d6d163c81e2",
       "name": "Build Filename",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3104,
-        160
+        14480,
+        1200
       ]
     },
     {
       "parameters": {
         "jsCode": "const checkResult = $input.first();\nconst buildData = $('Build Filename').first().json;\n\n// With onError: continueRegularOutput, a missing GitHub file appears as an error item.\n// If there is no error, the title-derived path already exists and should not be captured again.\nconst fileExists = !checkResult.error && !checkResult.json?.error;\n\nfunction escapeHtml(value) {\n  return String(value || '')\n    .replace(/&/g, '&amp;')\n    .replace(/</g, '&lt;')\n    .replace(/>/g, '&gt;');\n}\n\nlet filename = buildData.filename;\nlet path = buildData.path;\nlet duplicateArticle = false;\nlet duplicateReason = '';\n\nif (fileExists) {\n  duplicateArticle = true;\n  duplicateReason = 'same filename already exists';\n}\n\nconst commitMessage = 'Capture: ' + buildData.title;\nconst text = duplicateArticle\n  ? [\n      'Already captured',\n      '',\n      escapeHtml(buildData.title),\n      '',\n      'Matched on ' + escapeHtml(duplicateReason) + '.',\n      '',\n      'Vault path: <code>' + escapeHtml(buildData.path) + '</code>',\n    ].join('\\n')\n  : '';\n\nreturn [{ json: { filename, path, commitMessage, title: buildData.title, url: buildData.url, body: buildData.body, clipping: buildData.clipping, duplicateArticle, duplicateReason, chatId: $('Session Manager').first().json.chatId, text } }];"
       },
-      "id": "5342585c-4e35-4708-be8b-c116a83117ab",
+      "id": "af7b195f-73a7-4fae-bb70-0cbae37c006c",
       "name": "Resolve Filename",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3648,
-        160
+        14928,
+        1200
       ]
     },
     {
       "parameters": {
         "jsCode": "const resolveData = $('Resolve Filename').first().json;\nconst body = resolveData.body || '';\nconst title = resolveData.title;\nconst filename = resolveData.filename;\nconst chatId = $('Session Manager').first().json.chatId;\n\nfunction escapeHtml(value) {\n  return String(value || '')\n    .replace(/&/g, '&amp;')\n    .replace(/</g, '&lt;')\n    .replace(/>/g, '&gt;');\n}\n\n// Extract 'In summary,' sentence\nconst summaryMatch = body.match(/^In summary,\\s*(.+)/m);\nconst summaryLine = summaryMatch ? ('In summary, ' + summaryMatch[1].trim()).substring(0, 220) : body.substring(0, 200);\n\n// Extract Suggested Topics\nconst topicsMatch = body.match(/## Suggested Topics\\s*\\n+([^\\n#]+)/);\nconst suggestedTopics = topicsMatch ? topicsMatch[1].trim() : 'See clipping';\n\nconst text = [\n  'Captured',\n  '',\n  escapeHtml(title),\n  '',\n  escapeHtml(summaryLine),\n  '',\n  'Suggested topics: ' + escapeHtml(suggestedTopics),\n  '',\n  'Vault path: <code>Clippings/Telegram/' + escapeHtml(filename) + '</code>',\n].join('\\n');\n\nreturn [{ json: { chatId, text } }];"
       },
-      "id": "83f29c63-e206-439a-acaa-42990ac0dcc0",
+      "id": "9948848e-b26f-468f-8a8e-4f99180e54aa",
       "name": "Build Success Reply",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        5104,
-        288
+        16272,
+        1248
       ]
     },
     {
@@ -337,13 +337,13 @@
           "parse_mode": "HTML"
         }
       },
-      "id": "13f6c88b-41c0-4428-99ec-787a599be0e0",
+      "id": "fd7753af-d60c-4610-8032-381b46bf25a6",
       "name": "Success Reply",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        5344,
-        288
+        16496,
+        1248
       ],
       "webhookId": "18a12bb6-ba0f-4e9f-9a44-cb4d6b94ddae",
       "credentials": {
@@ -357,13 +357,13 @@
       "parameters": {
         "jsCode": "const items = $input.all();\nconst chatId = $('Session Manager').first().json.chatId;\n\nconst errorItem = items.find(item => item.json.error);\nif (errorItem) {\n  const error = errorItem.json.error;\n  const message = typeof error === 'string' ? error : (error.message || JSON.stringify(error));\n  return [{ json: { chatId, text: 'Unable to list topics from GitHub: ' + message } }];\n}\n\nconst topics = items\n  .map(item => item.json.name)\n  .filter(name => name && name.endsWith('.md'))\n  .map(name => name.replace(/\\.md$/, ''))\n  .sort();\n\nconst text = topics.length === 0\n  ? 'No topics yet...'\n  : 'Available topics:\\n' + topics.map(t => '- ' + t).join('\\n');\n\nreturn [{ json: { chatId, text } }];"
       },
-      "id": "8066c1d2-e8bb-4555-94f4-c9cb9ba363de",
+      "id": "eb6ababf-fab8-4cf8-bfc1-02c81e733767",
       "name": "Format Topics Reply",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        288,
-        464
+        12112,
+        1456
       ]
     },
     {
@@ -372,13 +372,13 @@
         "text": "={{ $json.text }}",
         "additionalFields": {}
       },
-      "id": "eef6b60e-a797-410d-8b23-312e9a2c8d2f",
+      "id": "64e6b5fe-7be0-46ce-8502-bad731e1860d",
       "name": "List Topics Reply",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        528,
-        464
+        12336,
+        1456
       ],
       "webhookId": "bd5799c3-1829-4980-9ce5-52e2358a6303",
       "credentials": {
@@ -396,13 +396,13 @@
           "parse_mode": "MarkdownV2"
         }
       },
-      "id": "bdc1d8f1-9a08-4eb8-af89-b48a1c93c9a3",
+      "id": "398c916e-79de-4437-aa0b-c204c1c34067",
       "name": "Help Reply",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        48,
-        768
+        11888,
+        1648
       ],
       "webhookId": "a0d7f280-e2cc-4840-b41b-ee60e415b23e",
       "credentials": {
@@ -418,13 +418,13 @@
         "text": "Forward me a link to capture, or use /help.",
         "additionalFields": {}
       },
-      "id": "a20461f2-320c-484a-908b-2393fb37e9c1",
+      "id": "481fe26d-4da3-411a-a8ab-dd1c7613fef2",
       "name": "Fallback Reply",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        48,
-        1056
+        11888,
+        1840
       ],
       "webhookId": "378b4713-a8c5-4132-a928-25d167263722",
       "credentials": {
@@ -443,10 +443,10 @@
       "type": "@mendable/n8n-nodes-firecrawl.firecrawl",
       "typeVersion": 1,
       "position": [
-        1488,
-        160
+        13232,
+        1200
       ],
-      "id": "071c94f4-f02f-4665-a56d-4dade301143d",
+      "id": "93c08c5a-5774-4434-9bc6-424480875b4c",
       "name": "Firecrawl Scrape",
       "credentials": {
         "firecrawlApi": {
@@ -471,10 +471,10 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.9,
       "position": [
-        2432,
-        160
+        13904,
+        1200
       ],
-      "id": "b8707c0b-a7e5-4637-8922-45dcbec9fe35",
+      "id": "e3c0953a-4348-4ec6-822e-e45feaedd281",
       "name": "Basic LLM Chain"
     },
     {
@@ -490,10 +490,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.5,
       "position": [
-        2352,
-        352
+        13984,
+        1424
       ],
-      "id": "760612a6-09b0-4c29-8ec7-25a3747e9f05",
+      "id": "e974841a-5b40-4bbf-9491-f5a3cba90173",
       "name": "Anthropic Chat Model",
       "credentials": {
         "anthropicApi": {
@@ -524,10 +524,10 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        3408,
-        160
+        14704,
+        1200
       ],
-      "id": "2ba4f7df-f77d-4fd0-8041-29716a40508e",
+      "id": "c3e220aa-fe16-473e-bec5-7fca9ca7e2cd",
       "name": "Get a file",
       "webhookId": "153e4850-32cb-489d-9043-b7e7065b2003",
       "credentials": {
@@ -560,10 +560,10 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        4144,
-        288
+        15376,
+        1248
       ],
-      "id": "a19bc08c-1fa1-4b46-9a0d-22f718f930a2",
+      "id": "03cd3c04-5764-4be0-b8b2-2f8726cad437",
       "name": "Create a file",
       "webhookId": "4408ed46-af40-4d6a-8425-05c863830555",
       "retryOnFail": true,
@@ -595,10 +595,10 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        1792,
-        160
+        13456,
+        1200
       ],
-      "id": "51f69729-f94c-4cdc-931c-7bf68279554f",
+      "id": "53949baa-057e-409e-888d-7b0b68288d1b",
       "name": "GitHub List Topics Capture",
       "webhookId": "e46c0372-8463-4807-a769-00d61e555c23",
       "credentials": {
@@ -630,10 +630,10 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        112,
-        464
+        11888,
+        1456
       ],
-      "id": "8fed7fd7-713a-4576-a542-859e3c682bca",
+      "id": "319dbce7-0451-4be0-b4a9-5d47e9508c45",
       "name": "List Topics",
       "webhookId": "e46c0372-8463-4807-a769-00d61e555c23",
       "credentials": {
@@ -668,13 +668,13 @@
         },
         "options": {}
       },
-      "id": "9554f8e4-4c87-4352-bb5b-eed159d58047",
+      "id": "c64ed2b0-1376-4b9e-993b-a5645a73ace3",
       "name": "Duplicate Article?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        3888,
-        160
+        15152,
+        1200
       ]
     },
     {
@@ -685,14 +685,15 @@
           "parse_mode": "HTML"
         }
       },
-      "id": "d128f8ec-5c92-4ef0-a914-169bc54f8201",
+      "id": "58acc2d9-688c-47d0-88af-f98f27626498",
       "name": "Duplicate Reply",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4144,
-        32
+        15376,
+        976
       ],
+      "webhookId": "f9f87497-8197-4c50-ad3c-b9d9e123a348",
       "credentials": {
         "telegramApi": {
           "id": "xmI58emhYOVxw0jo",
@@ -716,16 +717,16 @@
           "cachedResultName": "bw-knowledge-vault",
           "cachedResultUrl": "https://github.com/bw-knowledge/bw-knowledge-vault"
         },
-        "filePath": "Indexes/sources.json",
+        "filePath": "Templates/sources.json",
         "additionalParameters": {}
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        528,
-        80
+        12336,
+        1072
       ],
-      "id": "2ebf4bde-f8e7-4587-9d92-e71bc5afda54",
+      "id": "667e6d94-4441-435b-a4e9-63d258a58d7b",
       "name": "Get Source Index",
       "webhookId": "153e4850-32cb-489d-9043-b7e7065b2003",
       "credentials": {
@@ -738,15 +739,15 @@
     },
     {
       "parameters": {
-        "jsCode": "const checkResult = $input.first();\nconst sourceIndexExists = !checkResult.error && !checkResult.json?.error;\nconst incoming = $('Extract URL').first().json;\nconst chatId = $('Session Manager').first().json.chatId;\n\nfunction normaliseUrl(value) {\n  if (!value) return '';\n  try {\n    const parsed = new URL(value.trim());\n    parsed.hash = '';\n    if (parsed.pathname !== '/') parsed.pathname = parsed.pathname.replace(/\\/+$/, '');\n    return parsed.toString();\n  } catch (error) {\n    return value.trim().replace(/\\/+$/, '');\n  }\n}\n\nfunction readContent(json) {\n  if (!json) return '';\n  if (typeof json.fileContent === 'string') return json.fileContent;\n  if (typeof json.content === 'string') {\n    try {\n      return Buffer.from(json.content.replace(/\\s/g, ''), 'base64').toString('utf8');\n    } catch (error) {\n      return json.content;\n    }\n  }\n  if (typeof json.data === 'string') return json.data;\n  if (json.data && typeof json.data.content === 'string') {\n    try {\n      return Buffer.from(json.data.content.replace(/\\s/g, ''), 'base64').toString('utf8');\n    } catch (error) {\n      return json.data.content;\n    }\n  }\n  return '';\n}\n\nfunction parseSources(content) {\n  if (!content.trim()) return {};\n  try {\n    const parsed = JSON.parse(content);\n    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};\n  } catch (error) {\n    throw new Error('Unable to parse Indexes/sources.json: ' + error.message);\n  }\n}\n\nfunction escapeHtml(value) {\n  return String(value || '')\n    .replace(/&/g, '&amp;')\n    .replace(/</g, '&lt;')\n    .replace(/>/g, '&gt;');\n}\n\nconst sources = parseSources(readContent(checkResult.json));\nconst normalisedUrl = normaliseUrl(incoming.url);\nconst existingPath = sources[normalisedUrl];\nconst duplicateArticle = Boolean(existingPath);\nconst text = duplicateArticle\n  ? ['Already captured', '', escapeHtml(incoming.url), '', 'Matched on source URL.', '', 'Vault path: <code>' + escapeHtml(existingPath) + '</code>'].join('\\n')\n  : '';\n\nreturn [{ json: { ...incoming, chatId, sourceIndexExists, sources, normalisedUrl, duplicateArticle, duplicateReason: duplicateArticle ? 'same source URL' : '', path: existingPath || '', text } }];"
+        "jsCode": "const checkResult = $input.first();\nconst sourceIndexExists = !checkResult.error && !checkResult.json?.error;\nconst incoming = $('Extract URL').first().json;\nconst chatId = $('Session Manager').first().json.chatId;\n\nfunction normaliseUrl(value) {\n  if (!value) return '';\n  try {\n    const parsed = new URL(value.trim());\n    parsed.hash = '';\n    if (parsed.pathname !== '/') parsed.pathname = parsed.pathname.replace(/\\/+$/, '');\n    return parsed.toString();\n  } catch (error) {\n    return value.trim().replace(/\\/+$/, '');\n  }\n}\n\nasync function readContent(item) {\n  const json = item.json || {};\n\n  if (item.binary?.data) {\n    const buffer = await this.helpers.getBinaryDataBuffer(0, 'data');\n    return buffer.toString('utf8');\n  }\n\n  if (typeof json.fileContent === 'string') return json.fileContent;\n\n  if (typeof json.content === 'string') {\n    try {\n      return Buffer.from(json.content.replace(/\\s/g, ''), 'base64').toString('utf8');\n    } catch (error) {\n      return json.content;\n    }\n  }\n\n  if (typeof json.data === 'string') return json.data;\n\n  if (json.data && typeof json.data.content === 'string') {\n    try {\n      return Buffer.from(json.data.content.replace(/\\s/g, ''), 'base64').toString('utf8');\n    } catch (error) {\n      return json.data.content;\n    }\n  }\n\n  return '';\n}\n\nfunction parseSources(content) {\n  if (!content.trim()) return {};\n  try {\n    const parsed = JSON.parse(content);\n    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};\n  } catch (error) {\n    throw new Error('Unable to parse Templates/sources.json: ' + error.message);\n  }\n}\n\nfunction escapeHtml(value) {\n  return String(value || '')\n    .replace(/&/g, '&amp;')\n    .replace(/</g, '&lt;')\n    .replace(/>/g, '&gt;');\n}\n\nconst sources = parseSources(await readContent.call(this, checkResult));\nconst normalisedUrl = normaliseUrl(incoming.url);\nconst existingPath = sources[normalisedUrl];\nconst duplicateArticle = Boolean(existingPath);\n\nconst text = duplicateArticle\n  ? [\n      'Already captured',\n      '',\n      escapeHtml(incoming.url),\n      '',\n      'Matched on source URL.',\n      '',\n      'Vault path: <code>' + escapeHtml(existingPath) + '</code>',\n    ].join('\\n')\n  : '';\n\nreturn [{\n  json: {\n    ...incoming,\n    chatId,\n    sourceIndexExists,\n    sources,\n    normalisedUrl,\n    duplicateArticle,\n    duplicateReason: duplicateArticle ? 'same source URL' : '',\n    path: existingPath || '',\n    text,\n  },\n}];\n"
       },
-      "id": "d30895cd-c8a1-41f4-a34d-255e0dc17fe8",
+      "id": "1489ce5e-53d0-4006-9766-bdc4f596c1cf",
       "name": "Check Source Index",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        768,
-        80
+        12560,
+        1072
       ]
     },
     {
@@ -773,26 +774,26 @@
         },
         "options": {}
       },
-      "id": "3e915a99-e29c-463d-9379-1800c2a56634",
+      "id": "61b1e6e5-6fab-4084-9a0c-7e64df05ce2e",
       "name": "Source Duplicate?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        1008,
-        80
+        12784,
+        1072
       ]
     },
     {
       "parameters": {
         "jsCode": "const resolveData = $('Resolve Filename').first().json;\nconst sourceIndexData = $('Check Source Index').first().json;\nconst sources = sourceIndexData.sources && typeof sourceIndexData.sources === 'object' ? sourceIndexData.sources : {};\nsources[sourceIndexData.normalisedUrl] = resolveData.path;\n\nconst sourceIndexContent = JSON.stringify(sources, Object.keys(sources).sort(), 2) + '\\n';\nconst commitMessage = 'Update source index: ' + resolveData.title;\n\nreturn [{ json: { ...resolveData, sourceIndexExists: sourceIndexData.sourceIndexExists, sourceIndexPath: 'Indexes/sources.json', sourceIndexContent, commitMessage } }];"
       },
-      "id": "cf3d2c7c-d2d2-4529-82b1-36cc52febcb4",
+      "id": "6fbd2c35-19d1-4a41-bb57-d6c4a8820bc2",
       "name": "Build Source Index Update",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        4384,
-        288
+        15600,
+        1248
       ]
     },
     {
@@ -819,18 +820,19 @@
         },
         "options": {}
       },
-      "id": "bd68f7ea-b94d-4c09-a61e-39f6978dfef1",
+      "id": "56c24ef7-8185-4885-a0a2-7ad23d89c023",
       "name": "Source Index Exists?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        4624,
-        288
+        15824,
+        1248
       ]
     },
     {
       "parameters": {
         "resource": "file",
+        "operation": "edit",
         "owner": {
           "__rl": true,
           "value": "https://github.com/bw-knowledge",
@@ -845,16 +847,15 @@
         },
         "filePath": "={{ $json.sourceIndexPath }}",
         "fileContent": "={{ $json.sourceIndexContent }}",
-        "commitMessage": "={{ $json.commitMessage }}",
-        "operation": "edit"
+        "commitMessage": "={{ $json.commitMessage }}"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        4864,
-        192
+        16048,
+        1152
       ],
-      "id": "f421c5e2-16c7-4eba-b399-6fe2d5413396",
+      "id": "b913312b-ebde-448e-a18d-c36e010e60bf",
       "name": "Update Source Index",
       "webhookId": "4408ed46-af40-4d6a-8425-05c863830555",
       "retryOnFail": true,
@@ -887,10 +888,10 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        4864,
-        384
+        16048,
+        1344
       ],
-      "id": "10b3ad40-bce6-41bc-bc6f-091b555f5f2a",
+      "id": "c922cefd-9591-4f12-b5ef-69a1d253e891",
       "name": "Create Source Index",
       "webhookId": "4408ed46-af40-4d6a-8425-05c863830555",
       "retryOnFail": true,
@@ -902,6 +903,7 @@
       }
     }
   ],
+  "pinData": {},
   "connections": {
     "Telegram Trigger": {
       "main": [
@@ -1265,7 +1267,7 @@
     "callerPolicy": "workflowsFromSameOwner",
     "availableInMCP": true
   },
-  "versionId": "19a0a872-32c4-416c-9aa6-56ca0b50f9bf",
+  "versionId": "ccdac949-ff01-4e54-812c-da1e76bf812d",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "f05a478acf53faa792a63a68536b8465e780fffe48db0488a2724497ce50241e"

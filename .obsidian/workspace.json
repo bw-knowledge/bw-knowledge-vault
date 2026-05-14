@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "cb13fd54c8b7d8a2",
+        "id": "b2ba931242723cec",
         "type": "tabs",
         "children": [
           {
-            "id": "1a8e96aa5391eb2e",
+            "id": "1fb7bda349d8ce94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Anthropic Education Report The AI Fluency Index"
             }
           }
         ]
@@ -214,19 +214,21 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1a8e96aa5391eb2e",
+  "active": "8e25d52f3a22bdd6",
   "lastOpenFiles": [
+    "Templates/Knowledge Hub Capture.json",
+    "Templates/sources.json",
+    "Knowledge Hub Capture.json",
+    "sources.json",
+    "Topics/Anthropic.md",
+    "README.md",
     "Clippings/Telegram/Google Research's ALDRIFT AI Answers That Do More Than Sound Plausible.md",
     "Clippings/Telegram/Google Drops FAQ Rich Results From Search.md",
     "Clippings/Telegram/Digital PR is the way to win over LLMs The Drum.md",
     "Clippings/Telegram/Condé Nast CEO Plan As If Search Traffic Will Be Zero.md",
     "Clippings/Telegram/Anthropic Education Report The AI Fluency Index.md",
-    "Templates/sources.json",
-    "Templates/Knowledge Hub Capture.json",
-    "sources.json",
     "Indexes/sources.json",
     "Indexes",
-    "README.md",
     "conflict-files-obsidian-git.md",
     "Unconfirmed 514648.crdownload",
     "Bases/Articles.base",
@@ -234,11 +236,9 @@
     "Topics/SEO.md",
     "Topics/Generative Engine Optimisation (GEO).md",
     "Topics/Digital PR.md",
-    "Topics/Anthropic.md",
     "Topics/Untitled.md",
     "ai_video_summary.py",
     "ai_article_summary.py",
-    "Knowledge Hub Capture.json",
     "Templates/resources-dynamic.md",
     "Templates/Topic.md",
     "Welcome.md",
