@@ -11,3 +11,6 @@
 # OS-specific
 .DS_Store
 Thumbs.db
+
+# Claude
+.claude
