@@ -8,36 +8,6 @@ captured_via: "Telegram"
 
 captured_at: "2026-05-13T12:08:38.952Z"
 ---
-
-In summary, people using AI tools are developing measurable fluency behaviors through iterative refinement and critical evaluation, but this fluency drops significantly when AI produces polished artifacts, suggesting a gap between directiveness and discernment that requires intentional skill development.
-
-## Suggested Topics
-
-AI Fluency, Human-AI Collaboration, AI Literacy Skills, [[Anthropic]]
-
-## Headlines
-
-- **Iteration and refinement doubles the frequency of all other AI fluency behaviors.** Conversations where users build on previous exchanges to refine work exhibit 2.67 additional fluency behaviors on average, with users 5.6x more likely to question reasoning and 4x more likely to identify missing context.
-
-- **Users become less evaluative when AI produces polished outputs like code and documents.** Despite being more directive at the start of artifact conversations, users are 3.1–5.2 percentage points less likely to question reasoning or identify missing context, even though complex tasks are where AI struggles most.
-
-- **The 4D AI Fluency Framework identifies 24 behaviors for safe human-AI collaboration, but only 11 are observable in chat interfaces.** The remaining 13 behaviors—including transparency about AI's role and consequences of AI-generated output—occur outside conversations and require qualitative research to assess.
-
-- **Fewer than one-third of users explicitly set collaboration terms with AI tools.** Only 30% of conversations include users telling Claude how they'd like it to interact, despite evidence that establishing expectations like "push back on my assumptions" changes conversation dynamics.
-
-- **The study tracked 9,830 multi-turn Claude conversations over one week in January 2026 using privacy-preserving analysis tools.** Results show consistent behavioral patterns across weekdays and six languages, suggesting stable human-AI interaction habits rather than temporal or cultural artifacts.
-
-## Things
-
-- **People:** Kristen Swanson, Drew Bent, Zoe Ludwig, Rick Dakan, Joe Feller, Zack Lee, Hanah Ho
-- **Places:** Claude.ai, Claude Code
-- **Numbers:** 9,830 conversations; 11 observable behaviors; 24 total behaviors; 85.7% with iteration and refinement; 12.3% with artifacts; 30% setting collaboration terms; 5.6x more likely to question reasoning; 4x more likely to identify missing context; -3.1pp and -5.2pp for artifact conversations
-- **Things:** 4D AI Fluency Framework, Claude Sonnet 4, Claude Haiku 3.5, privacy-preserving analysis tool (CLIO), Economic Index
-- **Concepts:** AI fluency, human-AI collaboration, iteration and refinement, augmentative AI use, critical evaluation, artifact generation, early adopter bias, behavioral indicators
-=======
-captured_at: "2026-05-13T16:42:19.683Z"
----
-
 In summary, effective AI collaboration is characterized by iterative refinement rather than accepting initial outputs, but users tend to be less critically evaluative when AI produces polished artifacts despite this being precisely when careful evaluation is most needed.
 
 ## Suggested Topics
@@ -46,7 +16,7 @@ AI skill development, Human-AI collaboration, Technology adoption patterns
 
 ## Matched Topics
 
-None
+[[Anthropic]]
 
 ## Headlines
 
@@ -71,7 +41,6 @@ None
 - **Things:** 4D AI Fluency Framework, Claude Sonnet 4, Claude Haiku 3.5, privacy-preserving analysis tool (CLIO), Economic Index
 
 - **Concepts:** AI fluency, augmentative AI use, thought partnership, iteration and refinement, artifact creation, critical evaluation, behavioral indicators, human-AI collaboration, early adopters, responsible AI use
->>>>>>> origin/main
 
 ---
 

@@ -1,36 +1,40 @@
 ---
 title: "Digital PR is the way to win over LLMs | The Drum"
-created: 2026-05-13
+created: 2026-05-14
 source: "https://www.thedrum.com/opinion/digital-pr-is-the-way-to-win-over-llms"
 tags:
 ContentType: "Article"
 captured_via: "Telegram"
-captured_at: "2026-05-13T12:54:01.625Z"
+captured_at: "2026-05-14T10:27:38.906Z"
 ---
 
-In summary, digital PR has become essential to brand visibility in AI-driven search because large language models prioritize authoritative coverage and genuine relevance signals, making traditional PR activity a core component of organic strategy rather than an optional tactic.
+In summary, digital PR has become essential to brand visibility in an AI-driven discovery landscape, as large language models increasingly cite authoritative sources and consumer conversations to shape purchase recommendations, making PR a core component of organic strategy rather than a supplementary tactic.
 
 ## Suggested Topics
+
+LLM brand visibility, AI-driven discovery, PR and search algorithms
+
+## Matched Topics
 
 [[Digital PR]], [[Generative Engine Optimisation (GEO)]]
 
 ## Headlines
 
-- **Large language models are replacing celebrity endorsements as trusted shopping advisors.** Sixty-eight percent of AI adopters trust AI recommendations more than celebrity or influencer endorsements, and 41% of consumers discovered their favorite brand of the year through AI.
+- **Large language models are replacing celebrity endorsements as trusted shopping advisors.** According to Croud's Consumer Index, 68% of AI adopters trust AI recommendations more than celebrity or influencer endorsements, with 41% of consumers saying their favorite brand was discovered through AI.
 
-- **Digital PR is now foundational to visibility in AI-powered search results.** High-quality PR activity that earns authoritative coverage plays a meaningful role in how brands surface in LLM results, shifting PR from a "nice-to-have" to a core organic strategy component.
+- **Digital PR must now optimize for AI platforms and data sources, not just traditional search engines.** High-quality PR activity that earns authoritative coverage plays a meaningful role in how brands surface in AI-driven results, according to Google Search's VP of Product.
 
-- **Reddit and authentic consumer conversations are becoming primary discovery platforms for AI systems.** LLMs increasingly cite Reddit as a credible source, making spaces with genuine peer reviews and unfiltered feedback influential in shaping brand perception in AI outputs.
+- **Reddit and consumer-generated conversations are becoming critical PR channels for LLM influence.** LLMs increasingly cite Reddit discussions as credible sources, making authentic community engagement and real consumer reviews more valuable than branded marketing messages.
 
-- **Brands must optimize for LLM ecosystems, not just traditional search engines.** First-mover advantage belongs to brands that expand visibility beyond Google, ensure citations in AI training data sources, and align PR efforts with where consumers and AI models gather information.
+- **Brands have a narrow window to establish authority before AI discovery becomes the primary shopping channel.** With 61% of consumers expecting to use AI for most product searches within five years, early-mover advantage belongs to brands building credible visibility in LLM ecosystems today.
 
 ## Things
 
 - **People:** Hannah McIntosh, Robby Stein
-- **Places:** Reddit, Google Search, SpaceNK
-- **Numbers:** 68%; 17%; 34%; 41%; 61%; one in six; December 3, 2025
-- **Things:** ChatGPT, Gemini, Croud Consumer Index
-- **Concepts:** perceived neutrality, algorithm-driven discovery, authority signals, data-driven objectivity, LLM citations
+- **Places:** Reddit, SpaceNK, Google Search
+- **Numbers:** 68%; 17%; 34%; 41%; 61%; one in six; five years
+- **Things:** ChatGPT, Gemini, Large Language Models (LLMs), Croud Consumer Index
+- **Concepts:** Authority signals, brand discovery, perceived neutrality, data-driven objectivity, organic strategy
 
 ---
 
@@ -417,11 +421,11 @@ We help brands unlock growth with a Return on Intelligence...
 
 #### Trending
 
+[Creative thinking](https://www.thedrum.com/topics/creative-thinking) [David Bain: The thing no marketer will admit about ‘culture’](https://www.thedrum.com/opinion/david-bain-culture-defeats-description-you-cannot-trust-a-marketer-selling-it)
+
+[Ad of the Day](https://www.thedrum.com/topics/ad-of-the-day) [Ad of the Day: Peta touts veganism’s hard, strong, robust benefits to men’s health](https://www.thedrum.com/news/ad-of-the-day-peta-touts-veganism-s-hard-strong-robust-benefits-to-men-s-health)
+
 [Creative work](https://www.thedrum.com/topics/creative-work) [Columbia Sportswear sends Robert Irwin into the outback with 100 crocodiles](https://www.thedrum.com/news/columbia-sportswear-sent-robert-irwin-into-the-outback-with-100-crocodiles)
-
-[Ad of the Day](https://www.thedrum.com/topics/ad-of-the-day) [Ad of the Day: Hint’s ‘Mmmmm Water’ makes H20 sexy (sort of)](https://www.thedrum.com/news/ad-of-the-day-hint-s-mmmmm-water-makes-h20-sexy-sort-of)
-
-[Brand strategy](https://www.thedrum.com/topics/brand-strategy) [Paddy Gilmore: I have a hunk, sorry hunch, that new Diet Coke ads are missing somethi...](https://www.thedrum.com/opinion/paddy-gilmore-i-have-a-hunk-sorry-hunch-that-new-diet-coke-ads-are-missing-something)
 
 ### More from Artificial Intelligence
 
@@ -447,11 +451,11 @@ As AI moves faster than the standards around it, creative work is being reshaped
 
 #### Trending
 
+[Creative thinking](https://www.thedrum.com/topics/creative-thinking) [David Bain: The thing no marketer will admit about ‘culture’](https://www.thedrum.com/opinion/david-bain-culture-defeats-description-you-cannot-trust-a-marketer-selling-it)
+
+[Ad of the Day](https://www.thedrum.com/topics/ad-of-the-day) [Ad of the Day: Peta touts veganism’s hard, strong, robust benefits to men’s health](https://www.thedrum.com/news/ad-of-the-day-peta-touts-veganism-s-hard-strong-robust-benefits-to-men-s-health)
+
 [Creative work](https://www.thedrum.com/topics/creative-work) [Columbia Sportswear sends Robert Irwin into the outback with 100 crocodiles](https://www.thedrum.com/news/columbia-sportswear-sent-robert-irwin-into-the-outback-with-100-crocodiles)
-
-[Ad of the Day](https://www.thedrum.com/topics/ad-of-the-day) [Ad of the Day: Hint’s ‘Mmmmm Water’ makes H20 sexy (sort of)](https://www.thedrum.com/news/ad-of-the-day-hint-s-mmmmm-water-makes-h20-sexy-sort-of)
-
-[Brand strategy](https://www.thedrum.com/topics/brand-strategy) [Paddy Gilmore: I have a hunk, sorry hunch, that new Diet Coke ads are missing somethi...](https://www.thedrum.com/opinion/paddy-gilmore-i-have-a-hunk-sorry-hunch-that-new-diet-coke-ads-are-missing-something)
 
 #### Industry insights
 
