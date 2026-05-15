@@ -102,6 +102,33 @@ Append-only JSONL log. One JSON object per line:
 
 ---
 
+## Obsidian CLI
+
+Use the `obsidian` CLI as the **default interface for all vault interactions**. It uses the live Obsidian index and works in all environments (Claude Code desktop, web, IDE). MCP tools (`mcp__MCP_DOCKER__obsidian_*`) are an alternative but only available in the Claude Code desktop app — see Desktop Only section below.
+
+**Common commands:**
+```
+obsidian vault                          # active vault info
+obsidian search query=<term> limit=<n> # full-text search → file paths
+obsidian search:context query=<term>   # search with matching line context
+obsidian backlinks file=<name>         # incoming links (live index)
+obsidian links file=<name>             # outgoing links
+obsidian read file=<name>              # read file contents
+obsidian tags file=<name>              # tags in a file
+obsidian append file=<name> content=<text>
+obsidian files folder=<path>           # list files in a folder
+```
+
+**Link graph traversal:** `obsidian backlinks` (incoming) + `obsidian links` (outgoing) + `obsidian search` (topic entry points) — no vector DB needed.
+
+**Shell escaping gotcha:** When appending multi-line content containing backticks or `[[wikilinks]]`, write to a temp file first — passing inline via shell args causes bash to interpret backticks as command substitution and `[[...]]` as glob patterns.
+
+### Desktop Only (MCP)
+
+When running in Claude Code desktop, `mcp__MCP_DOCKER__obsidian_*` tools are also available and provide equivalent vault access via the Local REST API plugin.
+
+---
+
 ## Git Workflow
 
 GitHub is the source of truth. Obsidian Git pulls commits automatically into the local vault.
