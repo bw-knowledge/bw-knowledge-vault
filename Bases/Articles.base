@@ -667,3 +667,39 @@ views:
       file.name: 261
       formula.Domain: 197
       source: 218
+  - type: table
+    name: Neural Network
+    filters:
+      or:
+        - file.hasLink("Topics/Neural Network.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Synthetic Data
+    filters:
+      or:
+        - file.hasLink("Topics/Synthetic Data.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
