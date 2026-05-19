@@ -35,7 +35,7 @@ AI Visibility, Content Strategy, Generative Engine Optimisation (GEO)
 - **People:** Duane Forrester
 - **Places:** Princeton, Georgia Tech, KDD 2024
 - **Numbers:** 41%; 4.3 times; 0.334 correlation coefficient; 800 million Galaxy AI devices (projected for 2026); 11.2% of digital marketing budgets (allocated to first-party data initiatives); 15.8% (expected by 2026); 25-30% (content marketing's share of total marketing budgets); 8.2% to 4.1% churn reduction (case study example); 75,000 brands (analyzed by Evertune.ai); 1,000 B2B marketers (surveyed by Content Marketing Institute); 11,000 marketing executives (CMO Survey sample); Mar 15, 2026
-- **Things:** ChatGPT, Gmail Gemini-powered summary cards, Google AI Overviews, Microsoft Copilot, Samsung Galaxy AI, HubSpot State of Marketing report, Salesforce State of Sales, Princeton and Georgia Tech GEO study, Yext analysis, Evertune.ai analysis, CMO Survey, Content Marketing Institute 2026 B2B research
+- **Things:** ChatGPT, Gmail Gemini-powered summary cards, Google AI Overviews, [[Microsoft Copilot]], Samsung Galaxy AI, HubSpot State of Marketing report, Salesforce State of Sales, Princeton and Georgia Tech GEO study, Yext analysis, Evertune.ai analysis, CMO Survey, Content Marketing Institute 2026 B2B research
 - **Concepts:** Content moat, context moat, commodity content, citation authority flywheel, AI visibility, AI retrieval, answer engines, generative engine optimization, first-party data, proprietary datasets, original research, domain-specific experience, AI summarization, AI citations, citation dependencies, subject matter expertise
 
 ---

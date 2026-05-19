@@ -34,19 +34,8 @@ In summary, Google has fully deprecated FAQ rich results from search after a thr
 
 [Skip to content](https://www.searchenginejournal.com/google-drops-faq-rich-results-from-search/574429/#main-content)
 
-[![Reserve My Seat](https://cdn.searchenginejournal.com/wp-content/uploads/2026/05/top-desktop-2x-699.png)](https://www.searchenginejournal.com/sej-pro/webinar-cohort/?itm_source=website&itm_medium=takeover-970-200&itm_campaign=sejpro-alpha "Reserve My Seat")
 
 ![Google Drops FAQ Rich Results From Search](https://cdn.searchenginejournal.com/wp-content/uploads/2026/05/eb73b32e-a56d-4497-a523-a2da5f1eed81-885.jpeg)
-
-### [Built To Win AI Search, Not Just Monitor It](https://www.airops.com/platform/quill?utm_source=search-engine-journal&utm_medium=paid-newsletter&utm_campaign=NA_en_ProdMkt_Quill-Launch_Q2-2026&utm_content=sej-category-ad "Grow Faster")
-
-AirOps shows you how your brand shows up in AI search and ships the work that gets you cited.
-
-[Grow Faster➝](https://www.airops.com/platform/quill?utm_source=search-engine-journal&utm_medium=paid-newsletter&utm_campaign=NA_en_ProdMkt_Quill-Launch_Q2-2026&utm_content=sej-category-ad "Grow Faster")
-
-[![Built To Win AI Search, Not Just Monitor It](https://cdn.searchenginejournal.com/wp-content/uploads/2026/05/logo-airops-white-992.png)](https://www.airops.com/platform/quill?utm_source=search-engine-journal&utm_medium=paid-newsletter&utm_campaign=NA_en_ProdMkt_Quill-Launch_Q2-2026&utm_content=sej-category-ad "Grow Faster")
-
-SPONSORED
 
 Google has [deprecated the FAQ rich result feature](https://developers.google.com/search/docs/appearance/structured-data/faqpage). A notice added to Google’s FAQ structured data documentation reads:
 

@@ -40,7 +40,7 @@ AI misinformation, Search quality degradation, Generative Engine Optimisation
 
 - **Things:** Google Core Algorithm Update; September 2025 "Perspectives" Core Update; Google AI Overviews; AI Mode; ChatGPT; Perplexity; Claude; Gemini; GPT-5.3; GPT-5.4; RESONEO Chrome extension; Algorythmic; RAG-based systems
 
-- **Concepts:** AI slop loop; hallucination; misinformation cycle; data voids; ungrounded responses; retrieval-augmented generation; AI-generated content; GEO (Generative Engine Optimisation); AEO (AI Engine Optimisation); repetition as consensus; self-reinforcing feedback loop; content contamination; prediction engines; uncertainty
+- **Concepts:** [[AI Slop]] loop; hallucination; misinformation cycle; data voids; ungrounded responses; retrieval-augmented generation; AI-generated content; GEO (Generative Engine Optimisation); AEO (AI Engine Optimisation); repetition as consensus; self-reinforcing feedback loop; content contamination; prediction engines; uncertainty
 
 ---
 
@@ -54,11 +54,11 @@ AI misinformation, Search quality degradation, Generative Engine Optimisation
 
 Apr 14, 2026
 
-Last year, after spending a few days at a work summit in Austria, I asked Perplexity for the latest news related to SEO and AI search. It responded with details about a supposed “September 2025 ‘Perspective’ Core Algorithm Update” that Google had just rolled out, emphasizing “deeper expertise” and “completion of the user journey.”
+Last year, after spending a few days at a work summit in Austria, I asked [[Perplexity]] for the latest news related to [[SEO]] and [[Generative Engine Optimisation (GEO)|AI Search]]. It responded with details about a supposed “September 2025 ‘Perspective’ [[Google Search|Core Algorithm Update]]” that Google had just rolled out, emphasizing “deeper expertise” and “completion of the user journey.”
 
 It sounded plausible enough… if you don’t live and breathe Google core updates. Unfortunately for Perplexity, I do.
 
-I knew instantly that this information wasn’t right. For one, Google hasn’t named core updates in years. It also already had SERP features called “Perspectives.” And if a core update had actually rolled out while I was away, I would’ve been flooded with messages. So I checked Perplexity’s sources… and, surprise! Both citations came from made-up, AI-generated slop on a couple of SEO agency blogs, confidently fabricating details about an algorithm update **that never actually happened.**
+I knew instantly that this information wasn’t right. For one, Google hasn’t named core updates in years. It also already had [[SERP|SERP Features]] called “Perspectives.” And if a core update had actually rolled out while I was away, I would’ve been flooded with messages. So I checked Perplexity’s sources… and, surprise! Both citations came from made-up, AI-generated slop on a couple of SEO agency blogs, confidently fabricating details about an algorithm update **that never actually happened.**
 
 Like a bad game of telephone, this fake SEO news spread across multiple websites - likely driven by AI systems scanning and regurgitating information regardless of accuracy, all in the race to publish and scale “fresh” content. This is how we end up with this mess:
 
@@ -130,7 +130,7 @@ These are the models most AI users are currently interacting with, and they have
 
 ### Putting the Problem to the Test
 
-I recently spoke to journalists from both the [BBC](https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes) and the [New York Times](https://www.nytimes.com/2026/04/07/technology/google-ai-overviews-accuracy.html) about the problem of misinformation in AI-generated responses. In the case of the BBC article, the author Thomas Germaine and I tested publishing fictitious blog posts on our personal sites to see whether AI Overviews would present the made-up information as fact, and how quickly.
+I recently spoke to journalists from both the [BBC](https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes) and the [New York Times](https://www.nytimes.com/2026/04/07/technology/google-ai-overviews-accuracy.html) about the problem of [[Disinformation|Misinformation]] in AI-generated responses. In the case of the BBC article, the author Thomas Germaine and I tested publishing fictitious blog posts on our personal sites to see whether AI Overviews would present the made-up information as fact, and how quickly.
 
 Even knowing how bad the problem was, I was alarmed by the results.
 
@@ -174,19 +174,19 @@ The NYT article drew hundreds of comments from users sharing their own experienc
 
 As many commenters pointed out, this **actually makes search slower**: instead of scanning a list of sources and evaluating them yourself, you now have to **fact-check the AI’s summary before doing your actual research**. The tool supposedly designed to save time for the user is now creating double work for the user.
 
-Some of the comments also reinforced my same concerns about AI answers citing made-up, AI-generated content. Multiple users described what amounts to the same misinformation cycle: AI systems training on AI-generated content, citing unvetted Reddit posts and Facebook comments as authoritative sources, and producing a self-reinforcing loop of degrading quality. Several commenters compared it to making a copy of a copy. Even the defenders of AI Overviews admitted they still need to verify everything, which sort of undermines the core premise: that AI-generated answers save users time and effort.
+Some of the comments also reinforced my same concerns about AI answers citing made-up, AI-generated content. Multiple users described what amounts to the same misinformation cycle: AI systems training on AI-generated content, citing unvetted [[Reddit]] posts and [[Facebook]] comments as authoritative sources, and producing a self-reinforcing loop of degrading quality. Several commenters compared it to making a copy of a copy. Even the defenders of [[Google AI Overviews|AI Overviews]] admitted they still need to verify everything, which sort of undermines the core premise: that AI-generated answers save users time and effort.
 
 (Sidenote: I wrote more about Google’s response to the New York Times article in [a recent blog post](https://algorythmic.co/opinions/my-response-to-googles-response-to-the-nyt-ai-overview-story/) on my new consultancy website, [Algorythmic](https://algorythmic.co/).)
 
 ### How “Smarter” LLMs Are Attempting to Fix the Problem
 
-It’s worth monitoring how the AI companies are attempting to solve these problems. For example, using the [RESONEO Chrome extension](https://think.resoneo.com/scrap-chatgpt-plugin/), you can observe clear differences in how ChatGPT’s free-tier model (GPT-5.3) responds compared to GPT-5.4, the more capable model available only to paying subscribers.
+It’s worth monitoring how the AI companies are attempting to solve these problems. For example, using the [RESONEO Chrome extension](https://think.resoneo.com/scrap-chatgpt-plugin/), you can observe clear differences in how [[OpenAI|ChatGPT]]’s free-tier model (GPT-5.3) responds compared to GPT-5.4, the more capable model available only to paying subscribers.
 
-For example, when asking about the recent March 2026 Core Algorithm Update, I used ChatGPT’s more capable “Thinking” model (5.4). The model goes through _six rounds_ of thinking, much of which is clearly intended to reduce low-quality and spammy information from making its way into the answer. It even appends the names of trustworthy people with authority on core updates (Glenn Gabe & Aleyda Solis) and limits the fan-out searches to their sites (site:gsqi.com and site:linkedin.com/in/glenngabe) to pull up higher-quality answers.
+For example, when asking about the recent March 2026 [[Google Search|Core Algorithm Update]], I used ChatGPT’s more capable “Thinking” model (5.4). The model goes through _six rounds_ of thinking, much of which is clearly intended to reduce low-quality and spammy information from making its way into the answer. It even appends the names of trustworthy people with authority on core updates (Glenn Gabe & Aleyda Solis) and limits the [[Query Fan-Out|Fan-Out Searches]] to their sites (site:gsqi.com and site:linkedin.com/in/glenngabe) to pull up higher-quality answers.
 
 [![](https://substackcdn.com/image/fetch/$s_!P4jC!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff0db1138-554d-4c5e-81bd-286c7aed35d0_616x590.png)](https://substackcdn.com/image/fetch/$s_!P4jC!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff0db1138-554d-4c5e-81bd-286c7aed35d0_616x590.png)
 
-This is a step in the right direction, and the model produces measurably better answers. According to [OpenAI’s own launch announcement](https://openai.com/index/introducing-gpt-5-4/), GPT-5.4’s individual claims are 33% less likely to be false and its full responses are 18% less likely to contain errors compared to GPT-5.2. GPT-5.3, the model available to free users, also improved over its predecessor. [According to OpenAI’s own data](https://openai.com/index/gpt-5-3-instant/), it produces **26.8% fewer hallucinations** than prior models with web search enabled, and 19.7% fewer without it.
+This is a step in the right direction, and the model produces measurably better answers. According to [OpenAI’s own launch announcement](https://openai.com/index/introducing-gpt-5-4/), GPT-5.4’s individual claims are 33% less likely to be false and its full responses are 18% less likely to contain errors compared to GPT-5.2. GPT-5.3, the model available to free users, also improved over its predecessor. [According to OpenAI’s own data](https://openai.com/index/gpt-5-3-instant/), it produces **26.8% fewer [[AI Hallucinations|Hallucinations]]** than prior models with web search enabled, and 19.7% fewer without it.
 
 But **these improvements are tiered**. The most capable model is paywalled, and the free-tier model, while better than what came before, is still meaningfully less reliable. Other major AI platforms follow the same pattern: better reasoning and accuracy reserved for paying subscribers, **faster and cheaper models for everyone else**. The result is that the 94% of ChatGPT users on the free tier, and the billions of users interacting with free AI search products like AI Overviews are getting answers from models that are **more likely to be wrong and less equipped to flag uncertainty**.
 

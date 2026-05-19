@@ -176,7 +176,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const text = $input.first().json.text || '';\nconst urlMatch = text.match(/https?:\\/\\/[^\\s]+/);\nconst url = urlMatch ? urlMatch[0] : null;\n\nreturn [{ json: { ...$input.first().json, url, hasUrl: url !== null } }];"
+        "jsCode": "const text = $input.first().json.text || '';\nconst urlMatch = text.match(/https?:\\/\\/[^\\s]+/);\nlet url = urlMatch ? urlMatch[0] : null;\n\nif (url) {\n  // Strip text fragments (#:~:text=...)\n  url = url.replace(/#:~:text=[^#]*/, '');\n\n  const hashIdx = url.indexOf('#');\n  let fragment = hashIdx !== -1 ? url.slice(hashIdx) : '';\n  if (hashIdx !== -1) url = url.slice(0, hashIdx);\n\n  const qIdx = url.indexOf('?');\n  let base = qIdx !== -1 ? url.slice(0, qIdx) : url;\n  let query = qIdx !== -1 ? url.slice(qIdx + 1) : '';\n\n  const TRACKING = new Set([\n  'utm_source','utm_medium','utm_campaign','utm_term','utm_content','utm_id',\n  'fbclid','gclid','msclkid','mc_eid','mc_cid',\n  '_ga','_gl','twclid','igshid','s_kwcid','ef_id',\n  'ck_subscriber_id'\n]);\n\n  if (query) {\n    const filtered = query.split('&').filter(p => !TRACKING.has(p.split('=')[0]));\n    query = filtered.length ? '?' + filtered.join('&') : '';\n  }\n\n  url = base + query + fragment;\n}\n\nreturn [{ json: { ...$input.first().json, url, hasUrl: url !== null } }];"
       },
       "id": "dc1a5493-f358-49bf-aa9d-2e0dc37f9ff2",
       "name": "Extract URL",
@@ -1554,7 +1554,7 @@
     "errorWorkflow": "hUQXitUsEfcl3X06",
     "timeSavedPerExecution": 10
   },
-  "versionId": "f848049b-220a-4d21-a7c8-97d51fe19000",
+  "versionId": "c8875aee-89e5-4037-8a5a-357c4712a0ef",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "f05a478acf53faa792a63a68536b8465e780fffe48db0488a2724497ce50241e"

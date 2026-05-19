@@ -343,3 +343,327 @@ views:
       file.name: 261
       formula.Domain: 197
       source: 218
+  - type: table
+    name: Microsoft Copilot
+    filters:
+      or:
+        - file.hasLink("Topics/Microsoft Copilot.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google Analytics
+    filters:
+      or:
+        - file.hasLink("Topics/Google Analytics.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google Search Console
+    filters:
+      or:
+        - file.hasLink("Topics/Google Search Console.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: SEMRush
+    filters:
+      or:
+        - file.hasLink("Topics/SEMRush.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Large Language Models
+    filters:
+      or:
+        - file.hasLink("Topics/Large Language Models.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Machine Learning
+    filters:
+      or:
+        - file.hasLink("Topics/Machine Learning.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Strategy
+    filters:
+      or:
+        - file.hasLink("Topics/Strategy.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: AB Testing
+    filters:
+      or:
+        - file.hasLink("Topics/AB Testing.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Personas
+    filters:
+      or:
+        - file.hasLink("Topics/Personas.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Qualitative Data
+    filters:
+      or:
+        - file.hasLink("Topics/Qualitative Data.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Quantitative Data
+    filters:
+      or:
+        - file.hasLink("Topics/Quantitative Data.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: AI Slop
+    filters:
+      or:
+        - file.hasLink("Topics/AI Slop.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Disinformation
+    filters:
+      or:
+        - file.hasLink("Topics/Disinformation.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: AI Hallucinations
+    filters:
+      or:
+        - file.hasLink("Topics/AI Hallucinations.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: EEAT
+    filters:
+      or:
+        - file.hasLink("Topics/EEAT.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Facebook
+    filters:
+      or:
+        - file.hasLink("Topics/Facebook.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Query Fan-Out
+    filters:
+      or:
+        - file.hasLink("Topics/Query Fan-Out.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Retrieval Augmented Generation (RAG)
+    filters:
+      or:
+        - file.hasLink("Topics/Retrieval Augmented Generation (RAG).md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218

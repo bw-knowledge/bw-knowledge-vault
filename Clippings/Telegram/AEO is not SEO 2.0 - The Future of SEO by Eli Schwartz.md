@@ -7,7 +7,6 @@ ContentType: "Article"
 captured_via: "Telegram"
 captured_at: "2026-05-14T14:19:42.452Z"
 ---
-
 In summary, AEO represents a fundamentally different visibility challenge from SEO because LLMs synthesize information into direct answers without requiring clicks, eliminate rankable keyword positions, prioritize brand trust over optimization tactics, and personalize responses in ways that make traditional metrics and strategies obsolete.
 
 ## Suggested Topics
@@ -39,29 +38,6 @@ Generative Engine Optimisation (GEO), Search Engine Marketing, Brand Visibility
 - **Concepts:** AEO (Agent Engine Optimization), SEO best practices, brand signals, entity trust, personal context search, conversion funnel, visibility manufacturing, search UI disaggregation, KPI measurement, brand moat
 
 ---
-
-## Full Article
-
-[![The Future of SEO by Eli Schwartz](https://substackcdn.com/image/fetch/$s_!pW1g!,w_40,h_40,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7a8e2d1f-dd56-4fe9-828f-a9d4cd7ea573_271x271.png)](https://www.productledseo.com/)
-
-# [The Future of SEO by Eli Schwartz](https://www.productledseo.com/)
-
-SubscribeSign in
-
-![User's avatar](https://substackcdn.com/image/fetch/$s_!D6gJ!,w_64,h_64,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F66964206-ed65-4b5a-bafe-d4717e7827fd_6000x4000.jpeg)
-
-Discover more from The Future of SEO by Eli Schwartz
-
-Weekly posts on SEO & AEO that will tell you things other marketing newsletters won't.
-
-Over 14,000 subscribers
-
-Subscribe
-
-By subscribing, you agree Substack's [Terms of Use](https://substack.com/tos), and acknowledge its [Information Collection Notice](https://substack.com/ccpa#personal-data-collected) and [Privacy Policy](https://substack.com/privacy).
-
-Already have an account? Sign in
-
 # AEO is not SEO 2.0
 
 ### The comparison between SEO and AEO is a trap
@@ -71,44 +47,9 @@ Already have an account? Sign in
 [Eli Schwartz](https://substack.com/@productledseo)
 
 Apr 09, 2026
-
-24
-
-1
-
-3
-
-Share
-
-_This week’s newsletter is sponsored by [North Star Inbound](https://www.northstarinbound.com/) and [Semrush Enterprise](https://www.semrush.com/blog/linkedin-ai-visibility-study/?utm_source=newsletter&utm_medium=influencers&utm_campaign=socialorganic_partners_futureofseo&utm_term=social_organic&utm_content=elischwartz_april02https://enterprise.semrush.com/?utm_source=newsletter&utm_medium=influencers&utm_campaign=socialorganic_partners_futureofseo&utm_term=social_organic&utm_content=elischwartz_april09)_
-
-- _Paid subscribers can use this [brand visibility checklist](https://www.productledseo.com/p/brand-visibility-entity-checklist) to assess if they are hitting the right notes for LLM visibility_
-
-- _Softr is the AI platform that lets business teams build the software they need to run their operations—without code or developers. Turn your ideas into business apps that actually work. [Try it for free](https://www.softr.io/?utm_source=eli&utm_medium=sponsor&utm_campaign=AI)!_
-
-
-Subscribe
-
 * * *
 
 The comparison between SEO and AEO is a trap. It’s easy to look at both and see an LLM response as search results of 2026, but that logic is wrong, and this flawed reasoning is why so many are currently optimizing for a user journey that does not exist in an AI-first world.
-
-* * *
-
-_**\[Sponsored by [Semrush Enterprise](https://www.semrush.com/blog/linkedin-ai-visibility-study/?utm_source=newsletter&utm_medium=influencers&utm_campaign=socialorganic_partners_futureofseo&utm_term=social_organic&utm_content=elischwartz_april02https://enterprise.semrush.com/?utm_source=newsletter&utm_medium=influencers&utm_campaign=socialorganic_partners_futureofseo&utm_term=social_organic&utm_content=elischwartz_april09)\]**_
-
-_**The market’s most complete brand visibility data**_
-
-_**Semrush for Enterprise is built for brands who refuse to be second.**_
-
-_**The industry’s largest keyword, backlink, and clickstream datasets form a single connected system. Think 27B keywords, 43T backlinks, 213M prompts, and 500TB of web activity data at your fingertips.**_
-
-_**Act on shifts first and prove impact with insights from intent to purchase. This is what visibility leadership looks like.**_
-
-_**[Explore Semrush for Enterprise](https://enterprise.semrush.com/?utm_source=newsletter&utm_medium=influencers&utm_campaign=socialorganic_partners_futureofseo&utm_term=social_organic&utm_content=elischwartz_april09)**_
-
-[![](https://substackcdn.com/image/fetch/$s_!hJ3W!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0885d068-8f43-48b0-b9a7-1269a558a5dd_1200x600.png)](https://substackcdn.com/image/fetch/$s_!hJ3W!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0885d068-8f43-48b0-b9a7-1269a558a5dd_1200x600.png)
-
 * * *
 
 **Rankings don’t exist in LLMs**
@@ -156,107 +97,3 @@ The practical implication of AEO not being an upgraded version of SEO is uncomfo
 Winning in an LLM means you are fighting to be part of the machine’s model of the world, and not just to "show up” in a report that you were visible. This requires the same inputs that have always built brand authority: third-party mentions, customer loyalty, and brand recognition metrics. These are the tactics SEO was always supposed to implement or partner with other teams, but rarely did, because traffic was easier to measure than the revenue impact.
 
 You need to measure your success against this benchmark using real marketing, not SEO or AEO checklists. Ask your customers how they found you, and ask them about their journey to finding you, not just the last stop. These data points, tracked consistently over time, will tell you more about your LLM visibility than any prompt-tracking effort. LLMs learn about your brand from the world. If the world doesn't know you, neither will an LLM.
-
-Subscribe
-
-* * *
-
-**\[Sponsored by** _**[North Star Inbound](https://www.northstarinbound.com/contact/?utm_source=email&utm_medium=nwsltr&utm_campaign=trafficdrop&utm_id=eli)**_ **\]**
-
-**What happens when you combine best-in-class SEO with conversion optimization?**
-
-_BigRentz’s traffic increased by 186% (85k), **[added 1950 conversions](https://talkto.northstarinbound.com/eli-schwartz-offer/?utm_source=eli&utm_medium=nwsltr&utm_campaign=seocro&utm_id=1-month-free)** in 12 months._
-
-_Self Financial’s traffic increased by 50k/month, and **[added 685 new customers](https://talkto.northstarinbound.com/eli-schwartz-offer/?utm_source=eli&utm_medium=nwsltr&utm_campaign=seocro&utm_id=1-month-free)**._
-
-_Lastly, Secure Data **[added 1968 phone calls](https://talkto.northstarinbound.com/eli-schwartz-offer/?utm_source=eli&utm_medium=nwsltr&utm_campaign=seocro&utm_id=1-month-free)**._
-
-_North Star Inbound’s SEO strategies earn leads, conversions, and revenue.._
-
-_[Book a call](https://calendly.com/northstarinbound/nsi-discovery-call) for a free content audit and 10% off any engagement._
-
-_Intrigued? [\[Learn more here\]](https://talkto.northstarinbound.com/eli-schwartz-offer/?utm_source=eli&utm_medium=nwsltr&utm_campaign=seocro&utm_id=1-month-free)_
-
-[![Anna Reh's avatar](https://substackcdn.com/image/fetch/$s_!I_yn!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6583977d-4760-47ee-baee-0820794ac4e1_96x96.jpeg)](https://substack.com/profile/2542566-anna-reh)[![Liam Darmody's avatar](https://substackcdn.com/image/fetch/$s_!BCRq!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff7590cee-6be5-412c-b357-b2eef25ecbe2_800x800.png)](https://substack.com/profile/160225533-liam-darmody)[![Noor Yusuf's avatar](https://substackcdn.com/image/fetch/$s_!gAMP!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcc942a75-9f9e-4277-ad93-d5c4b1262b79_1242x1242.jpeg)](https://substack.com/profile/331723532-noor-yusuf)[![Melanie's avatar](https://substackcdn.com/image/fetch/$s_!q2O5!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F37921a21-b43b-46b7-b1ba-68a630f214f9_1080x1080.jpeg)](https://substack.com/profile/6992047-melanie)[![Samuel Lavoie's avatar](https://substackcdn.com/image/fetch/$s_!P4Ir!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb766cfa7-f356-4286-bf66-a7d34803fa60_779x1171.jpeg)](https://substack.com/profile/4467505-samuel-lavoie)
-
-24 Likes∙
-
-[3 Restacks](https://substack.com/note/p-188127433/restacks?utm_source=substack&utm_content=facepile-restacks)
-
-24
-
-1
-
-3
-
-Share
-
-PreviousNext
-
-#### Discussion about this post
-
-CommentsRestacks
-
-![User's avatar](https://substackcdn.com/image/fetch/$s_!TnFC!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Favatars%2Fdefault-light.png)
-
-[![joknowsmo's avatar](https://substackcdn.com/image/fetch/$s_!Tfxb!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Favatars%2Forange.png)](https://substack.com/profile/307474377-joknowsmo?utm_source=comment)
-
-[joknowsmo](https://substack.com/profile/307474377-joknowsmo?utm_source=substack-feed-item)
-
-[Apr 15](https://www.productledseo.com/p/aeo-is-not-seo-20/comment/243914982 "Apr 15, 2026, 12:47 PM") Edited
-
-Simple question: can you give me an example of one thing that you do, to be cited more in GEO/AEO/WHATEVERYOUWANNACALLIT that is not an SEO task?
-
-Like
-
-Reply
-
-Share
-
-TopLatestDiscussions
-
-[How to maximize internal links for SEO](https://www.productledseo.com/p/how-to-maximize-internal-links-for)
-
-[These are the links worth investing into and the best way to structure them.](https://www.productledseo.com/p/how-to-maximize-internal-links-for)
-
-Jul 3, 2024•[Eli Schwartz](https://substack.com/@productledseo)
-
-26
-
-15
-
-4
-
-![](https://substackcdn.com/image/fetch/$s_!sILp!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_center/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F210e4416-171a-4351-bb3f-1c771686a39a_850x530.jpeg)
-
-[Create an SEO moat with your product](https://www.productledseo.com/p/create-an-seo-moat-with-your-product)
-
-[An SEO moat is a sustainable competitive advantage in organic search that's difficult for competitors to replicate](https://www.productledseo.com/p/create-an-seo-moat-with-your-product)
-
-Sep 12, 2024•[Eli Schwartz](https://substack.com/@productledseo)
-
-20
-
-2
-
-![](https://substackcdn.com/image/fetch/$s_!B_E0!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_center/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0cd726ed-b21e-4d29-b693-790ee1cd6c9e_1162x998.png)
-
-[How to maximize SEO on Substack](https://www.productledseo.com/p/how-to-maximize-seo-on-substack)
-
-[The easiest guide on how to increase your Substack's visibility on search engines without hacks and millions in budget.](https://www.productledseo.com/p/how-to-maximize-seo-on-substack)
-
-Sep 10, 2024•[Eli Schwartz](https://substack.com/@productledseo)
-
-21
-
-9
-
-3
-
-![](https://substackcdn.com/image/fetch/$s_!1WSG!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_center/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd199293b-80ad-4189-85ed-f5627b2bd9b4_1250x1004.png)
-
-See all
-
-### Ready for more?
-
-Subscribe

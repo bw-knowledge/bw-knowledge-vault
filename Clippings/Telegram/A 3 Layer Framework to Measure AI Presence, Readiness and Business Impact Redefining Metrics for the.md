@@ -7,7 +7,6 @@ ContentType: "Article"
 captured_via: "Telegram"
 captured_at: "2026-05-14T14:40:38.538Z"
 ---
-
 In summary, the traditional SEO metrics of rankings, clicks, and sessions are insufficient for measuring performance in AI search environments, and brands need a new three-layer framework—Presence, Readiness, and Business Impact—to accurately measure visibility, diagnose structural gaps, and connect AI visibility to measurable business outcomes without overclaiming attribution.
 
 ## Suggested Topics
@@ -22,7 +21,7 @@ AI search measurement, AI visibility optimization, Search analytics
 
 - **A three-layer framework replaces outdated ranking-and-clicks metrics for AI search measurement.** Presence measures whether brands appear in AI answers and how they're represented; Readiness diagnoses structural barriers to visibility; Business Impact connects AI visibility to commercial outcomes using observed, proxy, and modelled signals.
 
-- **Brands can influence purchase decisions in AI search without generating clicks, requiring fundamentally different attribution models.** Users may discover brands inside ChatGPT, Perplexity, or Claude, form a preference, then search the brand name directly on Google—making AI's contribution largely invisible to traditional analytics.
+- **Brands can influence purchase decisions in AI search without generating clicks, requiring fundamentally different attribution models.** Users may discover brands inside [[OpenAI|ChatGPT]], [[Perplexity]], or [[Anthropic|Claude]], form a preference, then search the brand name directly on [[Google Search]]—making AI's contribution largely invisible to traditional analytics.
 
 - **Prompt libraries must reflect real buyer behavior and constraints, not keyword-stretched search terms.** Effective AI presence measurement requires grouping prompts by persona, customer journey stage, and buyer constraints like price band, team size, industry, integration needs, and compliance requirements.
 
@@ -35,16 +34,14 @@ AI search measurement, AI visibility optimization, Search analytics
 ## Things
 
 - **People:** Aleyda Solis, Dana DiTomaso
-- **Places:** ChatGPT, Perplexity, Gemini, Claude, Microsoft Copilot, Google Search, Google AI Overviews, AI Mode, Reddit, Slack, Wikipedia, Wikidata, LinkedIn, G2, Capterra, Bing, Bing Webmaster Tools
+- **Places:** ChatGPT, Perplexity, [[Google Gemini|Gemini]], Claude, [[Microsoft Copilot]], [[Google Search]], [[Google AI Overviews]], [[Google AI Mode|AI Mode]], [[Reddit]], Slack, Wikipedia, Wikidata, [[LinkedIn]], G2, Capterra, [[Bing]], [[Bing|Bing Webmaster Tools]]
 - **Numbers:** 42%; 45%; 40%; 55%; 80%; 30–60 prompts; 50–100 prompts; 100–250+ prompts; 250+ prompts; 22% QoQ; 38% QoQ; 6% (Finchling AI traffic share); 41% (Muck Rack); 22% (Prowly); 1,820 AI-referred sessions; 6.1% trial start rate; 2.4x organic benchmark; 4,200 estimated AI sessions; €14K ARR estimated influenced pipeline; 18% (branded search increase); 9% (direct traffic increase); 2024
-- **Things:** Google Search Console, GA4, Similarweb, Semrush, Profound, Peec AI, Sistrix, Waikay, CRM, Bing Webmaster Tools, Slack integration, HubSpot, Salesforce, UTM, custom channel groups, regex rules, data-driven attribution, multi-touch attribution, entity signals, Wikidata
+- **Things:** [[Google Search Console]], [[Google Analytics|GA4]], Similarweb, [[Semrush]], Profound, Peec AI, Sistrix, Waikay, CRM, [[Bing|Bing Webmaster Tools]], Slack integration, HubSpot, Salesforce, UTM, custom channel groups, regex rules, data-driven attribution, multi-touch attribution, entity signals, Wikidata
 - **Concepts:** AI search attribution, prompt engineering, buyer constraints, topic-level aggregation, confidence layers, entity clarity, message consistency, representation accuracy, conversion lift, branded search lift, AI-assisted conversions, prompt coverage, recommendation rate, linked citation rate, comparative win rate, readiness assessment, third-party corroboration, commercial intent, journey stage segmentation, persona-based measurement, platform fragmentation, observable AI traffic, invisible AI influence, modelled estimates, proxy signals
 
 ---
 
 ## Full Article
-
-[Skip to the content](https://www.aleydasolis.com/en/ai-search/a-3-layer-framework-to-measure-ai-presence-readiness-and-business-impact-redefining-metrics-for-the-ai-search-era/#content)
 
 The old organic search measurement model, built largely around rankings, clicks, and sessions, is becoming less sufficient on its own in an AI search environment. And the more I talk to SEOs, marketers, and leadership teams, the clearer it becomes that most of us are still trying to adapt the old model rather than expand it into something fit for AI search.
 
@@ -634,119 +631,3 @@ Teams that run the three layers in isolation are more likely to ship disconnecte
 Pick your metrics based on business importance. Report them with the right segmentation and confidence level. Interpret them with the right questions. And act on them by closing the structural, source, representation, or conversion gaps they expose.
 
 It’s time to measure AI search in a way that supports better decisions.
-
-### LIKE IT? SHARE IT!
-
-- [Share on X (Opens in new window)X](https://www.aleydasolis.com/en/ai-search/a-3-layer-framework-to-measure-ai-presence-readiness-and-business-impact-redefining-metrics-for-the-ai-search-era/?share=twitter&nb=1)
-- [Share on Facebook (Opens in new window)Facebook](https://www.aleydasolis.com/en/ai-search/a-3-layer-framework-to-measure-ai-presence-readiness-and-business-impact-redefining-metrics-for-the-ai-search-era/?share=facebook&nb=1)
-- [Share on LinkedIn (Opens in new window)LinkedIn](https://www.aleydasolis.com/en/ai-search/a-3-layer-framework-to-measure-ai-presence-readiness-and-business-impact-redefining-metrics-for-the-ai-search-era/?share=linkedin&nb=1)
-- [Share on WhatsApp (Opens in new window)WhatsApp](https://www.aleydasolis.com/en/ai-search/a-3-layer-framework-to-measure-ai-presence-readiness-and-business-impact-redefining-metrics-for-the-ai-search-era/?share=jetpack-whatsapp&nb=1)
-- [Email a link to a friend (Opens in new window)Email](mailto:?subject=%5BShared%20Post%5D%20A%203%20Layer%20Framework%20to%20Measure%20AI%20Presence%2C%20Readiness%20and%20Business%20Impact%3A%20Redefining%20Metrics%20for%20the%20AI%20Search%20Era&body=https%3A%2F%2Fwww.aleydasolis.com%2Fen%2Fai-search%2Fa-3-layer-framework-to-measure-ai-presence-readiness-and-business-impact-redefining-metrics-for-the-ai-search-era%2F&share=email&nb=1)
-
-### Leave a Reply [Cancel reply](https://www.aleydasolis.com/en/ai-search/a-3-layer-framework-to-measure-ai-presence-readiness-and-business-impact-redefining-metrics-for-the-ai-search-era/\#respond)
-
-Your email address will not be published.Required fields are marked \*
-
-Comment \*
-
-Name \*
-
-Email \*
-
-Website
-
-Save my name, email, and website in this browser for the next time I comment.
-
-Δ
-
-This site uses Akismet to reduce spam. [Learn how your comment data is processed.](https://akismet.com/privacy/)
-
-### Receive more SEO resources like this! Subscribe to \#SEOFOMO
-
-SUBSCRIBE NOW
-
-Receive a weekly newsletter with the best SEO resources and latest SEO news. Spam free. Only awesomeness! #SEOFOMO features a hand-picked list of the best in SEO every week, including the latest SEO news, updates, resources and guides, and the top remote SEO jobs in the market.
-
-### Related articles
-
-AI Search [Ecommerce AI Search Optimization: What Citation Patterns Across 5 Subverticals Tell Us About Optimizing Beyond PDPs and PLPs](https://www.aleydasolis.com/en/ai-search/ecommerce-ai-search-citations-optimization/ "Ecommerce AI Search Optimization: What Citation Patterns Across 5 Subverticals Tell Us About Optimizing Beyond PDPs and PLPs")
-
-#### [Ecommerce AI Search Optimization: What Citation Patterns Across 5 Subverticals Tell Us About Optimizing Beyond PDPs and PLPs](https://www.aleydasolis.com/en/ai-search/ecommerce-ai-search-citations-optimization/ "Ecommerce AI Search Optimization: What Citation Patterns Across 5 Subverticals Tell Us About Optimizing Beyond PDPs and PLPs")
-
-Aleyda Solis
-
-12 \|
-05 \|
-2026
-
-[![Ecommerce AI Search Optimization: What Citation Patterns Across 5 Subverticals Tell Us About Optimizing Beyond PDPs and PLPs](https://www.aleydasolis.com/wp-content/themes/aleydasolis/imgs/flecha.svg)](https://www.aleydasolis.com/en/ai-search/ecommerce-ai-search-citations-optimization/)
-
-AI Search [Where AI Search Sends Traffic: 10-Market Patterns for Your Global AI Search Strategy](https://www.aleydasolis.com/en/ai-search/global-ai-search-strategy/ "Where AI Search Sends Traffic: 10-Market Patterns for Your Global AI Search Strategy")
-
-#### [Where AI Search Sends Traffic: 10-Market Patterns for Your Global AI Search Strategy](https://www.aleydasolis.com/en/ai-search/global-ai-search-strategy/ "Where AI Search Sends Traffic: 10-Market Patterns for Your Global AI Search Strategy")
-
-Aleyda Solis
-
-29 \|
-04 \|
-2026
-
-[![Where AI Search Sends Traffic: 10-Market Patterns for Your Global AI Search Strategy](https://www.aleydasolis.com/wp-content/themes/aleydasolis/imgs/flecha.svg)](https://www.aleydasolis.com/en/ai-search/global-ai-search-strategy/)
-
-AI Search [The 10 Key Characteristics of  AI Search Winning Brands [With an Assessment Checklist]](https://www.aleydasolis.com/en/ai-search/ai-search-winning-brands-characteristics/ "The 10 Key Characteristics of  AI Search Winning Brands [With an Assessment Checklist]")
-
-#### [The 10 Key Characteristics of  AI Search Winning Brands \[With an Assessment Checklist\]](https://www.aleydasolis.com/en/ai-search/ai-search-winning-brands-characteristics/ "The 10 Key Characteristics of  AI Search Winning Brands [With an Assessment Checklist]")
-
-Aleyda Solis
-
-01 \|
-04 \|
-2026
-
-[![The 10 Key Characteristics of  AI Search Winning Brands [With an Assessment Checklist]](https://www.aleydasolis.com/wp-content/themes/aleydasolis/imgs/flecha.svg)](https://www.aleydasolis.com/en/ai-search/ai-search-winning-brands-characteristics/)
-
-### Contact now
-
-#### Do you need SEO consulting, training, or a talk?
-
-#### Thank you for your message
-
-Name(required)
-
-Email(required)
-
-Message(required)
-
-
-RESPONSIBLE PARTY: ORAINTI, S.L. \|\| PURPOSE: To send the requested information, respond to the inquiry made and, if authorized, send information about activities, products and services related to the company that may be of interest to you \|\| LEGAL BASIS: Consent granted by you \|\| RIGHTS: You may exercise your rights of access, rectification, deletion, data portability, restriction or objection to the processing of your data by submitting a written request to C/ Orfila, 5, Esc 1, 4º CyD, 28010, MADRID or by email to info@orainti.com \|\| ADDITIONAL INFORMATION: You can consult additional information in the privacy policy.
-
-I have read and accept the terms of the Data Protection Act (LOPD) - Privacy Policy. I give my consent to receive information about activities, products and services related to our organization.(required)
-
-Please fill out the form correctly.
-
-Send
-
-Δ
-
-![Contacto](https://www.aleydasolis.com/wp-content/themes/aleydasolis/imgs/contact.svg)
-
-Close GDPR Cookie Settings
-
-![International SEO Consultant, Author & Speaker | Aleyda Solis](https://www.aleydasolis.com/wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png)
-
-- Privacy Overview
-- Strictly Necessary Cookies
-
-[Powered by  GDPR Cookie Compliance](https://wordpress.org/plugins/gdpr-cookie-compliance/)
-
-Privacy Overview
-
-This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.
-
-Strictly Necessary Cookies
-
-Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings.
-
-Enable or Disable CookiesEnabledDisabled
-
-Enable AllSave Settings

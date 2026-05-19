@@ -7,8 +7,7 @@ ContentType: Article
 captured_via: Telegram
 captured_at: 2026-05-14T14:52:07.736Z
 ---
-
-In summary, seven core usability testing methods—lab testing, contextual inquiry, guerrilla testing, video interviews, session recording, tree testing, and A/B testing—provide different approaches to gathering qualitative and quantitative user feedback, with selection depending on budget, timeline, and whether moderated, remote, or in-person research is needed.
+In summary, seven core usability testing methods—lab testing, contextual inquiry, guerrilla testing, video interviews, session recording, tree testing, and [[AB Testing|A/B Testing]]—provide different approaches to gathering qualitative and quantitative user feedback, with selection depending on budget, timeline, and whether moderated, remote, or in-person research is needed.
 
 ## Suggested Topics
 
@@ -35,61 +34,6 @@ None
 - **Concepts:** Qualitative data, quantitative data, moderated usability testing, unmoderated usability testing, remote usability testing, in-person usability testing, formative usability testing, summative usability testing, exploratory research, comparative research, mixed methods research, cognitive biases, mental models, usability metrics, task completion times, error rates, multivariate testing, information architecture
 
 ---
-
-## Full Article
-
-We value your privacy
-
-We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
-
-CustomizeAccept All
-
-Customize Consent Preferences![](https://cdn-cookieyes.com/assets/images/close.svg)
-
-We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below.
-
-The cookies that are categorized as "Necessary" are stored on your browser as they are essential for enabling the basic functionalities of the site. ... Show more
-
-For more information on how Google's third-party cookies operate and handle your data, see: [Google Privacy Policy](https://business.safety.google/privacy)
-
-NecessaryAlways Active
-
-Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data.
-
-Functional
-
-Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features.
-
-Analytics
-
-Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.
-
-Performance
-
-Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.
-
-Advertisement
-
-Advertisement cookies are used to provide visitors with customized advertisements based on the pages you visited previously and to analyze the effectiveness of the ad campaigns.
-
-Uncategorized
-
-Other uncategorized cookies are those that are being analyzed and have not been classified into a category as yet.
-
-Save My PreferencesAccept All
-
-AI Study Builder \| Describe what you want to learn. Maze builds the study.
-
-[Explore](https://maze.co/features/ai-study-builder/)
-
-[Maze Guides \| Resources Hub](https://maze.co/guides/)
-
-#### A Beginner's Guide to Usability Testing
-
-0% complete
-
-Chapter 3
-
 # 7 Essential usability testing methods for UX insights
 
 #### TL;DR
@@ -343,11 +287,3 @@ Usability testing commonly uses these core methods to evaluate how users interac
 - Session recordings
 - Tree testing
 - A/B usability testing
-
-[Previous](https://maze.co/guides/usability-testing/moderated-vs-unmoderated/)
-
-[Chapter 4\\
-\\
-Creating a usability testing plan](https://maze.co/guides/usability-testing/plan/)
-
-![](https://slnrrgbg.maze.co/image.gif)

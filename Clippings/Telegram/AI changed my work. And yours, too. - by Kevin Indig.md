@@ -43,15 +43,6 @@ AI adoption and impact, Software economics, Work transformation
 - **Concepts:** Agentic AI, agentic coding, product-led growth, system of records (SOR), data providers, cost of automation, cost of verification, judgment, velocity, distribution, human cognition bottleneck, accountability, execution constraint, trust problem, keyword universe
 
 ---
-
-## Full Article
-
-[![Growth Memo](https://substackcdn.com/image/fetch/$s_!bQ1O!,w_40,h_40,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F28e5173e-857c-4a67-9fde-4091c8c5b902_256x256.png)](https://www.growth-memo.com/)
-
-# [![Growth Memo](https://substackcdn.com/image/fetch/$s_!nHrH!,e_trim:10:white/e_trim:10:transparent/h_140,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F546984a3-9475-4398-9bb2-0e9bd1067ce2_2488x512.png)](https://www.growth-memo.com/)
-
-SubscribeSign in
-
 # AI changed my work. And yours, too.
 
 ### When the cost of building anything collapses to near zero, what's actually scarce? What does that mean for how we work?
@@ -62,16 +53,6 @@ SubscribeSign in
 
 May 04, 2026
 
-∙ Paid
-
-27
-
-4
-
-3
-
-Share
-
 [![](https://substackcdn.com/image/fetch/$s_!b0zq!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5e9a33ea-9c1c-40f6-a429-3d3112962247_1672x941.png)](https://substackcdn.com/image/fetch/$s_!b0zq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5e9a33ea-9c1c-40f6-a429-3d3112962247_1672x941.png)
 
 ##### **This Memo was sent to 26,431 subscribers. Welcome to +97 new readers! Subscribe to get the free memo weekly or upgrade to [Premium](https://library.growth-memo.com/premium) for the full archive, research, frameworks, and templates.**
@@ -81,19 +62,6 @@ Share
 Subscribe
 
 [![](https://substackcdn.com/image/fetch/$s_!IOg4!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fabba29cd-a223-4e2f-b177-24ba7949f17c_4581x795.png)](https://substackcdn.com/image/fetch/$s_!IOg4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fabba29cd-a223-4e2f-b177-24ba7949f17c_4581x795.png)
-
-**How LTM Interactive achieved +400% project ROI with Semrush for Enterprise**
-
-[![](https://substackcdn.com/image/fetch/$s_!q0DR!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd33bf799-5b61-4f42-bd54-05fa3c384537_1800x900.png)](https://enterprise.semrush.com/customer-stories/ltm-interactive/?utm_source=newsletter&utm_medium=influencers&utm_campaign=socialorganic_partners_growthmemo&utm_term=social_organic&utm_content=kevinindig_may04)
-
-Global businesses operate under relentless pressure. But LTM Interactive successfully juggled more clients, growing expectations, and tighter margins by consolidating their search operations into Semrush for Enterprise.
-
-After cutting fragmented tools and turning wasted manual work into high-value client delivery, their teams improved search project ROI +400%.
-
-**[Read LTM’s full story](https://enterprise.semrush.com/customer-stories/ltm-interactive/?utm_source=newsletter&utm_medium=influencers&utm_campaign=socialorganic_partners_growthmemo&utm_term=social_organic&utm_content=kevinindig_may04)**
-
-[![](https://substackcdn.com/image/fetch/$s_!8lq4!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fee796a1a-90e5-4935-b5f1-053df9bc7d28_4581x802.png)](https://substackcdn.com/image/fetch/$s_!8lq4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fee796a1a-90e5-4935-b5f1-053df9bc7d28_4581x802.png)
-
 Am I still an advisor? Or a builder? **I’m having an existential moment.**
 
 My work has forever changed in a way I’m still trying to understand. 6 months ago, agentic vibe coding crossed a threshold. Since then, I have used AI to raise my impact by a magnitude.

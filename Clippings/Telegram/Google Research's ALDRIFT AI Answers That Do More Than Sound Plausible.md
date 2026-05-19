@@ -36,8 +36,6 @@ AI Answer Quality, [[Generative Engine Optimisation (GEO)|GEO]], Inference-Time 
 
 [Skip to content](https://www.searchenginejournal.com/google-researchs-aldrift-ai-answers-that-do-more-than-sound-plausible/574754/#main-content)
 
-[![Reserve My Seat](https://cdn.searchenginejournal.com/wp-content/uploads/2026/05/top-desktop-2x-699.png)](https://www.searchenginejournal.com/sej-pro/webinar-cohort/?itm_source=website&itm_medium=takeover-970-200&itm_campaign=sejpro-alpha "Reserve My Seat")
-
 ![Google Research’s ALDRIFT: AI Answers That Do More Than Sound Plausible](https://cdn.searchenginejournal.com/wp-content/uploads/2026/05/google-aldrift-654.jpg)
 
 Google Research published a paper that studies how to make generative AI systems produce answers that do more than sound plausible. The researchers say that their ALDRIFT framework “opens exciting avenues” for moving beyond answers that merely have a high probability.

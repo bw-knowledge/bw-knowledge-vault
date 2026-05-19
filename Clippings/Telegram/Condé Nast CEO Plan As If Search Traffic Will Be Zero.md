@@ -42,9 +42,6 @@ Publisher strategy, Search traffic decline, Digital subscriptions
 
 ## Full Article
 
-[Skip to content](https://www.searchenginejournal.com/conde-nast-ceo-plan-as-if-search-traffic-will-be-zero/574786/#main-content)
-
-[![Grow Faster](https://cdn.searchenginejournal.com/wp-content/uploads/2026/05/top-desk-2x-343.png)](https://www.airops.com/platform/quill?utm_source=search-engine-journal&utm_medium=paid-newsletter&utm_campaign=NA_en_ProdMkt_Quill-Launch_Q2-2026&utm_content=sej-takover-ad "Grow Faster")
 
 ![Condé Nast CEO: Plan As If Search Traffic Will Be Zero](https://cdn.searchenginejournal.com/wp-content/uploads/2026/05/6e0c1fae-785e-4d00-b906-10b252952a74-52.jpeg)
 
@@ -59,15 +56,6 @@ Lynch said:
 > “Every year, our search traffic was down more than we had forecast. So last year I told our teams, ‘Assume there’s no search.’ You have to have your businesses planned as if search is zero.”
 
 Lynch told TBPN that Condé Nast doesn’t expect search traffic to literally reach zero. He expects it to settle at a single-digit percentage of total traffic.
-
-**Built to win AI search, not just monitor it**
-
-AirOps shows you how your brand shows up in AI search and ships the work that gets you cited.
-
-
-[Grow Faster](https://www.airops.com/platform/quill?utm_source=search-engine-journal&utm_medium=paid-newsletter&utm_campaign=NA_en_ProdMkt_Quill-Launch_Q2-2026&utm_content=sej-takover-ad "Grow Faster")
-
-Sponsored
 
 ## What Changed
 
