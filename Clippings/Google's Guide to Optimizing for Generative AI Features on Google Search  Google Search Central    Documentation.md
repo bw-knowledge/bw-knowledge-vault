@@ -1,3 +1,12 @@
+---
+title: "Google's Guide to Optimizing for Generative AI Features on Google Search  Google Search Central"
+created: 2026-05-19
+source: "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+tags:
+ContentType: "Article"
+captured_via: "Obsidian Web Clipper"
+captured_at: "2026-05-19T11:14:07.736Z"
+---
 In summary, SEO best practices remain fundamentally relevant for generative AI search because Google's AI features rely on the same core ranking systems and indexing infrastructure that power traditional search, using retrieval-augmented generation to surface and highlight existing web content rather than creating entirely new information.
 
 ## Headlines
