@@ -7,14 +7,14 @@ ContentType: "Article"
 captured_via: "Obsidian Web Clipper"
 captured_at: "2026-05-19T11:14:07.736Z"
 ---
-In summary, SEO best practices remain fundamentally relevant for generative AI search because Google's AI features rely on the same core ranking systems and indexing infrastructure that power traditional search, using retrieval-augmented generation to surface and highlight existing web content rather than creating entirely new information.
+In summary, [[SEO]] best practices remain fundamentally relevant for [[Generative Engine Optimisation (GEO)|Generative AI Search]] because Google's AI features rely on the same core ranking systems and indexing infrastructure that power traditional search, using retrieval-augmented generation to surface and highlight existing web content rather than creating entirely new information.
 
 ## Headlines
 
 - **Create unique, valuable, non-commodity content with expert perspective.** Your firsthand experience and original insights stand out more to AI systems than recycled summaries of existing information.
-- **Build clear technical structure and ensure crawlability.** Meeting Search technical requirements, maintaining semantic HTML, and following JavaScript SEO best practices remain essential for AI visibility.
-- **Ignore AEO/GEO hacks like llms.txt files and artificial content chunking.** Google's systems understand nuance and synonyms without requiring special formatting or tiny content fragments.
-- **Optimize local business and ecommerce details through proper channels.** Use Google Business Profiles and Merchant Center feeds rather than pursuing inauthentic mentions across the web.
+- **Build clear technical structure and ensure crawlability.** Meeting Search technical requirements, maintaining semantic HTML, and following [[JavaScript SEO]] best practices remain essential for AI visibility.
+- **Ignore [[Generative Engine Optimisation (GEO)|AEO]]/[[Generative Engine Optimisation (GEO)|GEO]] hacks like llms.txt files and artificial content chunking.** Google's systems understand nuance and synonyms without requiring special formatting or tiny content fragments.
+- **Optimize local business and ecommerce details through proper channels.** Use [[Google Business Profile]] and [[Google Merchant Center]] feeds rather than pursuing inauthentic mentions across the web.
 - **Focus on helpful, reliable, people-first content over keyword variations.** AI systems can connect users with relevant content even without exact keyword matches.
 
 ## Things

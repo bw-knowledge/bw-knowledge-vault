@@ -108,3 +108,238 @@ views:
       file.name: 261
       formula.Domain: 197
       source: 218
+
+  - type: table
+    name: Google Gemini
+    filters:
+      or:
+        - file.hasLink("Topics/Google Gemini.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: JavaScript SEO
+    filters:
+      or:
+        - file.hasLink("Topics/JavaScript SEO.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: OpenAI
+    filters:
+      or:
+        - file.hasLink("Topics/OpenAI.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Perplexity
+    filters:
+      or:
+        - file.hasLink("Topics/Perplexity.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google AI Overviews
+    filters:
+      or:
+        - file.hasLink("Topics/Google AI Overviews.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google Business Profile
+    filters:
+      or:
+        - file.hasLink("Topics/Google Business Profile.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google Merchant Center
+    filters:
+      or:
+        - file.hasLink("Topics/Google Merchant Center.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google
+    filters:
+      or:
+        - file.hasLink("Topics/Google.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google Search
+    filters:
+      or:
+        - file.hasLink("Topics/Google Search.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google AI Mode
+    filters:
+      or:
+        - file.hasLink("Topics/Google AI Mode.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Reddit
+    filters:
+      or:
+        - file.hasLink("Topics/Reddit.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: LinkedIn
+    filters:
+      or:
+        - file.hasLink("Topics/LinkedIn.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Bing
+    filters:
+      or:
+        - file.hasLink("Topics/Bing.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218

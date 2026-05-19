@@ -20,6 +20,7 @@ aliases:
   - Generative Search Engines
   - AI-Powered Search
   - Relevance Engineering
+  - Generative AI Search
 ---
 # Resources 
 
