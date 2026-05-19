@@ -16,7 +16,7 @@ Organizational structure, LLM visibility, Brand and search integration
 
 ## Matched Topics
 
-[[Generative Engine Optimisation (GEO)]]
+[[Generative Engine Optimisation (GEO)]], [[SEO]]
 
 ## Headlines
 
