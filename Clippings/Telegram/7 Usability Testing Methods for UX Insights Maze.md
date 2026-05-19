@@ -1,11 +1,11 @@
 ---
-title: "7 Usability Testing Methods for UX Insights | Maze"
+title: 7 Usability Testing Methods for UX Insights | Maze
 created: 2026-05-14
-source: "https://maze.co/guides/usability-testing/methods/#:~:text=In%20a%20lab%20usability%20test,their%20feedback%20in%20real%2Dtime."
+source: https://maze.co/guides/usability-testing/methods/
 tags:
-ContentType: "Article"
-captured_via: "Telegram"
-captured_at: "2026-05-14T14:52:07.736Z"
+ContentType: Article
+captured_via: Telegram
+captured_at: 2026-05-14T14:52:07.736Z
 ---
 
 In summary, seven core usability testing methods—lab testing, contextual inquiry, guerrilla testing, video interviews, session recording, tree testing, and A/B testing—provide different approaches to gathering qualitative and quantitative user feedback, with selection depending on budget, timeline, and whether moderated, remote, or in-person research is needed.

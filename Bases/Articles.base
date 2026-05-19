@@ -13,7 +13,9 @@ views:
       - file.name
       - formula.Domain
       - source
-    sort: []
+    sort:
+      - property: formula.Domain
+        direction: ASC
     columnSize:
       file.name: 300
       formula.Domain: 175

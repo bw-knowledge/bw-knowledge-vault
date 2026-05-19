@@ -46,40 +46,13 @@ AI misinformation, Search quality degradation, Generative Engine Optimisation
 
 ## Full Article
 
-# [Lily Ray](https://lilyraynyc.substack.com/)
-
-SubscribeSign in
-
-![User's avatar](https://substackcdn.com/image/fetch/$s_!BE0G!,w_64,h_64,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff5e8f66c-cd90-48ca-9ada-fe92b45f3da4_1170x1084.jpeg)
-
-Discover more from Lily Ray
-
-SEO & AI Search by Day
-DJ, Drummer, Travel & Fitness Lover by Night
-
-Over 3,000 subscribers
-
-Subscribe
-
-By subscribing, you agree Substack's [Terms of Use](https://substack.com/tos), and acknowledge its [Information Collection Notice](https://substack.com/ccpa#personal-data-collected) and [Privacy Policy](https://substack.com/privacy).
-
-Already have an account? Sign in
-
 # The AI Slop Loop
 
 ### How AI-generated misinformation is feeding itself, and why billions of users are getting the worst of it.
 
-[![Lily Ray's avatar](https://substackcdn.com/image/fetch/$s_!BE0G!,w_36,h_36,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff5e8f66c-cd90-48ca-9ada-fe92b45f3da4_1170x1084.jpeg)](https://substack.com/@lilyraynyc)
-
 [Lily Ray](https://substack.com/@lilyraynyc)
 
 Apr 14, 2026
-
-84
-
-8
-
-Share
 
 Last year, after spending a few days at a work summit in Austria, I asked Perplexity for the latest news related to SEO and AI search. It responded with details about a supposed “September 2025 ‘Perspective’ Core Algorithm Update” that Google had just rolled out, emphasizing “deeper expertise” and “completion of the user journey.”
 
@@ -232,80 +205,3 @@ I don’t think the answer is to stop using AI. But I do think it’s worth bein
 I would warn marketers or publishers trying to take SEO or GEO advice from large language models: the information is contaminated, and should always be verified by real experts with experience in the field.
 
 * * *
-
-#### Subscribe to Lily Ray
-
-Launched 4 months ago
-
-SEO & AI Search by Day
-DJ, Drummer, Travel & Fitness Lover by Night
-
-Subscribe
-
-By subscribing, you agree Substack's [Terms of Use](https://substack.com/tos), and acknowledge its [Information Collection Notice](https://substack.com/ccpa#personal-data-collected) and [Privacy Policy](https://substack.com/privacy).
-
-[![Ewa's avatar](https://substackcdn.com/image/fetch/$s_!wgeW!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a3916ab-74a3-499b-a209-e86c2acc2965_144x144.png)](https://substack.com/profile/91563389-ewa)[![noone really go away's avatar](https://substackcdn.com/image/fetch/$s_!tEls!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbca3804d-a683-4ae6-b67f-c111af0f5d74_144x144.png)](https://substack.com/profile/43065264-noone-really-go-away)[![Stela Yordanova's avatar](https://substackcdn.com/image/fetch/$s_!xlzH!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9772b0eb-96c5-42f1-af78-16463c1cb230_300x300.jpeg)](https://substack.com/profile/53316029-stela-yordanova)[![Todd E Jones's avatar](https://substackcdn.com/image/fetch/$s_!Tv-U!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6ceb9ac7-74e3-45eb-849c-3e87fb4d8605_927x927.jpeg)](https://substack.com/profile/75153446-todd-e-jones)[![Natalia Rice's avatar](https://substackcdn.com/image/fetch/$s_!KlZR!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc5a2979d-c077-426a-9d26-9f66286383ff_709x709.jpeg)](https://substack.com/profile/165169037-natalia-rice)
-
-84 Likes∙
-
-[8 Restacks](https://substack.com/note/p-193424334/restacks?utm_source=substack&utm_content=facepile-restacks)
-
-84
-
-8
-
-Share
-
-#### Discussion about this post
-
-CommentsRestacks
-
-![User's avatar](https://substackcdn.com/image/fetch/$s_!TnFC!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Favatars%2Fdefault-light.png)
-
-TopLatestDiscussions
-
-[A Reflection on SEO & AI Search in 2025](https://lilyraynyc.substack.com/p/a-reflection-on-seo-and-ai-search)
-
-[Search transformed dramatically in 2025. Learn about the biggest changes in SEO & AI search, including my observations, hot takes, and predictions for…](https://lilyraynyc.substack.com/p/a-reflection-on-seo-and-ai-search)
-
-Jan 19
-
-163
-
-18
-
-15
-
-![](https://substackcdn.com/image/fetch/$s_!d90q!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Facda389e-531c-4d23-9956-cd7f9b8a954b_1909x803.png)
-
-[Is Google Finally Cracking Down on Self-Promotional Listicles?](https://lilyraynyc.substack.com/p/is-google-finally-cracking-down-on)
-
-[The most popular 'GEO' tactic might indeed be risky for SEO purposes after all](https://lilyraynyc.substack.com/p/is-google-finally-cracking-down-on)
-
-Feb 3•[Lily Ray](https://substack.com/@lilyraynyc)
-
-98
-
-15
-
-8
-
-![](https://substackcdn.com/image/fetch/$s_!9T9Z!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F277b52ca-8110-4544-b949-062fbf8c33dd_1274x851.png)
-
-[Your GEO Strategy Might Be Destroying Your SEO](https://lilyraynyc.substack.com/p/your-geo-strategy-might-be-destroying)
-
-[Many tactics designed to win in AI search can undermine SEO performance - which is, ironically, necessary for success in AI search.](https://lilyraynyc.substack.com/p/your-geo-strategy-might-be-destroying)
-
-Mar 18•[Lily Ray](https://substack.com/@lilyraynyc)
-
-128
-
-14
-
-![](https://substackcdn.com/image/fetch/$s_!k12M!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f52e6ff-50ea-48af-967c-f7c95412ecac_2048x2048.jpeg)
-
-See all
-
-### Ready for more?
-
-Subscribe
