@@ -21,6 +21,7 @@ aliases:
   - AI-Powered Search
   - Relevance Engineering
   - Generative AI Search
+  - AI Search Optimization
 ---
 # Resources 
 

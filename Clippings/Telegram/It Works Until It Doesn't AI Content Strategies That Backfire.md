@@ -8,11 +8,11 @@ captured_via: "Telegram"
 captured_at: "2026-05-19T10:05:02.641Z"
 ---
 
-In summary, scaling content production with AI tools can generate short-term organic search gains, but across 220+ monitored websites, the strategy consistently backfires within 12–24 months as Google's algorithms identify and demote the formulaic, SEO-optimized patterns that characterize AI-generated content at scale.
+In summary, scaling [[Content Production]] with AI tools can generate short-term [[SEO|Organic Search]] gains, but across 220+ monitored websites, the strategy consistently backfires within 12–24 months as [[Google Search|Google's Algorithm]] identify and demote the formulaic, [[SEO]]-optimized patterns that characterize [[Generative AI|AI-Generated Content]] at scale.
 
 ## Suggested Topics
 
-AI content strategy, SEO algorithm risk, Content quality at scale
+AI [[Content Production|Content Strategy]], SEO algorithm risk, Content quality at scale
 
 ## Matched Topics
 
@@ -38,32 +38,13 @@ AI content strategy, SEO algorithm risk, Content quality at scale
 
 - **Numbers:** 220+ websites monitored; 54% lost 30% or more of peak organic traffic; 39% lost 50% or more; 22% lost 75% or more; September 2023 (Helpful Content Update launch); March 2024 (Core Update); 45% reduction target for low-quality content; January 20-21, 2026 (unconfirmed update date); 40–95% traffic declines for affected sites in January–April 2026; over a decade of experience helping companies recover from algorithm updates
 
-- **Things:** Helpful Content Update, March 2024 Core Update, Scaled Content Abuse policy, RAG (Retrieval-Augmented Generation), E-E-A-T framework, information gain, FAQ Rich Results, schema markup, GEO/AEO (AI Engine Optimization/Generative Engine Optimization)
+- **Things:** Helpful Content Update, March 2024 Core Update, Scaled Content Abuse policy, RAG (Retrieval-Augmented Generation), [[EEAT|E-E-A-T]] framework, [[Information Gain]], FAQ Rich Results, [[Structured Data|Schema Markup]], GEO/AEO (AI Engine Optimization/Generative Engine Optimization)
 
 - **Concepts:** Mount AI (boom-bust cycle), rank and tank playbook, SEO spam, automated content generation, formulaic content templates, search engine spam policies, topical relevance, content quality, algorithmic demoting, self-promotional content, programmatic scaling
 
 ---
 
 ## Full Article
-
-# [Lily Ray](https://lilyraynyc.substack.com/)
-
-SubscribeSign in
-
-![User's avatar](https://substackcdn.com/image/fetch/$s_!BE0G!,w_64,h_64,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff5e8f66c-cd90-48ca-9ada-fe92b45f3da4_1170x1084.jpeg)
-
-Discover more from Lily Ray
-
-SEO & AI Search by Day
-DJ, Drummer, Travel & Fitness Lover by Night
-
-Over 3,000 subscribers
-
-Subscribe
-
-By subscribing, you agree Substack's [Terms of Use](https://substack.com/tos), and acknowledge its [Information Collection Notice](https://substack.com/ccpa#personal-data-collected) and [Privacy Policy](https://substack.com/privacy).
-
-Already have an account? Sign in
 
 # It Works Until It Doesn't: AI Content Strategies That Backfire
 
@@ -75,15 +56,7 @@ Already have an account? Sign in
 
 May 13, 2026
 
-115
-
-1
-
-11
-
-Share
-
-Over the past few years, I’ve watched AI content creation tools rapidly gain adoption across the SEO/GEO industry. These tools offer the promise of leveraging AI to automate content creation, reduce headcount, cut costs, and scale output.
+Over the past few years, I’ve watched AI [[Content Production]] tools rapidly gain adoption across the [[SEO]]/[[Generative Engine Optimisation (GEO)|GEO]] industry. These tools offer the promise of leveraging AI to automate content creation, reduce headcount, cut costs, and scale output.
 
 As someone who has spent the last decade helping companies recover from Google algorithm updates, my spidey senses started tingling the minute I heard the pitches for many of these tools. Even before AI was part of the conversation, Google already had a [long history](https://web.archive.org/web/20221013131119/https://developers.google.com/search/docs/essentials/spam-policies#spammy-automatically-generated-content) of reducing the visibility of automated content in its search results.
 
@@ -117,7 +90,7 @@ Third, vendors and specific domains are deliberately not named here. The pattern
 
 ## **What the Data Shows: Rapid Growth Before a Steep Decline**
 
-If there is one thing the data makes clear, it is this: **scaling content production with AI is not a low-risk strategy for organic search**. It can produce real short-term gains in both SEO and AI search ( [LLMs use search engines](https://lilyraynyc.substack.com/p/a-reflection-on-seo-and-ai-search)), but across this dataset, those gains have rarely held. In many cases, the eventual loss has exceeded the initial peak.
+If there is one thing the data makes clear, it is this: **scaling content production with AI is not a low-risk strategy for organic search**. It can produce real short-term gains in both SEO and [[Generative Engine Optimisation (GEO)|AI Search]] ( [LLMs use search engines](https://lilyraynyc.substack.com/p/a-reflection-on-seo-and-ai-search)), but across this dataset, those gains have rarely held. In many cases, the eventual loss has exceeded the initial peak.
 
 Across the group of 220+ sites and subfolders I analyzed:
 
@@ -128,7 +101,7 @@ Across the group of 220+ sites and subfolders I analyzed:
 - 22% lost 75% or more.
 
 
-Within those declines, a recurring trajectory appears: a rapid growth in organic pages over six to twelve months; an organic traffic peak within roughly three to six months of the content peak; and then a steep decline in traffic that erases most of the gain (and frequently drops below the prior baseline) within the following year.
+Within those declines, a recurring trajectory appears: a rapid growth in organic pages over six to twelve months; an [[Search Traffic|Organic Traffic]] peak within roughly three to six months of the content peak; and then a steep decline in traffic that erases most of the gain (and frequently drops below the prior baseline) within the following year.
 
 [![](https://substackcdn.com/image/fetch/$s_!m-mQ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa4f818e-2edc-4976-a81f-b8a168ccb056_941x306.png)](https://substackcdn.com/image/fetch/$s_!m-mQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa4f818e-2edc-4976-a81f-b8a168ccb056_941x306.png)
 
@@ -170,7 +143,7 @@ Alongside the March 2024 update, Google formalized a new spam policy called “ 
 
 The SEO industry is still working through the collateral damage from those updates, including significant losses for many small publishers, some of whom were publishing original, human-written content but used excessive SEO frameworks that the updates likely flagged. The casualty list also included some publishers who had partnered with ad networks and other emerging tools **offering AI content creation and scaling as a service**.
 
-Many sites affected by the HCU haven’t recovered to this day, despite their enormous efforts. I spent significant time in 2024 working and speaking with many site owners trying to dig themselves out of that hole.
+Many sites affected by the [[Helpful Content Update|HCU]] haven’t recovered to this day, despite their enormous efforts. I spent significant time in 2024 working and speaking with many site owners trying to dig themselves out of that hole.
 
 Having spent hundreds of hours [analyzing](https://www.youtube.com/watch?v=-ewdcdsJ2k4) and [presenting about](https://www.slideshare.net/slideshow/the-helpful-content-update-everything-you-need-to-know/287230579) those two major updates, I can say that the content I am seeing published with many of these new AI tools **often looks and feels a lot like the exact type of content that was wiped off the map** with these 2023 and 2024 Google updates.
 
@@ -186,29 +159,29 @@ Reviewing top-traffic URLs across the declining domains, eight distinct content 
 
 Sidenote: **I am not saying these page types don’t work for ranking in search and influencing LLM responses.** Indeed they do! That’s why so many sites are implementing them. This section is meant to show that when these page types are scaled (often by using AI), it becomes much easier for search engines to identify the tactic as spam.
 
-1\. **Comparison pages at scale.**
+#### 1\. **Comparison pages at scale.**
 
 Pattern: /blog/\[product-A\]-vs-\[product-B\] published at scale across most reasonable head-to-head matchups in a category. Observed across the dataset for product-vs-product pairings, framework-vs-framework pairings, and, in at least one case, concept-vs-concept pairings unrelated to the publisher’s actual business.
 
-2\. **The “What is X” glossary.**
+#### 2\. **The “What is X” glossary.**
 
 Single-term, single-question pages designed to be cited by AI engines. Pattern: /resources/what-is-\[term\] or /glossary/\[term\]. Observed across the dataset, including programmatic glossaries scaled across multiple languages from a single source template. _Scaling translations with AI and without human review can also frequently lead to sitewide content quality issues._
 
-3\. **The “Best \[X\] for \[Y\]” listicle.**
+#### 3\. **The “Best \[X\] for \[Y\]” listicle.**
 
 The most familiar AI-content template, with origins in the affiliate-content era. This pattern was observed across the dataset in both broad-category and narrow-niche variants.
 
-4\. **The self-promotional listicle.**
+#### 4\. **The self-promotional listicle.**
 
 A variant of #3 in which the publisher is itself a competitor in the category being ranked, and frequently lists itself as the #1 best among competitors. These pages generally lack real evidence that the company genuinely tested all of the competitors in the list, which is [recommended by Google for review pages](https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews#:~:text=Provide%20evidence%20such%20as%20visuals%2C%20audio%2C%20or%20other%20links%20of%20your%20own%20experience%20with%20what%20you%20are%20reviewing%2C%20to%20support%20your%20expertise%20and%20reinforce%20the%20authenticity%20of%20your%20review.).
 
 I [wrote about this ‘listicle’ page template causing SEO/GEO issues](https://lilyraynyc.substack.com/p/is-google-finally-cracking-down-on) in February 2026, when I found that many companies publishing dozens, hundreds, or even thousands of self-promotional listicles saw extreme traffic drops beginning on the same day (approximately January 21, 2026). This pattern was observed across multiple sites in the dataset, most aggressively in B2B services.
 
-5\. **The competitor-vs-alternatives page.**
+#### 5\. **The competitor-vs-alternatives page.**
 
 Pattern: /blog/\[competitor-brand\]-alternatives, or, in the more programmatic form, dedicated landing pages built for every named competitor in a category. This approach was observed extensively across the dataset, including one case where the **majority of a site’s top traffic pages were dedicated to individual competitor brand names**.
 
-6\. **Programmatic location and language scaling.**
+#### 6\. **Programmatic location and language scaling.**
 
 This is one of the oldest tricks in the SEO book, and one that I’ve seen sites get in trouble for with algorithm updates **for at least 10 years**. The approach: use one template multiplied across every geography or language a search engine will index, with very little unique content per local landing page.
 
@@ -216,7 +189,7 @@ In many cases, the company publishing these pages often does not have real brick
 
 This page type was observed across the dataset including state-by-state content, country-by-country service pages, and the multilingual programmatic glossaries described above.
 
-7\. **The FAQ farm.**
+#### 7\. **The FAQ farm.**
 
 Each page answers exactly one question. Pattern: /faq/\[full-question\]. Designed for extraction by AI engines: a clear question in the URL, the answer in the first paragraph, bullet points in the body, schema markup at the bottom.
 
@@ -228,7 +201,7 @@ Here is a screenshot of [my March 2024 Amsive article advising against the same 
 
 It’s also worth noting that just last week, Google announced it was deprecating FAQ Rich Results, which [I believe might have something to do with this new influx of FAQ schema](https://www.linkedin.com/posts/lily-ray-44755615_interesting-timing-google-is-dropping-rich-activity-7458552788135092224-nuZd) aimed at trying to earn citations and mentions in AI search.
 
-8\. **Off-topic content published at scale.**
+#### 8\. **Off-topic content published at scale.**
 
 Publishing off-topic content, with no apparent connection to the publisher’s actual business, at high volumes is one of the fastest ways to get in trouble with search engine algorithms. This was also a huge problem during the Helpful Content Update and March 2024 Core Updates, when many sites were experimenting with publishing off-topic content, like funny quotes, jokes, baby names, horoscopes, and other high-volume articles that weren’t actually topically relevant for the publisher.
 
@@ -250,11 +223,11 @@ I do believe there is a way to use AI content tools safely, and a way for these 
 
 Using AI content tools for research, organization, content briefs, pulling in proprietary company data and insights, and more **can be invaluable for speeding up the content creation process**. But when articles are simply published “for SEO/GEO” without consideration of the risks involved with search engine ranking systems, the well-intentioned content can actually backfire for both SEO and AI search.
 
-To perform well, I recommend that any AI-assisted content should still demonstrate E-E-A-T, add original or unique information above and beyond what is offered by competing pages ( [information gain](https://gofishdigital.com/blog/information-gain-scores/)), and consider being transparent about the use of AI to create the content (which is recommended by Google).
+To perform well, I recommend that any AI-assisted content should still demonstrate [[EEAT|E-E-A-T]], add [[Information Gain|Original Research]] or unique information above and beyond what is offered by competing pages ( [information gain](https://gofishdigital.com/blog/information-gain-scores/)), and consider being transparent about the use of AI to create the content (which is recommended by Google).
 
 ## **The Bottom Line**
 
-If there is one takeaway from monitoring these 220+ sites over the past several months, it’s that the playbooks being sold as “AI-first SEO” or “GEO-optimized content at scale” look remarkably similar to the playbooks that got sites flattened by the Helpful Content Update and the March 2024 Core Update. The packaging is new, but the pattern is not.
+If there is one takeaway from monitoring these 220+ sites over the past several months, it’s that the playbooks being sold as “AI-first SEO” or “GEO-optimized content at scale” look remarkably similar to the playbooks that got sites flattened by the [[Helpful Content Update]] and the March 2024 Core Update. The packaging is new, but the pattern is not.
 
 Across the dataset, the brands still growing are generally the ones whose content does not match the eight templates above. Many brands that scaled into those templates are the ones now removing pages, redirecting subfolders, and taking other steps to try to mitigate recent losses in traffic.
 
@@ -274,120 +247,3 @@ If you’re currently evaluating an AI content vendor, or running a program in-h
 **None of this means AI content tools are unusable.** They can be genuinely useful for research, briefs, internal data synthesis, and accelerating workflows where a human expert is still in the loop. The trouble starts when the goal becomes volume, or when the people closest to the content stop reviewing what is going out the door.
 
 The SEO industry has already lived through this cycle once in the last few years. The sites that came out of it best were the ones that prioritized quality, originality, and topical focus over scale. I expect the same to be true of this cycle, and I’ll keep tracking the data as it plays out.
-
-* * *
-
-#### Subscribe to Lily Ray
-
-Launched 4 months ago
-
-SEO & AI Search by Day
-DJ, Drummer, Travel & Fitness Lover by Night
-
-Subscribe
-
-By subscribing, you agree Substack's [Terms of Use](https://substack.com/tos), and acknowledge its [Information Collection Notice](https://substack.com/ccpa#personal-data-collected) and [Privacy Policy](https://substack.com/privacy).
-
-[![Tim's avatar](https://substackcdn.com/image/fetch/$s_!LVuf!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5cd5989a-b80c-4d5a-844a-0b20defc2cf4_1167x875.jpeg)](https://substack.com/profile/40944692-tim)[![Britney Muller's avatar](https://substackcdn.com/image/fetch/$s_!2sFv!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4a0d4e7c-4a96-4252-a33e-c61de1df6a3c_300x300.jpeg)](https://substack.com/profile/3165888-britney-muller)[![Sylvain Deauré's avatar](https://substackcdn.com/image/fetch/$s_!Madm!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0e7fa943-1e37-464b-8d2e-47b14ac6f627_1024x1024.png)](https://substack.com/profile/329943992-sylvain-deaure)[![Jay Graves's avatar](https://substackcdn.com/image/fetch/$s_!-Qh3!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F582a63cd-cbc7-4b07-ad86-9cf5e59cee09_1280x720.jpeg)](https://substack.com/profile/16362311-jay-graves)[![Jojo Inika's avatar](https://substackcdn.com/image/fetch/$s_!OxA4!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3b880d51-9ec6-498c-8983-35d0de24e69f_828x592.png)](https://substack.com/profile/10289292-jojo-inika)
-
-115 Likes∙
-
-[11 Restacks](https://substack.com/note/p-197164548/restacks?utm_source=substack&utm_content=facepile-restacks)
-
-115
-
-1
-
-11
-
-Share
-
-#### Discussion about this post
-
-CommentsRestacks
-
-![User's avatar](https://substackcdn.com/image/fetch/$s_!TnFC!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Favatars%2Fdefault-light.png)
-
-[![Thanos's avatar](https://substackcdn.com/image/fetch/$s_!sKrA!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc55edb3-b7ec-4c5f-a5c1-9e3bffc384df_796x796.jpeg)](https://substack.com/profile/21612347-thanos?utm_source=comment)
-
-[Thanos](https://substack.com/profile/21612347-thanos?utm_source=substack-feed-item)
-
-[5d](https://substack.com/note/c-258782622 "May 14, 2026, 3:03 AM") Edited
-
-Liked by Lily Ray
-
-A great piece by Lily Ray on why AI content at scale keeps backfiring.
-
-If you're doing any of these, getting results, and thinking "why not scale with another hack", sooner or later Google's algorithm catches up.
-
-1\. Comparison pages at scale (/X-vs-Y)2.
-
-2\. "What is X" glossary pages, often programmatically translated
-
-3\. "Best X for Y" listicles
-
-4\. Self-promotional listicles where the publisher names itself #1
-
-5\. Competitor-vs-alternatives pages, one per named competitor brand
-
-6\. Programmatic location and language scaling with thin per-page uniqueness
-
-7\. FAQ farms, one question per URL, optimised for AI extraction with schema
-
-8\. Off-topic content at scale, unrelated to the publisher's actual business
-
-Bad thing is, Google takes too long to react to these schemes. SEOs find a hole, abuse it, oversell it until it stops working, then jump to the next thing. Clients get confused or feel scammed, and that's bad for the whole industry.SEO needs time like any other business. If you don't have 10 domains to play with and you're trying to build a brand, you have to be patient. No one likes hearing that.
-
-Like (2)
-
-Reply
-
-Share
-
-TopLatestDiscussions
-
-[A Reflection on SEO & AI Search in 2025](https://lilyraynyc.substack.com/p/a-reflection-on-seo-and-ai-search)
-
-[Search transformed dramatically in 2025. Learn about the biggest changes in SEO & AI search, including my observations, hot takes, and predictions for…](https://lilyraynyc.substack.com/p/a-reflection-on-seo-and-ai-search)
-
-Jan 19
-
-163
-
-18
-
-15
-
-![](https://substackcdn.com/image/fetch/$s_!d90q!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Facda389e-531c-4d23-9956-cd7f9b8a954b_1909x803.png)
-
-[Is Google Finally Cracking Down on Self-Promotional Listicles?](https://lilyraynyc.substack.com/p/is-google-finally-cracking-down-on)
-
-[The most popular 'GEO' tactic might indeed be risky for SEO purposes after all](https://lilyraynyc.substack.com/p/is-google-finally-cracking-down-on)
-
-Feb 3•[Lily Ray](https://substack.com/@lilyraynyc)
-
-98
-
-15
-
-8
-
-![](https://substackcdn.com/image/fetch/$s_!9T9Z!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F277b52ca-8110-4544-b949-062fbf8c33dd_1274x851.png)
-
-[Your GEO Strategy Might Be Destroying Your SEO](https://lilyraynyc.substack.com/p/your-geo-strategy-might-be-destroying)
-
-[Many tactics designed to win in AI search can undermine SEO performance - which is, ironically, necessary for success in AI search.](https://lilyraynyc.substack.com/p/your-geo-strategy-might-be-destroying)
-
-Mar 18•[Lily Ray](https://substack.com/@lilyraynyc)
-
-128
-
-14
-
-![](https://substackcdn.com/image/fetch/$s_!k12M!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f52e6ff-50ea-48af-967c-f7c95412ecac_2048x2048.jpeg)
-
-See all
-
-### Ready for more?
-
-Subscribe

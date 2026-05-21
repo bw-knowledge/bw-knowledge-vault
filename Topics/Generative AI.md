@@ -4,6 +4,7 @@ aliases:
   - AI Generated
   - AI-Generated
   - AI-Generated Content
+  - AI Content
 ---
 
 # Resources 

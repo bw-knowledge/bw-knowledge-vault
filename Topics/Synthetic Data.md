@@ -1,5 +1,7 @@
 ---
 aliases:
+  - Synthesized Data
+  - Synthesized Content
 ---
 
 # Resources 

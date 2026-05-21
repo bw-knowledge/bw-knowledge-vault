@@ -703,3 +703,741 @@ views:
       file.name: 261
       formula.Domain: 197
       source: 218
+  - type: table
+    name: AI Agent
+    filters:
+      or:
+        - file.hasLink("Topics/AI Agent.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Social Media
+    filters:
+      or:
+        - file.hasLink("Topics/Social Media.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: YouTube
+    filters:
+      or:
+        - file.hasLink("Topics/YouTube.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: WhatsApp
+    filters:
+      or:
+        - file.hasLink("Topics/WhatsApp.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Attention Economy
+    filters:
+      or:
+        - file.hasLink("Topics/Attention Economy.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Brand Sentiment
+    filters:
+      or:
+        - file.hasLink("Topics/Brand Sentiment.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: B2B
+    filters:
+      or:
+        - file.hasLink("Topics/B2B.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Reviews
+    filters:
+      or:
+        - file.hasLink("Topics/Reviews.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Rankings
+    filters:
+      or:
+        - file.hasLink("Topics/Rankings.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Content Production
+    filters:
+      or:
+        - file.hasLink("Topics/Content Production.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Reporting
+    filters:
+      or:
+        - file.hasLink("Topics/Reporting.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Untitled 1
+    filters:
+      or:
+        - file.hasLink("Topics/Untitled 1.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Dopamine
+    filters:
+      or:
+        - file.hasLink("Topics/Dopamine.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Netflix
+    filters:
+      or:
+        - file.hasLink("Topics/Netflix.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: TikTok
+    filters:
+      or:
+        - file.hasLink("Topics/TikTok.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Cryptocurrency
+    filters:
+      or:
+        - file.hasLink("Topics/Cryptocurrency.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Data Analysis
+    filters:
+      or:
+        - file.hasLink("Topics/Data Analysis.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Data Science
+    filters:
+      or:
+        - file.hasLink("Topics/Data Science.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google Maps
+    filters:
+      or:
+        - file.hasLink("Topics/Google Maps.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Android
+    filters:
+      or:
+        - file.hasLink("Topics/Android.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Gmail
+    filters:
+      or:
+        - file.hasLink("Topics/Gmail.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google Calendar
+    filters:
+      or:
+        - file.hasLink("Topics/Google Calendar.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google Chrome
+    filters:
+      or:
+        - file.hasLink("Topics/Google Chrome.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google IO
+    filters:
+      or:
+        - file.hasLink("Topics/Google IO.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Google Alerts
+    filters:
+      or:
+        - file.hasLink("Topics/Google Alerts.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Search Traffic
+    filters:
+      or:
+        - file.hasLink("Topics/Search Traffic.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Impressions
+    filters:
+      or:
+        - file.hasLink("Topics/Impressions.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Keyword
+    filters:
+      or:
+        - file.hasLink("Topics/Keyword.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Information Gain
+    filters:
+      or:
+        - file.hasLink("Topics/Information Gain.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Technical SEO
+    filters:
+      or:
+        - file.hasLink("Topics/Technical SEO.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: AI Visibility
+    filters:
+      or:
+        - file.hasLink("Topics/AI Visibility.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Knowledge Graph
+    filters:
+      or:
+        - file.hasLink("Topics/Knowledge Graph.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Entities
+    filters:
+      or:
+        - file.hasLink("Topics/Entities.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Grounding
+    filters:
+      or:
+        - file.hasLink("Topics/Grounding.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Chunking
+    filters:
+      or:
+        - file.hasLink("Topics/Chunking.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Crawling
+    filters:
+      or:
+        - file.hasLink("Topics/Crawling.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Indexing
+    filters:
+      or:
+        - file.hasLink("Topics/Indexing.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Prompt Engineering
+    filters:
+      or:
+        - file.hasLink("Topics/Prompt Engineering.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: AI Native
+    filters:
+      or:
+        - file.hasLink("Topics/AI Native.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Context Engineering
+    filters:
+      or:
+        - file.hasLink("Topics/Context Engineering.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218
+  - type: table
+    name: Helpful Content Update
+    filters:
+      or:
+        - file.hasLink("Topics/Helpful Content Update.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218

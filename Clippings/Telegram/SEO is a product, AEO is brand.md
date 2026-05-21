@@ -8,7 +8,7 @@ captured_via: "Telegram"
 captured_at: "2026-05-14T13:42:05.140Z"
 ---
 
-In summary, SEO and AEO require fundamentally different organizational structures and responsibilities—SEO should be managed as a product function with cross-functional authority, while AEO success depends on brand teams building external reputation through PR, partnerships, and earned visibility rather than technical optimization.
+In summary, [[SEO]] and [[Generative Engine Optimisation (GEO)|AEO]] require fundamentally different organizational structures and responsibilities—SEO should be managed as a product function with cross-functional authority, while AEO success depends on brand teams building external reputation through PR, partnerships, and earned visibility rather than technical optimization.
 
 ## Suggested Topics
 
@@ -22,11 +22,11 @@ Organizational structure, LLM visibility, Brand and search integration
 
 - **SEO belongs in product, not marketing, to gain the cross-functional authority needed to execute.** Placing SEO within a marketing organization silos the function and forces SEO teams to make requests rather than drive requirements, leaving strategic initiatives unfunded and unimplemented.
 
-- **LLMs rely on brand reputation and external consensus, not technical optimization or content manipulation.** AI models learn from the collective internet conversation about a company, meaning visibility depends on PR, partnerships, and earned mentions rather than meta tags or backlinks.
+- **LLMs rely on [[Brand Sentiment|Brand Reputation]] and external consensus, not technical optimization or content manipulation.** AI models learn from the collective internet conversation about a company, meaning visibility depends on [[Digital PR|PR]], partnerships, and earned mentions rather than meta tags or backlinks.
 
 - **Budget and responsibility for AEO must shift to brand teams, not drain SEO resources.** When brand teams control AEO budgets and outcomes, SEO teams can focus on technical foundation work while brand teams build the external reputation that AI models actually consider.
 
-- **Low-quality spam tactics on Reddit and listicles for AI visibility damage long-term brand perception.** SEO teams treating community platforms as backlink farms or creating low-quality content trains language models to associate the brand with spam rather than authority.
+- **Low-quality spam tactics on [[Reddit]] and listicles for [[AI Visibility]] damage long-term brand perception.** SEO teams treating community platforms as backlink farms or creating low-quality content trains language models to associate the brand with spam rather than authority.
 
 ## Things
 
@@ -39,27 +39,6 @@ Organizational structure, LLM visibility, Brand and search integration
 ---
 
 ## Full Article
-
-[![The Future of SEO by Eli Schwartz](https://substackcdn.com/image/fetch/$s_!pW1g!,w_40,h_40,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7a8e2d1f-dd56-4fe9-828f-a9d4cd7ea573_271x271.png)](https://www.productledseo.com/)
-
-# [The Future of SEO by Eli Schwartz](https://www.productledseo.com/)
-
-SubscribeSign in
-
-![User's avatar](https://substackcdn.com/image/fetch/$s_!D6gJ!,w_64,h_64,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F66964206-ed65-4b5a-bafe-d4717e7827fd_6000x4000.jpeg)
-
-Discover more from The Future of SEO by Eli Schwartz
-
-Weekly posts on SEO & AEO that will tell you things other marketing newsletters won't.
-
-Over 14,000 subscribers
-
-Subscribe
-
-By subscribing, you agree Substack's [Terms of Use](https://substack.com/tos), and acknowledge its [Information Collection Notice](https://substack.com/ccpa#personal-data-collected) and [Privacy Policy](https://substack.com/privacy).
-
-Already have an account? Sign in
-
 # SEO is a product, AEO is brand
 
 ### The organizational structure of SEO as marketing leaves the team without the authority to get things done
@@ -70,36 +49,15 @@ Already have an account? Sign in
 
 May 14, 2026
 
-Share
+* * *
 
-_This week’s newsletter is sponsored by [North Star Inbound](https://www.northstarinbound.com/) and [Semrush Enterprise](https://ai-visibility-index.semrush.com/downloads??utm_source=newsletter&utm_medium=influencers&utm_campaign=socialorganic_partners_futureofseo&utm_term=social_organic&utm_content=elischwartz_may07https://enterprise.semrush.com/customer-stories/ltm-interactive/?utm_source=newsletter&utm_medium=influencers&utm_campaign=socialorganic_partners_futureofseo&utm_term=social_organic&utm_content=elischwartz_may14)_
-
-- _Paid subscribers can access this [AEO responsibility matrix](https://www.productledseo.com/p/aeo-responsibility-matrix) and this [brand entity checklist](https://www.productledseo.com/p/brand-visibility-entity-checklist)_
-
-
-Subscribe
+Every CEO I know has done the same thing in the last two years. They opened [[OpenAI|ChatGPT]], typed in their company name, didn’t like what came back, and then emailed the [[SEO]] team or agency to fix it. For the leaders I have had this conversation with, I have been able to redirect their efforts. This post is for everyone else.
 
 * * *
 
-Every CEO I know has done the same thing in the last two years. They opened ChatGPT, typed in their company name, didn’t like what came back, and then emailed the SEO team or agency to fix it. For the leaders I have had this conversation with, I have been able to redirect their efforts. This post is for everyone else.
+That instant reaction makes sense on the surface. SEO is about visibility in search, [[Large Language Models (LLMs)|LLMs]] are the new search, voila, the SEO team owns the problem. The logic checks out. It is also completely wrong, and this thinking risks making things worse.
 
-* * *
-
-_**\[Sponsored by [Semrush Enterprise](https://enterprise.semrush.com/customer-stories/ltm-interactive/?utm_source=newsletter&utm_medium=influencers&utm_campaign=socialorganic_partners_futureofseo&utm_term=social_organic&utm_content=elischwartz_may14)\]**_
-
-_**How LTM achieved +400% project ROI with Semrush for Enterprise**_
-
-_**Global businesses operate under relentless pressure. But LTM Interactive successfully juggled more clients, growing expectations, and tighter margins by consolidating their search operations into Semrush for Enterprise.**_
-
-_**After cutting fragmented tools and turning wasted manual work into more value for clients, their teams improved search project ROI +400%. See how Semrush for Enterprise helped enable this.**_
-
-_**[Read LTM’s full story](https://enterprise.semrush.com/customer-stories/ltm-interactive/?utm_source=newsletter&utm_medium=influencers&utm_campaign=socialorganic_partners_futureofseo&utm_term=social_organic&utm_content=elischwartz_may14)**_
-
-* * *
-
-That instant reaction makes sense on the surface. SEO is about visibility in search, LLMs are the new search, voila, the SEO team owns the problem. The logic checks out. It is also completely wrong, and this thinking risks making things worse.
-
-**Marketing has always owned SEO**
+### **Marketing has always owned SEO**
 
 This isn’t just an AI issue; it begins with putting SEO in a marketing org. One of the many reasons a company leaves its SEO potential unfulfilled is that it inadvertently silos the person responsible for SEO, leaving the SEO manager as a marketing individual contributor who must go through their marketing lead to get anything done.
 
@@ -107,11 +65,11 @@ The marketing lead then needs to [negotiate for bandwidth](https://www.productle
 
 The organizational structure of SEO as marketing leaves the team without the authority to get things done. An SEO team that can write code has always been rare. Therefore, the best an SEO team can do is make requests of other teams, and those [requests are not requirements.](https://www.productledseo.com/p/stop-writing-seo-briefs-write-prds)
 
-This structural mistake compounds with AEO. A team without authority to execute SEO correctly has no chance of executing AEO at all. This means a company that can't define SEO organizationally will never be able to define AEO either.
+This structural mistake compounds with [[Generative Engine Optimisation (GEO)|AEO]]. A team without authority to execute SEO correctly has no chance of executing AEO at all. This means a company that can't define SEO organizationally will never be able to define AEO either.
 
 When SEO is viewed organizationally as a marketing function, it leads to tasks being structured as campaigns that rely on other marketing contributions, such as content and design. Technical tasks happen elsewhere in another divisional structure because, in most companies, marketers don’t own technical resources.
 
-**SEO is a product**
+### **SEO is a product**
 
 The fix is to view SEO as a product and have the SEO manager operate like a product manager rather than a marketing manager. Product managers are akin to entertainment directors. You rarely see them on screen, but they manage everything in the background. Similarly, product managers always rely on other teams and are inherently cross-functional. When planning SEO efforts, their skill lies not in implementation but in aligning on the [required resources and commitments](https://www.productledseo.com/p/prioritize-seo-efforts-like-a-pro) with their team leads. For product managers and, by extension, SEO product managers, success comes from soft skills rather than hard skills.
 
@@ -119,7 +77,7 @@ Every SEO plan dies in committee without alignment and collaboration. I once wor
 
 [![](https://substackcdn.com/image/fetch/$s_!bcST!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F705462d5-9bd1-4f60-9519-59bd1fcaebc0_1242x830.png)](https://substackcdn.com/image/fetch/$s_!bcST!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F705462d5-9bd1-4f60-9519-59bd1fcaebc0_1242x830.png)
 
-**Org charts lead to budgets**
+### **Org charts lead to budgets**
 
 When budgeting for a marketing plan, SEO usually falls to the bottom because the investment-to-output story is harder to sell to a CFO. Traditionally, this means SEO gets the short end of the stick when it comes to hiring, software, and contractors, while paid marketing teams are flush with cash. Thinking of SEO as a product realigns those expectations.
 
@@ -127,23 +85,23 @@ Product teams aren’t resourced because they have a direct line to ROI, but bec
 
 Now here is where the conversation about AEO begins, and why it has nothing to do with the SEO team’s job.
 
-**AEO is brand**
+### **AEO is brand**
 
-LLMs don’t work with the logical flows that could be manipulated in traditional search. AI works more like a human brain, which learns by reading everything and forming connections between concepts. When someone asks an LLM for the best analytics tool, the AI doesn’t look up a database of meta tags pairing the word “analytics” with listicles that say “best”. The same is true when someone asks you, as a human, for the best burger in your neighborhood: you rely on past experiences, social media posts, and friends' reports to make your recommendation.
+LLMs don’t work with the logical flows that could be manipulated in traditional search. AI works more like a human brain, which learns by reading everything and forming connections between concepts. When someone asks an [[Large Language Models (LLMs)|LLM]] for the best analytics tool, the AI doesn’t look up a database of meta tags pairing the word “analytics” with listicles that say “best”. The same is true when someone asks you, as a human, for the best burger in your neighborhood: you rely on past experiences, social media posts, and friends' reports to make your recommendation.
 
-LLMs have the same thought process as humans. It extracts the intent of the question and understands the context [personally.](https://www.productledseo.com/p/the-personalized-internet-is-here) Based on this, it predicts the most probable answer from the billions of words it has read. It looks for content most frequently and positively associated with the requester's context, drawing on forum discussions, news articles, PR releases, social media conversations (not just [Reddit](https://www.productledseo.com/p/reddit-is-winning-the-battle-for)), and expert reviews. When you think of AI as imitating human thought, you can see the wasted effort that comes from just using spam efforts on Reddit to promote LLM visibility.
+LLMs have the same thought process as humans. It extracts the intent of the question and understands the context [personally.](https://www.productledseo.com/p/the-personalized-internet-is-here) Based on this, it predicts the most probable answer from the billions of words it has read. It looks for content most frequently and positively associated with the requester's context, drawing on forum discussions, news articles, PR releases, [[Social Media]] conversations (not just [Reddit](https://www.productledseo.com/p/reddit-is-winning-the-battle-for)), and expert reviews. When you think of AI as imitating human thought, you can see the wasted effort that comes from just using spam efforts on Reddit to promote LLM visibility.
 
-**Understand the difference between AEO and SEO**
+### **Understand the difference between AEO and SEO**
 
 This is where the difference between SEO and AEO becomes critical. An SEO team can optimize the website so an AI can read it, but they can’t force the AI to care about it. The AI cares about what the collective internet says about you, not just what you say about yourself on your own [domain.](https://www.productledseo.com/p/websites-are-more-valuable-than-ever) If your brand isn’t being discussed in the wider ecosystem, if you don’t have a distinct point of view that’s being quoted by others, and if you lack a strong presence, you won’t appear in the answer.
 
-These aren’t problems you solve by tweaking a sitemap or title tags. Low visibility is a problem of brand strength, authority, and narrative. Those KPIs belong to the brand team.
+These aren’t problems you solve by tweaking a sitemap or title tags. Low [[AI Visibility]] is a problem of brand strength, authority, and narrative. Those KPIs belong to the brand team.
 
 Look at this example: two companies selling the same B2B tool. One has a clean technical foundation, great content, and a great portfolio of _purchased_ backlinks. The other has mediocre content, but its founder speaks at conferences, its positioning gets cited in industry reports, and journalists quote its executives when covering the category. The second company decisively wins in LLMs. The first company's SEO team did everything right and still lost, because brand is the deciding factor.
 
 The SEO team or agency can’t manufacture this external consensus. Only the brand team can do that through PR, partnerships, and creative campaigns. They’re the ones who can generate the volume of mentions required to teach the model who you are. In the last three years, I have met many startups with vast funds that they hoped to deploy to win AEO in their vertical. That is more than likely not possible because, unlike traditional SEO, money can’t buy visibility in LLMs. It needs to be earned.
 
-**Brands earn AEO**
+### **Brands earn AEO**
 
 A brand team is responsible for the who and the why of the company. The SEO team is responsible for the where and the how. In the era of AI, the **who** matters way more. Brand teams spend weeks defining the corporate mission and values, only for it to end up in a PDF on an internal server. For LLMs, this information needs to be consistent and available everywhere.
 
@@ -151,7 +109,7 @@ The brand team should also pay for AEO. If the activities driving AEO success ar
 
 This can be a fatal mistake for organic acquisition. It starves SEO of the resources needed to continue driving acquisition in a changing market, and it tasks a team with change that it cannot drive. Winning in AEO comes at a cost: building a market-leading reputation that requires PR, partnerships, and community events. These have always been line items on the brand marketing budget.
 
-**Don’t steal SEO budget for AEO**
+### **Don’t steal SEO budget for AEO**
 
 The budget question is also a political one. Whoever pays for a thing tends to own it and then gets to claim the wins. Right now, SEO teams are absorbing the cost of AEO without the authority to actually move it. That is a setup for failure, and when the results disappoint, the blame will land on the SEO team anyway. Solving that political problem requires a CEO or CMO willing to explicitly reassign both responsibility and budget simultaneously.
 
@@ -160,85 +118,3 @@ This pressure is precisely why SEO teams are suddenly interested in owning Reddi
 The expectation that SEOs should fix AEO isn’t just misdirected rage. It is dangerous because it misallocates resources, damaging both channels simultaneously. [AEO is not SEO 2.0](https://www.productledseo.com/p/aeo-is-not-seo-20). It is an additional layer on top of SEO, with contributions from the SEO team, but the heavy lifting comes from brand efforts. Don’t let the brand team shirk this responsibility. As long as AEO is a line item on the SEO P&L, the brand team will treat it as tech stuff and ignore it.
 
 The CEO who blamed the SEO team two years ago didn't know better. Today, there is no excuse. SEO is a product. AEO is brand. Your SEO team can make sure the AI knows your site exists. It has no idea how to make the AI care.
-
-Subscribe
-
-* * *
-
-**\[Sponsored by** _**[North Star Inbound](https://www.northstarinbound.com/contact/?utm_source=email&utm_medium=nwsltr&utm_campaign=trafficdrop&utm_id=eli)**_ **\]**
-
-**What happens when you combine best-in-class SEO with conversion optimization?**
-
-_BigRentz’s traffic increased by 186% (85k), **[added 1950 conversions](https://talkto.northstarinbound.com/eli-schwartz-offer/?utm_source=eli&utm_medium=nwsltr&utm_campaign=seocro&utm_id=1-month-free)** in 12 months._
-
-_Self Financial’s traffic increased by 50k/month, and **[added 685 new customers](https://talkto.northstarinbound.com/eli-schwartz-offer/?utm_source=eli&utm_medium=nwsltr&utm_campaign=seocro&utm_id=1-month-free)**._
-
-_Lastly, Secure Data **[added 1968 phone calls](https://talkto.northstarinbound.com/eli-schwartz-offer/?utm_source=eli&utm_medium=nwsltr&utm_campaign=seocro&utm_id=1-month-free)**._
-
-_North Star Inbound’s SEO strategies earn leads, conversions, and revenue.._
-
-_[Book a call](https://calendly.com/northstarinbound/nsi-discovery-call) for a free content audit and 10% off any engagement._
-
-_Intrigued? [\[Learn more here\]](https://talkto.northstarinbound.com/eli-schwartz-offer/?utm_source=eli&utm_medium=nwsltr&utm_campaign=seocro&utm_id=1-month-free)_
-
-[![Aviel's avatar](https://substackcdn.com/image/fetch/$s_!i9GT!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Favatars%2Fpurple.png)](https://substack.com/profile/21097720-aviel)[![Mingus's avatar](https://substackcdn.com/image/fetch/$s_!1pgH!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd79a8748-aff8-498b-b3c1-fa176540ff51_144x144.png)](https://substack.com/profile/223436957-mingus)[![Marko Marić's avatar](https://substackcdn.com/image/fetch/$s_!usfJ!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6596846-fdbe-45a2-8388-ada0b0b9cecc_640x760.png)](https://substack.com/profile/26975987-marko-maric)[![Melanie's avatar](https://substackcdn.com/image/fetch/$s_!q2O5!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F37921a21-b43b-46b7-b1ba-68a630f214f9_1080x1080.jpeg)](https://substack.com/profile/6992047-melanie)
-
-4 Likes
-
-Share
-
-Previous
-
-#### Discussion about this post
-
-CommentsRestacks
-
-![User's avatar](https://substackcdn.com/image/fetch/$s_!TnFC!,w_32,h_32,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Favatars%2Fdefault-light.png)
-
-TopLatestDiscussions
-
-[How to maximize internal links for SEO](https://www.productledseo.com/p/how-to-maximize-internal-links-for)
-
-[These are the links worth investing into and the best way to structure them.](https://www.productledseo.com/p/how-to-maximize-internal-links-for)
-
-Jul 3, 2024•[Eli Schwartz](https://substack.com/@productledseo)
-
-26
-
-15
-
-4
-
-![](https://substackcdn.com/image/fetch/$s_!sILp!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_center/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F210e4416-171a-4351-bb3f-1c771686a39a_850x530.jpeg)
-
-[Create an SEO moat with your product](https://www.productledseo.com/p/create-an-seo-moat-with-your-product)
-
-[An SEO moat is a sustainable competitive advantage in organic search that's difficult for competitors to replicate](https://www.productledseo.com/p/create-an-seo-moat-with-your-product)
-
-Sep 12, 2024•[Eli Schwartz](https://substack.com/@productledseo)
-
-20
-
-2
-
-![](https://substackcdn.com/image/fetch/$s_!B_E0!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_center/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0cd726ed-b21e-4d29-b693-790ee1cd6c9e_1162x998.png)
-
-[How to maximize SEO on Substack](https://www.productledseo.com/p/how-to-maximize-seo-on-substack)
-
-[The easiest guide on how to increase your Substack's visibility on search engines without hacks and millions in budget.](https://www.productledseo.com/p/how-to-maximize-seo-on-substack)
-
-Sep 10, 2024•[Eli Schwartz](https://substack.com/@productledseo)
-
-21
-
-9
-
-3
-
-![](https://substackcdn.com/image/fetch/$s_!1WSG!,w_320,h_213,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_center/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd199293b-80ad-4189-85ed-f5627b2bd9b4_1250x1004.png)
-
-See all
-
-### Ready for more?
-
-Subscribe

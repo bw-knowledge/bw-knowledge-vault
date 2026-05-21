@@ -2,6 +2,7 @@
 aliases:
   - Strategic
   - Strategic Thinking
+  - Strategist
 ---
 
 # Resources 

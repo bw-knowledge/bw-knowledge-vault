@@ -16,7 +16,7 @@ AI collaboration, Teammate onboarding, Prompt strategy
 
 ## Matched Topics
 
-None
+[[Context Engineering]]
 
 ## Headlines
 
@@ -39,11 +39,6 @@ None
 - **Concepts:** Onboarding, context-building, reusable leverage, self-literacy, appropriately boring work, tool versus teammate, working relationship, stewardship
 
 ---
-
-## Full Article
-
-[0](https://www.jeremyutley.com/cart)
-
 # Stop Reintroducing Yourself to AI
 
 May 11
@@ -144,7 +139,7 @@ AI is just the first colleague that actually demands it.
 
 ### The problem with better prompts
 
-A lot of people are still trying to get better at prompting.
+A lot of people are still trying to get better at [[Prompt Engineering|Prompting]].
 
 That makes sense. Prompting is visible. Prompting feels controllable. Prompting gives us something to tweak.
 
@@ -327,63 +322,5 @@ I'm putting together a more tactical walkthrough of the exact setup I use — in
 The goal is not to become a better prompter.
 
 The goal is to stop reintroducing yourself to AI.
-
-Related: [It's a Skill, Not a Pill](https://www.jeremyutley.com/blog/its-a-skill-not-a-pill)
-
-Related: [From Authorship to Stewardship](https://www.jeremyutley.com/blog/from-authorship-to-stewardship)
-
-Related: [You're Not Tired of AI. You're Scared of It.](https://www.jeremyutley.com/blog/youre-not-tired-of-ai)
-
-[Join](https://www.jeremyutley.design/join) over 35,147 creators & leaders who read **Methods of the Masters** each week.
-
-May 11, 2026
-
-[Stop Reintroducing Yourself to AI](https://www.jeremyutley.com/blog/stop-reintroducing-yourself-to-ai)
-
-May 11, 2026
-
-I asked my AI chief of staff to read 50 pre-event transcripts and write the FAQ I'd been avoiding for months. It took three minutes.
-
-May 11, 2026
-
-May 4, 2026
-
-[Don't Use AI. Work With It.](https://www.jeremyutley.com/blog/dont-use-ai-work-with-it)
-
-May 4, 2026
-
-Reese Witherspoon asked her book club, "do you use AI?" Three million people watched. The internet split — and both sides were right, because they were arguing about the wrong word.
-
-May 4, 2026
-
-Apr 27, 2026
-
-[Real Concerns, Wrong Conclusion](https://www.jeremyutley.com/blog/real-concerns-wrong-conclusion)
-
-Apr 27, 2026
-
-A real concern is not a valid conclusion. An EVP in finance emailed me last week about AI sycophancy. Most people raise that concern as an off-ramp. He made it the curriculum.
-
-Apr 27, 2026
-
-[AI](https://www.jeremyutley.com/blog/tag/AI)[Learning](https://www.jeremyutley.com/blog/tag/Learning)[Growth](https://www.jeremyutley.com/blog/tag/Growth)[Beyond the Prompt](https://www.jeremyutley.com/blog/tag/Beyond+the+Prompt)
-
-[Jeremy Utley](https://www.jeremyutley.com/blog?author=5524682ee4b0126cded29321)
-
-### Comments (0)
-
-Newest FirstOldest FirstNewest FirstMost LikedLeast Liked
-
-Preview
-Post Comment…
-
-
-[Next\\
-\\
-Next\\
-\\
-**Don't Use AI. Work With It.**](https://www.jeremyutley.com/blog/dont-use-ai-work-with-it)
-
-­
 
 ­

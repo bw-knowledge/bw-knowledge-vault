@@ -1,5 +1,7 @@
 ---
 aliases:
+  - Subreddit
+  - Redditor
 ---
 
 # Resources 

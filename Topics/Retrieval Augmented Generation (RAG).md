@@ -4,6 +4,7 @@ aliases:
   - RAG
   - Retrieval-Augmented Generation (RAG)
   - Retrieval-Augmented Generation
+  - Retrieval
 ---
 
 # Resources 

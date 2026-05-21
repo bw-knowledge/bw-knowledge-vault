@@ -25,7 +25,7 @@ Generative Engine Optimisation (GEO), Search Engine Marketing, Brand Visibility
 
 - **Brand authority cannot be manufactured in an AI-driven world.** LLMs prioritize established entities and brand recognition from their training data, making third-party mentions, customer loyalty, and real-world brand recognition prerequisites rather than bonuses—reversing the SEO-era playbook where creative optimization could overcome brand obscurity.
 
-- **Technical SEO remains foundational but insufficient for LLM visibility.** While crawlability, structured data, and site architecture enable AI scrapers to ingest content, scoring 100% on SEO best practices alone will not secure LLM citations, which require trust-based positioning as the authoritative source in a category.
+- **[[Technical SEO]] remains foundational but insufficient for LLM visibility.** While crawlability, structured data, and site architecture enable AI scrapers to ingest content, scoring 100% on SEO best practices alone will not secure LLM citations, which require trust-based positioning as the authoritative source in a category.
 
 - **Personalization and session context make LLM visibility impossible to track like search rankings.** Each LLM response varies based on user prompt phrasing, conversation history, platform, and internal weighting, rendering prompt-tracking metrics as unreliable as checking weather by looking out a window.
 

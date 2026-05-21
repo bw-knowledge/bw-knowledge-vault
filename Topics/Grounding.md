@@ -2,8 +2,9 @@
 aliases:
   - Ungrounded
   - Query Needs Grounding
+  - Grounded
 ---
 
 # Resources 
 
-![[Articles.base#Untitled]]
+![[Articles.base#Grounding]]

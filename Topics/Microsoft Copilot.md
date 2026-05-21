@@ -1,6 +1,7 @@
 ---
 aliases:
   - Copilot
+  - Microsoft’s Copilot
 ---
 
 # Resources 
