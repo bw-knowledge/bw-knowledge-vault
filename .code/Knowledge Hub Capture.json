@@ -125,7 +125,7 @@
                   {
                     "id": "cond-url",
                     "leftValue": "={{ $json.text }}",
-                    "rightValue": "https?://",
+                    "rightValue": "/clip",
                     "operator": {
                       "type": "string",
                       "operation": "regex"
@@ -140,7 +140,7 @@
           ]
         },
         "options": {
-          "fallbackOutput": "extra"
+          "fallbackOutput": "none"
         }
       },
       "id": "1afa8178-4069-4959-9e6c-30469dbffb3a",
@@ -223,7 +223,7 @@
     {
       "parameters": {
         "chatId": "={{ $('Session Manager').first().json.chatId }}",
-        "text": "I didn't find a URL in your message. Forward me a link to capture, or use /help.",
+        "text": "I didn't find a URL in your message. Use /clip and forward me a link to capture, or use /help.",
         "additionalFields": {}
       },
       "id": "8d5f10a6-c27e-4216-bafe-50406b94d7b8",
@@ -391,7 +391,7 @@
     {
       "parameters": {
         "chatId": "={{ $('Session Manager').first().json.chatId }}",
-        "text": "📚 *Knowledge Hub Bot*\n\n*Commands:*\n• Forward or paste a URL → captures the article as a clipping\n• /list\\_topics → shows your current topic notes\n• /help → shows this message\n• /cancel or /reset → clears the current session\n\n*How it works:*\n1\\. Send me a link\n2\\. I fetch and summarise the article \\(\\~30 seconds\\)\n3\\. A formatted clipping appears in your Obsidian vault under Clippings/Telegram/\n4\\. The clipping includes a summary, headlines, entities, and suggested topics",
+        "text": "📚 *Knowledge Hub Bot*\n\n*Commands:*\n• /clip and paste a URL → captures the article as a clipping\n• /list\\_topics → shows your current topic notes\n• /help → shows this message\n• /cancel or /reset → clears the current session\n\n*How it works:*\n1\\. Send me a link\n2\\. I fetch and summarise the article \\(\\~30 seconds\\)\n3\\. A formatted clipping appears in your Obsidian vault under Clippings/Telegram/\n4\\. The clipping includes a summary, headlines, entities, and suggested topics",
         "additionalFields": {
           "parse_mode": "MarkdownV2"
         }
@@ -432,7 +432,8 @@
           "id": "xmI58emhYOVxw0jo",
           "name": "bwclipper_bot"
         }
-      }
+      },
+      "disabled": true
     },
     {
       "parameters": {
@@ -1174,13 +1175,6 @@
             "type": "main",
             "index": 0
           }
-        ],
-        [
-          {
-            "node": "Fallback Reply",
-            "type": "main",
-            "index": 0
-          }
         ]
       ]
     },
@@ -1554,7 +1548,7 @@
     "errorWorkflow": "hUQXitUsEfcl3X06",
     "timeSavedPerExecution": 10
   },
-  "versionId": "c8875aee-89e5-4037-8a5a-357c4712a0ef",
+  "versionId": "62ac25fa-934f-4623-aac7-aaee1dcea058",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "f05a478acf53faa792a63a68536b8465e780fffe48db0488a2724497ce50241e"

@@ -16,7 +16,7 @@ Generative AI Strategy, Agent-Ready Content, AI Discovery Infrastructure
 
 ## Matched Topics
 
-[[Generative AI]], [[Strategy]]
+[[Generative AI]], [[Strategy]], [[AI Agent]]
 
 ## Headlines
 
