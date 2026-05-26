@@ -54,7 +54,7 @@ By clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreeme
 
 ````````
 
-Unsurprisingly, there's been a lot of noise coming off the back of Google's I/O keynote, which aired last night for those of us based in the UK. Here's my tuppence worth, with a focus on what actually matters for businesses...
+Unsurprisingly, there's been a lot of noise coming off the back of [[Google IO|Google's I/O]] keynote, which aired last night for those of us based in the UK. Here's my tuppence worth, with a focus on what actually matters for businesses...
 
 Gemini's scale is hard to ignore
 
