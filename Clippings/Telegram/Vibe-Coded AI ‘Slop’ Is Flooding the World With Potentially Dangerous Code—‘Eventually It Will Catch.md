@@ -95,35 +95,3 @@ Vibe slop happens when coders replace the hard work of designing and testing a s
 Zechner and his partner in making Pi, Armin Ronacher, aren’t saying AI is never useful. Both use it to handle drudge work in their own projects. And they believe in it enough to have crafted an AI coding tool now used by millions.
 
 Their core message: These systems are supposed to make [senior engineers so productive](https://www.wsj.com/tech/ai/the-tech-jobs-that-are-safe-from-ai-8d415383?mod=article_inline) that companies can lay off junior engineers, but in reality, many companies are trading near-term productivity for long-term woes. Not only does the pipeline of junior talent dry up, but residual effects include buggy software, service outages, security vulnerabilities and mounting [technical debt](https://www.wsj.com/tech/personal-tech/the-invisible-1-52-trillion-problem-clunky-old-software-f5cbba27?mod=article_inline).
-
-Copyright ©2026 Dow Jones & Company, Inc. All Rights Reserved. 87990cbe856818d5eddac44c7b1cdeb8
-
-content frame
-
-**An error has occurred**
-
-# Limited-Time Sale
-
-75% Off WSJ+ Bundle
-
-
-[Subscribe Now](https://www.wsj.com/subscribe/gb/?page=wsjplussuk&inttrackingCode=ac8726fc&ucid=WSJ_ONS_ALL_ACQ_NAP_OPT_PRS_DY1_NAP_BAU&n2IKsaD9=n2IKsaD9&Pg9aWOPT=Pg9aWOPT&Cp5dKJWb=Cp5dKJWb&APCc9OU1=APCc9OU1&_ptid=%7Bkpdx%7DAAAAwQspC-zygwoKS0tiZ3FwQmxwdRIQbXBwaHB4aXY5OGR0emV0NhoMRVg3REQwWFBXUDdNIiUxODA4dmZnMGNvLTAwMDAzN2plazh1MG1pNW01N25rODRwb2ZzKhpzaG93VGVtcGxhdGVIRjE4R01IQ0tETlo2OTABOgxPVE1YWldMWjQ0TkJCDU9UVjdWREJWWDMwR0lSEnYthADwGmoyamM0aDNxNmhaDjc3LjI0Ny4xMTYuMjUxYgNkYmJo6pbm0AZwFngE#offers)
-
-Already a subscriber?
-[Sign in](https://www.wsj.com/client/login?target=https%3A%2F%2Fwww.wsj.com%2Ftech%2Fai%2Fvibe-coding-slop-ai-tools-e6a99394&_ptid=%7Bkpdx%7DAAAAwQspC-zygwoKS0tiZ3FwQmxwdRIQbXBwaHB4aXY5OGR0emV0NhoMRVg3REQwWFBXUDdNIiUxODA4dmZnMGNvLTAwMDAzN2plazh1MG1pNW01N25rODRwb2ZzKhpzaG93VGVtcGxhdGVIRjE4R01IQ0tETlo2OTABOgxPVE1YWldMWjQ0TkJCDU9UVjdWREJWWDMwR0lSEnYthADwGmoyamM0aDNxNmhaDjc3LjI0Ny4xMTYuMjUxYgNkYmJo6pbm0AZwFngE)
-
-World news. Market tools. Expert insight.
-
-![WSJ Full brand Logo](https://images.dowjones.com/wp-content/uploads/sites/315/2023/02/14180240/WSJPlus_Primary-Logo_Deep-Emerald_549x48.png)
-
-![](https://sts3.wsj.net/iweb/images/wsj-logo-big-black.svg)
-
-Continue reading your article with
-
-a WSJ subscription
-
-[Subscribe Now](https://subscribe.wsj.com/wsjsnippet)
-
-Already a subscriber? [Sign In](https://www.wsj.com/client/login?target=https%3A%2F%2Fwww.wsj.com%2Ftech%2Fai%2Fvibe-coding-slop-ai-tools-e6a99394)
-
-Advertisement

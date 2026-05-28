@@ -62,22 +62,6 @@ Defense technology, Data analytics, Geopolitical AI
 
 Saturday May 23 2026, 3.30pm BST, The Sunday Times
 
-Listen
-
-0:00/•10:09min
-
-Share
-
-### Share this article
-
-[Email](mailto:?body=https%3A%2F%2Fwww.thetimes.com%2Fbusiness%2Ftechnology%2Farticle%2Fpalantir-vmsvt7mmk "Share by email") [Twitter](https://twitter.com/intent/tweet?text=Shared%20with%20you%20by%20a%20Times%20subscriber.%0A%0AEnjoy%20this%20article%20for%20free.%0A%0Ahttps://www.thetimes.com/business/technology/article/palantir-vmsvt7mmk "Share on Twitter") [Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.com/business/technology/article/palantir-vmsvt7mmk "Share on Facebook")
-
-Link
-
-Save
-
-[Prefer us on Google](https://google.com/preferences/source?q=thetimes.com "Prefer us on Google")
-
 There are few places where Alex Karp is truly comfortable. The billionaire chief of Palantir is a self-proclaimed introvert — a singleton who is “happily not married, not divorced” and resides in rural New Hampshire, miles from his nearest neighbour.
 
 Yet one place he does feel at home is as a societal pariah. “I’m viewed as the batshit-crazy guy who is often telling you something you don’t want to hear and you may not like, but is probably right,” he said at a recent conference.
@@ -93,119 +77,6 @@ It powered Israel’s war machine as Gaza was pulverised. Its software has been 
 Advertisement
 
 The atomic age, in his view, is ending. AI is the new deterrent, and Karp sees Palantir as an engine for western victory. “We are here to disrupt and make the institutions we partner with the very best in the world, and, when it’s necessary, to scare enemies and on occasion kill them.”
-
-## Top stories
-
-1. 1
-
-
-
-### [Joe Biden’s wife thought he was ‘having a stroke’ during Trump debate](https://www.thetimes.com/us/news-today/article/joe-biden-jill-biden-stroke-trump-debate-9xvmf2mkw)
-
-
-
-
-US news
-
-2. 2
-
-
-
-### [Matthew Perry’s family attack ‘monster’ assistant for injecting fatal drug](https://www.thetimes.com/us/news-today/article/matthew-perry-chandler-bing-ketamine-personal-assistant-srfm86dvf)
-
-
-
-
-US news
-
-3. 3
-
-
-
-### [Fifa investigated for ‘manipulated’ World Cup ticket prices](https://www.thetimes.com/us/american-politics/article/fifa-world-cup-new-york-new-jersey-ticket-prices-s3tm8zwtn)
-
-
-
-
-US politics
-
-4. 4
-
-
-
-### [Brexiteers peddled ‘nationalist pish’, said Reform Makerfield candidate](https://www.thetimes.com/uk/politics/article/reform-makerfield-robert-kenyon-brexit-farage-fxnqfc0sk)
-
-
-
-
-Politics
-
-5. 5
-
-
-
-### [Alan Milburn review: 58% of inactive young people have never had a job](https://www.thetimes.com/uk/politics/article/alan-milburn-landmark-findings-review-young-people-job-t5dcllrth)
-
-
-
-
-Politics
-
-
-## Top stories
-
-1. 1
-
-
-
-### [Alan Milburn review: 58% of inactive young people have never had a job](https://www.thetimes.com/uk/politics/article/alan-milburn-landmark-findings-review-young-people-job-t5dcllrth)
-
-
-
-
-Politics
-
-2. 2
-
-
-
-### [Matthew Perry’s family attack ‘monster’ assistant for injecting fatal drug](https://www.thetimes.com/us/news-today/article/matthew-perry-chandler-bing-ketamine-personal-assistant-srfm86dvf)
-
-
-
-
-US news
-
-3. 3
-
-
-
-### [Festival exhibit turned Stanford activist Taryn Thomas to Israel](https://www.thetimes.com/us/news-today/article/festival-exhibit-stanford-activist-taryn-thomas-israel-kpcfhqjv2)
-
-
-
-
-US news
-
-4. 4
-
-
-
-### [Glad to have known Gladys Dickson, doyenne of Commons tearoom](https://www.thetimes.com/uk/politics/article/gladys-dickson-doyenne-commons-tearoom-b2wt9nvgw)
-
-
-
-
-Politics
-
-5. 5
-
-
-
-### [A Highland bull beats the heat — and other news in pictures](https://www.thetimes.com/uk/photography-uk/article/a-highland-cow-beats-the-heat-and-other-news-in-pictures-p3xkhj26z)
-
-
-
 
 Photography
 
@@ -285,36 +156,3 @@ It is unclear what, if any, recourse Palantir may have. What does seem certain, 
 That has begun to shift as companies from Google to Microsoft and OpenAI have jumped into the business of war. Karp is leading from the front — happy to take the arrows.
 
 [Police](https://www.thetimes.com/topic/police) [Sadiq Khan](https://www.thetimes.com/topic/sadiq-khan) [Silicon Valley](https://www.thetimes.com/topic/silicon-valley) [Artificial Intelligence](https://www.thetimes.com/topic/artificial-intelligence) [Met Police](https://www.thetimes.com/topic/metropolitan-police)
-
-Share
-
-### Share this article
-
-[Email](mailto:?body=https%3A%2F%2Fwww.thetimes.com%2Fbusiness%2Ftechnology%2Farticle%2Fpalantir-vmsvt7mmk "Share by email") [Twitter](https://twitter.com/intent/tweet?text=Shared%20with%20you%20by%20a%20Times%20subscriber.%0A%0AEnjoy%20this%20article%20for%20free.%0A%0Ahttps://www.thetimes.com/business/technology/article/palantir-vmsvt7mmk "Share on Twitter") [Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.com/business/technology/article/palantir-vmsvt7mmk "Share on Facebook")
-
-Link
-
-Save
-
-### Related articles
-
-[![Palantir helps keep Londoners safe. That’s what Khan should value ](https://www.thetimes.com/imageserver/image/9661706d-9f58-47b3-ba01-eb18a90816b1.jpg?strip=all&format=webp&crop=7709px%2C4336px%2C0px%2C405px&resize=750)\\
-\\
-LOUIS MOSLEY\\
-\\
-**Palantir helps keep Londoners safe. That’s what Khan should value** \\
-\\
-Louis Mosley](https://www.thetimes.com/business/companies-markets/article/louis-mosley-palantir-met-sadiq-khan-london-3mc2k6tbf)
-
-Promoted Content
-
-[Previous Article](https://www.thetimes.com/business/technology/article/palantir-vmsvt7mmk) [Next Article](https://www.thetimes.com/business/technology/article/palantir-vmsvt7mmk)
-
-#### Continue reading
-
-Enjoy unlimited digital access.
-
-[Subscribe now](https://globalstore.thetimes.com/)
-
-Already have an account?
-[Log in ›](https://login.thetimes.com/)

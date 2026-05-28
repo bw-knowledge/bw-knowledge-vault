@@ -158,7 +158,7 @@ When product is the marketing, the emphasis shifts to product growth: onboarding
 
 ## **The effect on people**
 
-AI capability is racing ahead, but human cognition… isn’t. Until we reach AGI (God knows when; I hope not any time soon), **human cognition is what limits AI productivity**. We can only ship as much as we can review.
+AI capability is racing ahead, but human cognition… isn’t. Until we reach [[Artificial General Intelligence (AGI)|AGI]] (God knows when; I hope not any time soon), **human cognition is what limits AI productivity**. We can only ship as much as we can review.
 
 AI tools can take in more input than ever before, while our own human attention span is declining: AI’s context windows grew [3,906x](https://arxiv.org/abs/2603.26707) (!) over the last 10 years, from 512 to 2 million tokens, while human attention has [shrunk](https://www.nationalgeographic.com/health/article/attention-spans-shrinking-how-to-regain). We’re outsourcing thinking faster than we’re learning to check it.
 
