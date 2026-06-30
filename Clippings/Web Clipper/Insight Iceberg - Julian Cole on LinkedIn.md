@@ -1,13 +1,13 @@
 ---
-title: "Post by Julian Cole on LinkedIn"
-source: "https://www.linkedin.com/posts/juliancole_the-insight-iceberg-in-full-the-deeper-share-7475737880280330240-b8UX/"
+title: Insight Iceberg - Julian Cole on LinkedIn
+source: https://www.linkedin.com/posts/juliancole_the-insight-iceberg-in-full-the-deeper-share-7475737880280330240-b8UX/
 author:
   - "[[Julian Cole]]"
 published: 4d
 created: 2026-06-30
-description: "The insight iceberg, in full. The deeper you go, the stronger the insight. Insights are like ice;Once exposed, they start melting.A true ins"
+description: The insight iceberg, in full. The deeper you go, the stronger the insight. Insights are like ice;Once exposed, they start melting.A true ins
 tags:
-  - "clippings"
+  - clippings
 ---
 The insight iceberg, in full.
 
