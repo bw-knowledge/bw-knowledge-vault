@@ -1463,7 +1463,11 @@ views:
     filters:
       and:
         - file.hasLink("Topics/Agentic Commerce Protocol (ACP)")
-
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
   - type: table
     name: AI Citations
     filters:
