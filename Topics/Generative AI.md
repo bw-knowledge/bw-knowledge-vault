@@ -9,4 +9,4 @@ aliases:
 
 # Resources 
 
-![[Articles.base#Untitled]]
+![[Articles.base#Generative AI]]

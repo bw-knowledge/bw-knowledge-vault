@@ -24,7 +24,7 @@ None
 
 - **AI should be wielded as a tool for amplifying human insight, not replacing it.** The synthesised strategist creates symbiosis between machine pattern detection and cultural intuition, using AI to reveal previously invisible forces like community resonance and network effects that traditional metrics cannot track.
 
-- **Pattern recognition across unrelated domains unlocks breakthrough strategic insights.** Understanding dopamine loops in dating apps informs Netflix retention strategies; studying furry communities reveals membership ecosystem design; analysing sommelier techniques shapes recommendation algorithms.
+- **Pattern recognition across unrelated domains unlocks breakthrough strategic insights.** Understanding [[dopamine]] loops in dating apps informs Netflix retention strategies; studying furry communities reveals membership ecosystem design; analysing sommelier techniques shapes recommendation algorithms.
 
 - **Holding contradictory viewpoints in tension creates competitive advantage in modern brand building.** Successful contemporary strategists balance global and hyper-local positioning, mass and personal appeal, planned and emergent approaches to thrive in an environment where brands can be built in days and destroyed in hours.
 
@@ -78,7 +78,7 @@ Bullshit.
 
 The next evolution in strategic thinking transcends the false dichotomies of breadth versus depth, human versus machine capabilities. The synthesised strategist forges disparate skills and tools into new powers that were impossible before.
 
-Look at pattern recognition. Most see patterns within their domain. The synthesised strategist spots them across universes. When analysing dating apps, they recognise the same dopamine loops that keep us endlessly scrolling Netflix. When studying luxury brands, they see the same initiation rituals that power exclusive underground music scenes.
+Look at pattern recognition. Most see patterns within their domain. The synthesised strategist spots them across universes. When analysing dating apps, they recognise the same [[dopamine]] loops that keep us endlessly scrolling Netflix. When studying luxury brands, they see the same initiation rituals that power exclusive underground music scenes.
 
 The magic happens in application. Building a membership ecosystem by studying how Furries create belonging. Crafting recommendation algorithms by understanding how sommeliers guide wine discovery. Each pattern becomes a lens for predicting what's next.
 

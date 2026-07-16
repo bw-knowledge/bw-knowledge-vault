@@ -126,7 +126,7 @@ But they’re also saying that by this summer, they’re going to be generating 
 
 kevin roose
 
-Yeah, there was a lot of focus on agentic stuff, like agentic coding. They have this new agentic search mode, which basically is the fancy upgrade to Google Alerts. You can have it tell you when there’s a new home listed on Zillow or a new baseball score you might care about, or something like that.
+Yeah, there was a lot of focus on [[AI Agent|agentic]] stuff, like agentic coding. They have this new agentic search mode, which basically is the fancy upgrade to Google Alerts. You can have it tell you when there’s a new home listed on Zillow or a new baseball score you might care about, or something like that.
 
 I was really interested that they seemed to be betting very big on cost and speed. So their new model that they talked about today was Gemini 3.5 Flash, which is the newest version. But it’s also, they say, four times faster and much cheaper than the other leading frontier models. And so I think Google’s strategy of betting on scale and distribution, and making their models as efficient to serve as possible, is really the direction they’re going in. They don’t seem to care about having the absolute most cutting-edge models, as long as they can serve them cheaply and quickly to billions of people.
 

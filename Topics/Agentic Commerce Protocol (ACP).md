@@ -12,4 +12,4 @@ aliases:
 
 # Resources 
 
-![[Articles.base#Untitled]]
+![[Articles.base#Agentic Commerce Protocol (ACP)]]

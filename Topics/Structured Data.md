@@ -7,4 +7,4 @@ aliases:
 
 # Resources 
 
-![[Articles.base#Untitled]]
+![[Articles.base#Structured Data]]

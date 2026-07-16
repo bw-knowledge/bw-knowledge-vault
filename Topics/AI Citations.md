@@ -6,4 +6,4 @@ aliases:
 
 # Resources 
 
-![[Articles.base#Untitled 1]]
+![[Articles.base#AI Citations]]

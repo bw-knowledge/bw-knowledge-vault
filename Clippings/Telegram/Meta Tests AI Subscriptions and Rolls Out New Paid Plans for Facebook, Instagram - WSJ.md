@@ -271,7 +271,7 @@ OPINION
 
 [![](https://images.wsj.net/im-58575599?size=1.5)](https://www.wsj.com/tech/ai/google-unveils-new-gemini-ai-agent-for-personal-tasks-b8093197?mod=wsj_furtherreading_pos_1)
 
-### [Google Unveils New Gemini AI Agent for Personal Tasks](https://www.wsj.com/tech/ai/google-unveils-new-gemini-ai-agent-for-personal-tasks-b8093197?mod=wsj_furtherreading_pos_1)
+### [Google Unveils New Gemini [[AI Agent]] for Personal Tasks](https://www.wsj.com/tech/ai/google-unveils-new-gemini-ai-agent-for-personal-tasks-b8093197?mod=wsj_furtherreading_pos_1)
 
 [![](https://images.wsj.net/im-53572449?size=1.5)](https://www.wsj.com/tech/tech-media-telecom-roundup-market-talk-cf084917?mod=wsj_furtherreading_pos_2)
 

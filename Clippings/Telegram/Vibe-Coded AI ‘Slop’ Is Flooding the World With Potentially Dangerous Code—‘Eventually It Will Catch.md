@@ -8,7 +8,7 @@ captured_via: "Telegram"
 captured_at: "2026-05-28T12:49:54.629Z"
 ---
 
-In summary, two prominent AI engineers who created the OpenClaw AI agent's core systems are warning that widespread "vibe slop"—low-quality AI-generated code produced through plain-English prompting without proper design and testing—is creating dangerous software vulnerabilities, technical debt, and infrastructure failures that will eventually compromise system reliability.
+In summary, two prominent AI engineers who created the OpenClaw [[AI agent]]'s core systems are warning that widespread "vibe slop"—low-quality AI-generated code produced through plain-English prompting without proper design and testing—is creating dangerous software vulnerabilities, technical debt, and infrastructure failures that will eventually compromise system reliability.
 
 ## Suggested Topics
 

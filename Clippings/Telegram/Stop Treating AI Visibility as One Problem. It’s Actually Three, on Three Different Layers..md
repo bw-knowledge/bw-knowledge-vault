@@ -8,7 +8,7 @@ captured_via: "Telegram"
 captured_at: "2026-05-14T14:02:14.339Z"
 ---
 
-In summary, AI visibility for brands operates across three distinct structural layers—retrieval, knowledge graphs, and context graphs—each requiring different strategies and organizational ownership, and most marketing teams are concentrating effort on the wrong layer while neglecting the entity definition and governance work that will determine enterprise AI agent decisions.
+In summary, AI visibility for brands operates across three distinct structural layers—retrieval, knowledge graphs, and context graphs—each requiring different strategies and organizational ownership, and most marketing teams are concentrating effort on the wrong layer while neglecting the entity definition and governance work that will determine enterprise [[AI agent]] decisions.
 
 ## Suggested Topics
 

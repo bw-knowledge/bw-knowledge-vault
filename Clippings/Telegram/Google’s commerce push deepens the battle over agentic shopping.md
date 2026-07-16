@@ -8,7 +8,7 @@ captured_via: "Telegram"
 captured_at: "2026-05-28T12:51:49.033Z"
 ---
 
-In summary, Google's Universal Cart and Universal Commerce Protocol represent an escalating competition among major tech platforms—Google, Amazon, Meta, OpenAI, and others—to control the end-to-end shopping journey through AI agents, though consumer trust concerns about data privacy pose a significant barrier to adoption.
+In summary, Google's Universal Cart and Universal Commerce Protocol represent an escalating competition among major tech platforms—Google, Amazon, Meta, OpenAI, and others—to control the end-to-end shopping journey through [[AI Agent|AI agents]], though consumer trust concerns about data privacy pose a significant barrier to adoption.
 
 ## Suggested Topics
 
