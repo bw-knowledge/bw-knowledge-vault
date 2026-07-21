@@ -8,6 +8,11 @@ captured_via: "Telegram"
 captured_at: "2026-05-13T12:49:04.061Z"
 ---
 
+## Matched Topics
+
+[[Google Search]]
+
+
 In summary, Google has fully deprecated FAQ rich results from search after a three-year gradual reduction, with support ending across all site types by August 2026, though the structured data markup remains valid and harmless if left in place.
 
 ## Suggested Topics

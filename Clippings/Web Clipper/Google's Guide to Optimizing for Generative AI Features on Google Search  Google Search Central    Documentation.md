@@ -7,6 +7,11 @@ ContentType: "Article"
 captured_via: "Obsidian Web Clipper"
 captured_at: "2026-05-19T11:14:07.736Z"
 ---
+
+## Matched Topics
+
+[[Chunking]], [[Crawling]], [[Generative AI]], [[Google Search]], [[Indexing]], [[Query Fan-Out]], [[Retrieval Augmented Generation (RAG)]], [[Structured Data]]
+
 In summary, [[SEO]] best practices remain fundamentally relevant for [[Generative Engine Optimisation (GEO)|Generative AI Search]] because Google's AI features rely on the same core ranking systems and indexing infrastructure that power traditional search, using retrieval-augmented generation to surface and highlight existing web content rather than creating entirely new information.
 
 ## Headlines

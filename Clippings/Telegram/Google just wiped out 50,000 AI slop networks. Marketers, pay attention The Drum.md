@@ -16,7 +16,7 @@ AI Slop, Content Quality, Search Platform Detection
 
 ## Matched Topics
 
-[[AI Slop]], [[SEO]], [[Generative AI]]
+[[AI Slop]], [[SEO]], [[Generative AI]], [[Content Production]]
 
 ## Headlines
 

@@ -15,7 +15,7 @@ Generative Engine Optimisation (GEO), Search Engine Marketing, Brand Visibility
 
 ## Matched Topics
 
-[[Generative Engine Optimisation (GEO)]]
+[[Generative Engine Optimisation (GEO)]], [[Entities]], [[Keyword]], [[Large Language Models (LLMs)]], [[Rankings]], [[Reporting]], [[SEO]], [[Structured Data]]
 
 ## Headlines
 

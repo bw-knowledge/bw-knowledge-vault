@@ -16,6 +16,11 @@ author:
   - "Rowan Niemisto"
   - "Alyssa Moxley"
 ---
+
+## Matched Topics
+
+[[AI Hallucinations]], [[Google AI Mode]]
+
 ## Highlights
 - In summary, [[Google IO|Google I/O]] 2026 demonstrated that the company has stabilized its position in the AI race by prioritizing speed and cost efficiency over cutting-edge capabilities, while the broader tech industry continues grappling with public skepticism about AI despite unprecedented technical progress toward [[Artificial General Intelligence (AGI)]].
 

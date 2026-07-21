@@ -8,6 +8,11 @@ captured_via: "Telegram"
 captured_at: "2026-05-13T13:04:34.092Z"
 ---
 
+## Matched Topics
+
+[[Keyword]]
+
+
 In summary, Google's AI-powered personalized search fundamentally restructures how visibility works by using accumulated behavioral context across all Google products to serve different answers to different people searching identical queries, making [[Rankings|Keyword Rankings]] obsolete as a measurement metric and requiring businesses to optimize for user-level relevance rather than keyword match.
 
 ## Suggested Topics

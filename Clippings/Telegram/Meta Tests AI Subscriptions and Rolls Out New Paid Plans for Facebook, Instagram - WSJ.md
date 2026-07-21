@@ -16,7 +16,7 @@ Generative AI Monetization, Subscription Strategy, AI Infrastructure Investment
 
 ## Matched Topics
 
-[[Generative AI]], [[Strategy]]
+[[Generative AI]], [[Strategy]], [[Facebook]], [[WhatsApp]]
 
 ## Headlines
 

@@ -16,7 +16,7 @@ AI and employment, Future of work, Generative AI impacts
 
 ## Matched Topics
 
-[[Generative AI]], [[Strategy]]
+[[Generative AI]], [[Strategy]], [[Anthropic]], [[OpenAI]], [[Qualitative Data]]
 
 ## Headlines
 

@@ -16,7 +16,7 @@ In summary, AI-driven search represents a fundamental shift in how audiences dis
 
 ## Matched Topics
 
-[[Generative Engine Optimisation (GEO)]]
+[[Generative Engine Optimisation (GEO)]], [[AI Agent]], [[Keyword]], [[Reporting]]
 
 ## Headlines
 

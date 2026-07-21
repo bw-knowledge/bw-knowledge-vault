@@ -9,6 +9,11 @@ description: The insight iceberg, in full. The deeper you go, the stronger the i
 tags:
   - clippings
 ---
+
+## Matched Topics
+
+[[LinkedIn]], [[Social Media]]
+
 The insight iceberg, in full.
 
 The deeper you go, the stronger the insight.

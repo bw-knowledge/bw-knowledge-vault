@@ -15,7 +15,7 @@ Usability testing methods, UX research, User testing
 
 ## Matched Topics
 
-None
+None, [[Qualitative Data]], [[Quantitative Data]]
 
 ## Headlines
 

@@ -16,7 +16,7 @@ Agentic Commerce, AI Shopping, Commerce Competition
 
 ## Matched Topics
 
-[[Agentic Commerce Protocol (ACP)]], [[Google Gemini]], [[Google Search]], [[Generative AI]], [[eCommerce]]
+[[Agentic Commerce Protocol (ACP)]], [[Google Gemini]], [[Google Search]], [[Generative AI]], [[eCommerce]], [[OpenAI]]
 
 ## Headlines
 

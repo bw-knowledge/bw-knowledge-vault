@@ -16,7 +16,7 @@ Google Search Evolution, AI Search Features, E-commerce AI Integration
 
 ## Matched Topics
 
-[[Google Search]], [[Google AI Overviews]], [[Google Gemini]], [[SEO]], [[Generative Engine Optimisation (GEO)]], [[Google Merchant Center]]
+[[Google Search]], [[Google AI Overviews]], [[Google Gemini]], [[SEO]], [[Generative Engine Optimisation (GEO)]], [[Google Merchant Center]], [[eCommerce]], [[Google AI Mode]], [[Keyword]], [[YouTube]]
 
 ## Headlines
 

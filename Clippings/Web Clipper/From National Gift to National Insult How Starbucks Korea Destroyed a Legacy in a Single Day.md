@@ -9,6 +9,11 @@ ContentType: "Article"
 captured_via: "Obsidian Web Clipper"
 captured_at: 2026-07-03T10:27:28+01:00
 ---
+
+## Matched Topics
+
+[[Social Media]], [[Brand Sentiment]]
+
 ## Highlights
 - In summary, Starbucks Korea's May 18th \\"Tank Day\\" merchandise campaign triggered a national catastrophe by invoking traumatic symbols of the 1980 Gwangju Democratization Movement massacre, resulting in criminal investigations, stock collapse, and the destruction of the brand's status as South Korea's most trusted gift..
 

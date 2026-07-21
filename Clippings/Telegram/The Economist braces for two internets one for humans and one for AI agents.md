@@ -16,7 +16,7 @@ Generative AI Strategy, Agent-Ready Content, AI Discovery Infrastructure
 
 ## Matched Topics
 
-[[Generative AI]], [[Strategy]], [[AI Agent]]
+[[Generative AI]], [[Strategy]], [[AI Agent]], [[Vibe Coding]]
 
 ## Headlines
 

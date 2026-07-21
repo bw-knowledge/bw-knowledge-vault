@@ -16,7 +16,7 @@ Reddit travel influence, Destination marketing, Social media tourism
 
 ## Matched Topics
 
-[[Reddit]], [[Social Media]]
+[[Reddit]], [[Social Media]], [[Reviews]]
 
 ## Headlines
 

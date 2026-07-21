@@ -16,7 +16,7 @@ Hospitality Marketing, Social Media Strategy, Brand Building
 
 ## Matched Topics
 
-[[Social Media]], [[Strategy]], [[Brand Sentiment]]
+[[Social Media]], [[Strategy]], [[Brand Sentiment]], [[AI Agent]], [[Google AI Overviews]], [[Reviews]], [[Search Traffic]], [[TikTok]]
 
 ## Headlines
 
