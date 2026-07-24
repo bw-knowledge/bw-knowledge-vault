@@ -16,7 +16,7 @@ Generative AI Governance, AI Ethics, Tech Criticism
 
 ## Matched Topics
 
-[[Generative AI]], [[Strategy]]
+[[Generative AI]], [[Strategy]], [[Social Media]]
 
 ## Headlines
 

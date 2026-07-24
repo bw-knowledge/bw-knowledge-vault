@@ -16,7 +16,7 @@ Publisher strategy, Search traffic decline, Digital subscriptions
 
 ## Matched Topics
 
-[[SEO]]
+[[SEO]], [[Forecasting]], [[Google AI Overviews]], [[Search Traffic]]
 
 ## Headlines
 

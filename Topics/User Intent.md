@@ -5,4 +5,4 @@ aliases:
 
 # Resources 
 
-![[Articles.base#Untitled 1]]
+![[Articles.base#User Intent]]

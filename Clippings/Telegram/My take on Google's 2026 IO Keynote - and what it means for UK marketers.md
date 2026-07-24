@@ -8,7 +8,7 @@ captured_via: "Telegram"
 captured_at: "2026-05-20T14:46:01.057Z"
 ---
 
-In summary, Google's 2026 I/O keynote announced major shifts in search functionality—including an AI-powered intelligent search box, agentic capabilities, and Universal Cart—that will significantly alter how consumers find information and make purchasing decisions, requiring marketers to fundamentally reconsider their SEO and e-commerce strategies.
+In summary, Google's 2026 I/O keynote announced major shifts in search functionality—including an AI-powered intelligent search box, [[AI Agent|agentic]] capabilities, and Universal Cart—that will significantly alter how consumers find information and make purchasing decisions, requiring marketers to fundamentally reconsider their SEO and e-commerce strategies.
 
 ## Suggested Topics
 
@@ -16,7 +16,7 @@ Google Search Evolution, AI Search Features, E-commerce AI Integration
 
 ## Matched Topics
 
-[[Google Search]], [[Google AI Overviews]], [[Google Gemini]], [[SEO]], [[Generative Engine Optimisation (GEO)]], [[Google Merchant Center]]
+[[Google Search]], [[Google AI Overviews]], [[Google Gemini]], [[SEO]], [[Generative Engine Optimisation (GEO)]], [[Google Merchant Center]], [[eCommerce]], [[Google AI Mode]], [[Keyword]], [[YouTube]]
 
 ## Headlines
 
@@ -24,7 +24,7 @@ Google Search Evolution, AI Search Features, E-commerce AI Integration
 
 - **Agentic AI is coming to search with information monitoring and booking agents launching in the US this summer.** Google is embedding AI agents directly into its search interface, lowering the barrier to adoption compared to standalone tools and creating significant implications for site accessibility and usability.
 
-- **Universal Cart intelligently aggregates shopping across multiple retailers with price comparison and instant checkout via Google Wallet.** The feature, powered by Google's Universal Commerce Protocol and launching with major partners including Nike, Sephora, and Walmart, fundamentally reshapes e-commerce by surfacing the best deals across stores directly within search results.
+- **Universal Cart intelligently aggregates shopping across multiple retailers with price comparison and instant checkout via Google Wallet.** The feature, powered by Google's [[Agentic Commerce Protocol (ACP)|Universal Commerce Protocol]] and launching with major partners including Nike, Sephora, and Walmart, fundamentally reshapes e-commerce by surfacing the best deals across stores directly within search results.
 
 - **Personal Intelligence connects Google services like Photos, Gmail, and Calendar to search results, amplifying Google's structural advantage over competitors.** The feature, rolling out to nearly 200 countries including the UK, allows AI Mode to surface personalized context that rivals like OpenAI cannot match.
 

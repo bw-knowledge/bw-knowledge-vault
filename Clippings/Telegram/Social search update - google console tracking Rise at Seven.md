@@ -16,7 +16,7 @@ Social search measurement, Search Console features, Social SEO
 
 ## Matched Topics
 
-[[Google Search Console]], [[Social Media]], [[SEO]], [[Keyword]]
+[[Google Search Console]], [[Social Media]], [[SEO]], [[Keyword]], [[Google Search]], [[Reporting]], [[SERP]], [[TikTok]], [[YouTube]]
 
 ## Headlines
 

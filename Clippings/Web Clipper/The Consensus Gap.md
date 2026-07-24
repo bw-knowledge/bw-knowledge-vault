@@ -9,6 +9,11 @@ ContentType: "Article"
 captured_via: "Obsidian Web Clipper"
 captured_at: 2026-05-19T13:49:26+01:00
 ---
+
+## Matched Topics
+
+[[AI Visibility]], [[Reddit]], [[YouTube]]
+
 ## Highlights
 In summary, AI search engines operate as three largely independent citation systems rather than a unified ranking landscape, with only 2.37% of URLs appearing across all three engines (ChatGPT, Perplexity, Google AI Overviews) for the same prompt, meaning traditional blended AI visibility scores mask critical engine-specific fragmentation that requires separate strategic approaches..
 

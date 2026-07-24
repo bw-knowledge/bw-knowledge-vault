@@ -8,7 +8,7 @@ captured_via: "Telegram"
 captured_at: "2026-05-21T06:15:44.904Z"
 ---
 
-In summary, The Economist is building dual content structures optimized for AI agents and humans separately, preparing for a future where AI intermediaries become primary discovery mechanisms alongside restructuring internal workflows to embed generative AI into product development cycles.
+In summary, The Economist is building dual content structures optimized for [[AI Agent|AI agents]] and humans separately, preparing for a future where AI intermediaries become primary discovery mechanisms alongside restructuring internal workflows to embed generative AI into product development cycles.
 
 ## Suggested Topics
 
@@ -16,7 +16,7 @@ Generative AI Strategy, Agent-Ready Content, AI Discovery Infrastructure
 
 ## Matched Topics
 
-[[Generative AI]], [[Strategy]], [[AI Agent]]
+[[Generative AI]], [[Strategy]], [[AI Agent]], [[Vibe Coding]]
 
 ## Headlines
 

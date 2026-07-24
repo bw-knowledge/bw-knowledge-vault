@@ -16,7 +16,7 @@ AI misinformation, Search quality degradation, Generative Engine Optimisation
 
 ## Matched Topics
 
-[[Generative Engine Optimisation (GEO)]]
+[[Generative Engine Optimisation (GEO)]], [[Anthropic]], [[Large Language Models (LLMs)]], [[Rankings]], [[Retrieval Augmented Generation (RAG)]]
 
 ## Headlines
 

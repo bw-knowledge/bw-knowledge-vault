@@ -8,4 +8,4 @@ aliases:
 
 # Resources 
 
-![[Articles.base#Untitled]]
+![[Articles.base#Vibe Coding]]

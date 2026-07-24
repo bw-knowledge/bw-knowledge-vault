@@ -21,6 +21,7 @@ This is a **knowledge capture pipeline** — not a traditional code project. The
   capture-log.jsonl           ← JSONL append-log of every capture (one entry per line)
 
 Clippings/Telegram/           ← AI-generated clippings (auto-committed by n8n)
+Clippings/Web Clipper/        ← manually saved clippings (Obsidian Web Clipper browser extension)
 Topics/                       ← curated topic notes (hand-maintained)
 Templates/                    ← Obsidian Templater scripts + the Claude prompt template
 Bases/Articles.base           ← Obsidian database definition with domain-extraction formula
@@ -42,6 +43,8 @@ To update the workflow: edit `.code/Knowledge Hub Capture.json` and import it in
 ---
 
 ## Clipping Format
+
+**When surveying, summarizing, or counting articles, read both `Clippings/Telegram/` and `Clippings/Web Clipper/`** (and check for stray files directly under `Clippings/`) — glob `Clippings/**` rather than assuming one subfolder is the whole set. The two folders use different capture paths (n8n bot vs. manual browser clipping) but both hold real vault content.
 
 Every file in `Clippings/Telegram/` follows this schema:
 

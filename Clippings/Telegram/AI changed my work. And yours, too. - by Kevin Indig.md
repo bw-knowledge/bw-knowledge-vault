@@ -16,7 +16,7 @@ AI adoption and impact, Software economics, Work transformation
 
 ## Matched Topics
 
-[[Anthropic]]
+[[Anthropic]], [[AI Agent]], [[Reporting]], [[SEO]], [[Vibe Coding]]
 
 ## Headlines
 

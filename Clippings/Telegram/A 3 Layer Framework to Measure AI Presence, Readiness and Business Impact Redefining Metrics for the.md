@@ -15,7 +15,7 @@ AI search measurement, AI visibility optimization, Search analytics
 
 ## Matched Topics
 
-[[Generative Engine Optimisation (GEO)]]
+[[Generative Engine Optimisation (GEO)]], [[AI Visibility]], [[Grounding]], [[Keyword]], [[Personas]], [[Reporting]], [[Reviews]]
 
 ## Headlines
 

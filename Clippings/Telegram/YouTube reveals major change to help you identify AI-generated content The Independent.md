@@ -16,7 +16,7 @@ AI content detection, AI transparency, Video platform policy
 
 ## Matched Topics
 
-[[AI Native]], [[Generative AI]]
+[[AI Native]], [[Generative AI]], [[YouTube]]
 
 ## Headlines
 

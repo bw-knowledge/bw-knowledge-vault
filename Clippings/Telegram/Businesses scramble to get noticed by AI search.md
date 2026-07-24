@@ -16,7 +16,7 @@ AI Search Visibility, Answer Engine Optimisation, AI-Driven Traffic
 
 ## Matched Topics
 
-[[Generative Engine Optimisation (GEO)]], [[Generative AI]], [[Search Traffic]], [[Large Language Models (LLMs)]], [[User Intent]]
+[[Generative Engine Optimisation (GEO)]], [[Generative AI]], [[Search Traffic]], [[Large Language Models (LLMs)]], [[User Intent]], [[AI Slop]], [[Google AI Overviews]]
 
 ## Headlines
 

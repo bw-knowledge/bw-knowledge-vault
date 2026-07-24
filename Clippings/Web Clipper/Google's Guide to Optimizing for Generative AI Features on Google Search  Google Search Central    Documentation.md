@@ -7,6 +7,11 @@ ContentType: "Article"
 captured_via: "Obsidian Web Clipper"
 captured_at: "2026-05-19T11:14:07.736Z"
 ---
+
+## Matched Topics
+
+[[Chunking]], [[Crawling]], [[Generative AI]], [[Google Search]], [[Indexing]], [[Query Fan-Out]], [[Retrieval Augmented Generation (RAG)]], [[Structured Data]]
+
 In summary, [[SEO]] best practices remain fundamentally relevant for [[Generative Engine Optimisation (GEO)|Generative AI Search]] because Google's AI features rely on the same core ranking systems and indexing infrastructure that power traditional search, using retrieval-augmented generation to surface and highlight existing web content rather than creating entirely new information.
 
 ## Headlines
@@ -86,9 +91,9 @@ To help you focus on what matters for your website's visibility, we've collected
 
 ## Explore agentic experiences
 
-AI agents are autonomous systems that can perform tasks on behalf of people, such as booking a reservation or comparing product specifications. These agents can take many forms; for example, browser agents may access your website to gather the data they need to complete these tasks, such as analyzing visual renderings (like screenshots), inspecting the DOM structure, and interpreting the accessibility tree.
+[[AI Agent|AI agents]] are autonomous systems that can perform tasks on behalf of people, such as booking a reservation or comparing product specifications. These agents can take many forms; for example, browser agents may access your website to gather the data they need to complete these tasks, such as analyzing visual renderings (like screenshots), inspecting the DOM structure, and interpreting the accessibility tree.
 
-If this is something that's relevant to your business and you have extra time, check out the available agentic experiences and review the guide to [agent-friendly website best practices](https://web.dev/articles/ai-agent-site-ux), which gives some insights into how a website can generally prepare for current browser agents. Protocols like [Universal Commerce Protocol](https://ucp.dev/latest/) (UCP) are emerging that will allow Search agents to do more.
+If this is something that's relevant to your business and you have extra time, check out the available agentic experiences and review the guide to [agent-friendly website best practices](https://web.dev/articles/ai-agent-site-ux), which gives some insights into how a website can generally prepare for current browser agents. Protocols like [Universal Commerce Protocol](https://ucp.dev/latest/) ([[Agentic Commerce Protocol (ACP)|UCP]]) are emerging that will allow Search agents to do more.
 
 ## Next steps: what to focus on
 

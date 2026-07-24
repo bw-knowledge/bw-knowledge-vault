@@ -7,6 +7,11 @@ ContentType: "Article"
 author:
 reviewed:
 ---
+
+## Matched Topics
+
+[[Generative AI]]
+
 ## Highlights
 - In summary, organizations are experiencing a productivity paradox where widespread AI adoption and investment are failing to generate measurable returns, with 95% of companies seeing no ROI despite doubling their AI-led processes and usage since 2023.
 

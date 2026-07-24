@@ -7,4 +7,4 @@ aliases:
 
 # Resources 
 
-![[Articles.base#Untitled 1]]
+![[Articles.base#Customer Lifetime Value]]

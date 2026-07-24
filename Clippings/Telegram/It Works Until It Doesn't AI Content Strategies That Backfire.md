@@ -16,7 +16,7 @@ AI [[Content Production|Content Strategy]], SEO algorithm risk, Content quality 
 
 ## Matched Topics
 
-[[Generative Engine Optimisation (GEO)]], [[SEO]]
+[[Generative Engine Optimisation (GEO)]], [[SEO]], [[Large Language Models (LLMs)]], [[Rankings]], [[Retrieval Augmented Generation (RAG)]]
 
 ## Headlines
 

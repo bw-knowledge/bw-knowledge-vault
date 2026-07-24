@@ -16,7 +16,7 @@ AI search optimization, SEO strategy, Competitive positioning
 
 ## Matched Topics
 
-[[Generative Engine Optimisation (GEO)]]
+[[Generative Engine Optimisation (GEO)]], [[AI Citations]], [[AI Visibility]], [[Forecasting]], [[Google AI Mode]], [[Google AI Overviews]], [[Keyword]], [[Large Language Models (LLMs)]], [[Personas]]
 
 ## Headlines
 

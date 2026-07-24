@@ -16,7 +16,7 @@ Print media strategy, Magazine publishing, Content permanence
 
 ## Matched Topics
 
-None
+None, [[Attention Economy]], [[Social Media]]
 
 ## Headlines
 
