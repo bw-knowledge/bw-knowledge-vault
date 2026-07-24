@@ -13,7 +13,10 @@ views:
       - file.name
       - formula.Domain
       - source
+      - file.ctime
     sort:
+      - property: file.ctime
+        direction: DESC
       - property: formula.Domain
         direction: ASC
     columnSize:
@@ -108,7 +111,6 @@ views:
       file.name: 261
       formula.Domain: 197
       source: 218
-
   - type: table
     name: Google Gemini
     filters:
