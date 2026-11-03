@@ -1461,3 +1461,22 @@ views:
       file.name: 261
       formula.Domain: 197
       source: 218
+
+  - type: table
+    name: AI adoption in consulting is everywhere. AI profitability is nowhere. Here’s why
+    filters:
+      or:
+        - file.hasLink("Clippings/Web Clipper/AI adoption in consulting is everywhere. AI profitability is nowhere. Here’s why.md")
+    order:
+      - file.name
+      - formula.Domain
+      - author
+      - source
+      - watched
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 261
+      formula.Domain: 197
+      source: 218

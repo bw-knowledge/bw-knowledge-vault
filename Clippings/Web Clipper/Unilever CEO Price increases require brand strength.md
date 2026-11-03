@@ -10,7 +10,6 @@ captured_via: "Obsidian Web Clipper"
 captured_at: 2026-10-29T17:27:26+00:00
 ---
 ## Highlights
-- 
 
 ## Full Article
 ![](https://marketingweek.imgix.net/uploads/2025/11/Home-Care-unilever.jpg?auto=compress,format&crop=faces,entropy,edges&fit=crop&q=60&w=1200&h=700) Strengthening brand equity is the only way to justify increasing prices above market levels, says Unilever’s CEO.
