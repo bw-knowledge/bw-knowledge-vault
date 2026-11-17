@@ -41,40 +41,6 @@ None
 ---
 
 ## Full Article
-
-A little housekeeping
-
-We use essential cookies to keep Geningo running. With your permission, we'd also like to use optional cookies to understand how visitors use our website and improve their experience.
-
-FunctionalFunctional
-Always active
-
-The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.
-
-PreferencesPreferences
-
-The technical storage or access is necessary for the legitimate purpose of storing preferences that are not requested by the subscriber or user.
-
-StatisticsStatistics
-
-The technical storage or access that is used exclusively for statistical purposes.The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.
-
-MarketingMarketing
-
-The technical storage or access is required to create user profiles to send advertising, or to track the user on a website or across several websites for similar marketing purposes.
-
-- [Manage options](https://geningo.com/#cmplz-manage-consent-container)
-- [Manage services](https://geningo.com/#cmplz-cookies-overview)
-- [Manage {vendor\_count} vendors](https://geningo.com/#cmplz-tcf-wrapper)
-- [Read more about these purposes](https://cookiedatabase.org/tcf/purposes/)
-
-Accept allReject optionalPreferencesSave preferences [Preferences](https://geningo.com/#cmplz-manage-consent-container)
-
-- [Privacy](https://geningo.com/privacy/)
-- [{title}](https://geningo.com/how-to-approach-a-client-before-a-brief-exists/#)
-
-[Skip to content](https://geningo.com/how-to-approach-a-client-before-a-brief-exists/#content)
-
 ## Finding Opportunities
 
 ![Geningo-Knowledge-Hub-How-to-approach-a-client-before-a-brief-exists](https://geningo.com/wp-content/uploads/2026/10/GennFlow-Knowledge-Hub-How-to-approach-a-client-before-a-brief-exists.png)
