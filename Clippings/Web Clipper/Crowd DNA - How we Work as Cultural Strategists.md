@@ -1,3 +1,14 @@
+---
+title: "Crowd DNA - How we Work as Cultural Strategists"
+author:
+  - "Crowd DNA"
+created: 2026-11-26
+source: "https://www.crowddna.com/wp-content/uploads/2025/04/Crowd-DNA-How-We-Work-As-Cultural-Strategists-6-1.pdf"
+tags:
+ContentType: "Article"
+captured_via: "Obsidian Web Clipper"
+captured_at: 2026-11-26T15:40:26+00:00
+---
 In summary, Crowd DNA argues that brands win commercially by tapping into slow, deep-rooted culture rather than chasing fast-moving trends, and sets out a three-step method (decode, reframe, act) delivered by blended "Cultural Strategist" teams.
 
 ## Suggested Topics
@@ -21,7 +32,3 @@ Cultural Strategy, Cultural Insights, Research Methods
 - **Numbers:** Brands with the highest Cultural Resonance Score grew 25% more than competitors (TMA, August 2023); 63% of CMOs agree brands must create culture, not just borrow from it; 84% agree brands need to entertain and engage, not interrupt, to connect with younger generations (Dentsu CMO Survey, 2023, as the layout appears to attribute); brands that listen to and lead culture grow six times more than those with low cultural relevance (Kantar); "Polarization" was Merriam-Webster's 2024 Word of the Year; Amazon Ads study spanned 12 markets and a 12,000-person survey; Reckitt work looked 3-5 years ahead; Suntory scenarios looked 10, 20 and 30 years ahead
 - **Things:** Cultural Futures Navigation, Cultural Strategy Layers, ethnographic observation framework (space, actors, activities, objects, acts, events, time, goals, feelings), Altitude of Tension framework, Finding the Cultural Tension framework, Culturally Authentic Space framework, culturally charged scenario planning, PESTLE global drivers, KIN network
 - **Concepts:** Slow culture versus fast culture, culturally charged commercial advantage, mess to meaning, cultural tension, cultural orthodoxy, ideological opportunity, culturally authentic space, T-shaped skills, blended methods, casting rather than recruiting, passing the mic, method-agnostic research
-
----
-
-Article title: How We Work As Cultural Strategists Article source: PDF upload (Crowd DNA, April 2025, 35 pages)
