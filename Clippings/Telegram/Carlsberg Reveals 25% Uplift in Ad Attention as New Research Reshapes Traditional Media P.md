@@ -1,11 +1,11 @@
 ---
-title: "Newsroom » Carlsberg Reveals 25% Uplift in Ad Attention as New Research Reshapes Traditional Media Planning « Carlsberg Group"
+title: Carlsberg Reveals 25% Uplift in Ad Attention as New Research Reshapes Traditional Media Planning « Carlsberg Group
 created: 2026-11-24
-source: "https://www.carlsberggroup.com/newsroom/carlsberg-reveals-25-uplift-in-ad-attention-as-new-research-reshapes-traditional-media-planning/"
+source: https://www.carlsberggroup.com/newsroom/carlsberg-reveals-25-uplift-in-ad-attention-as-new-research-reshapes-traditional-media-planning/
 tags:
-ContentType: "Article"
-captured_via: "Telegram"
-captured_at: "2026-11-24T16:18:05.712Z"
+ContentType: Article
+captured_via: Telegram
+captured_at: 2026-11-24T16:18:05.712Z
 ---
 
 In summary, Carlsberg's research demonstrates that brand distinctiveness fundamentally changes how advertising attention should be measured and optimized, revealing that established brands with strong recognition require less attention than competitors to drive recall and purchase intent.
